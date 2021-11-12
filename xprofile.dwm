@@ -1,0 +1,36 @@
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+
+export _JAVA_AWT_WM_NONREPARENTING=1
+
+#export LIBVA_DRIVER_NAME=nvidia
+#export LIBVA_DRIVERS_PATH=/usr/lib64/dri
+#export MOZ_DISABLE_RDD_SANDBOX=1
+
+#export GDK_SCALE=1.5
+#export GDK_DPI_SCALE=1.5
+
+nitrogen --restore
+pulseaudio --start
+picom -b
+xscreensaver --no-splash &
+light-locker \
+  --lock-on-suspend \
+  --lock-on-lid &
+
+#xinput set-prop Elan\ Touchpad Device\ Enabled 0
+setxkbmap -option ctrl:nocaps
+fcitx5 -rd
+(
+  sleep 3
+  sands &
+) &
+
+while true; do
+  {
+    _FREE=($(free -h --si))
+    xsetroot -name " MEM: ${_FREE[8]} / ${_FREE[7]} | BAT: $(cat /sys/class/power_supply/BAT0/capacity)% | $(date +%y-%m-%d\ %H:%M:%S) "
+  }&
+  sleep 1
+done &

@@ -1,0 +1,12 @@
+#!/sbin/openrc-run
+
+name="cloudflared"
+command="/usr/local/bin/$name"
+command_args="--pidfile /var/run/$name.pid tunnel run"
+command_background="true"
+pidfile="/var/run/$name.pid"
+
+depend() {
+	need net
+	use dns logger
+}

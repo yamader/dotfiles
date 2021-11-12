@@ -1,0 +1,1 @@
+LDFLAGS="-Wl,-O2 -Wl,--as-needed"

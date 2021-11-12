@@ -1,0 +1,3 @@
+app-emulation/qemu crt-static-compat
+sys-apps/busybox crt-static-compat
+sys-process/tini crt-static-compat
