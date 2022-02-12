@@ -1,0 +1,28 @@
+export XMODIFIERS=@im=fcitx
+export QT_IM_MODULE=fcitx
+export GTK_IM_MODULE=fcitx
+
+export _JAVA_AWT_WM_NONREPARENTING=1
+
+nitrogen --restore
+
+while true; do
+  {
+    _FREE=($(free -h --si))
+    xsetroot -name " MEM: ${_FREE[7]} / ${_FREE[8]} | BAT: $(($(cat /sys/class/power_supply/BAT0/capacity)+1))% | $(date +%y-%m-%d\ %H:%M:%S) "
+  }&
+  sleep 1
+done &
+
+#xinput set-prop Elan\ Touchpad Device\ Enabled 0
+
+setxkbmap -option ctrl:nocaps
+fcitx -rd
+
+(
+  sleep 3;
+  sands &
+) &
+
+xcompmgr &
+light-locker &
