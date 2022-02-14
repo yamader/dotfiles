@@ -7,10 +7,6 @@ alias b="HOMEBREW_NO_AUTO_UPDATE=1 brew"
 alias dc="docker rm (docker ps -aq); docker network rm (docker network ls -q); docker rmi (docker images -aq);"
 alias silicon="silicon --shadow-blur-radius 32"
 
-function llatex-watch
-  fswatch -b --event=Updated $argv[1] | xargs -n1 lualatex
-end
-
 ## lang
 
 alias d="rdmd"
