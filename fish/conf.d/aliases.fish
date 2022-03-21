@@ -9,7 +9,9 @@ alias silicon="silicon --shadow-blur-radius 32"
 
 ## lang
 
-alias d="rdmd"
+alias d="dub run -q drepl"
+alias dc="rdmd"
+alias dpp="dub run -q dpp"
 alias p="python"
 
 ## git
