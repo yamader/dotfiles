@@ -9,7 +9,7 @@ nitrogen --restore
 while true; do
   {
     _FREE=($(free -h --si))
-    xsetroot -name " MEM: ${_FREE[7]} / ${_FREE[8]} | BAT: $(cat /sys/class/power_supply/BAT0/capacity)% | $(date +%y-%m-%d\ %H:%M:%S) "
+    xsetroot -name " MEM: ${_FREE[8]} / ${_FREE[7]} | BAT: $(cat /sys/class/power_supply/BAT0/capacity)% | $(date +%y-%m-%d\ %H:%M:%S) "
   }&
   sleep 1
 done &
