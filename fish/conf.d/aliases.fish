@@ -4,13 +4,13 @@ alias l="ll"
 alias v="vim"
 alias s="subl"
 alias b="HOMEBREW_NO_AUTO_UPDATE=1 brew"
-#alias dc="docker rm (docker ps -aq); docker network rm (docker network ls -q); docker rmi (docker images -aq);"
+alias dc="docker rm (docker ps -aq); docker network rm (docker network ls -q); docker rmi (docker images -aq);"
 alias silicon="silicon --shadow-blur-radius 32"
 
 ## lang
 
-alias d="dub run -q drepl --"
-alias dc="rdmd"
+#alias d="rdmd"
+alias drepl="dub run -q drepl --"
 alias dfmt="dub run -q dfmt --"
 alias dpp="dub run -q dpp --"
 alias p="python"
