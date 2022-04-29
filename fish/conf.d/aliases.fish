@@ -31,6 +31,7 @@ alias gr="git reset"
 
 ## rlwrap
 
+alias sqlite="rlwrap sqlite3"
 alias ocaml="rlwrap ocaml"
 alias gosh="rlwrap gosh"
 alias replim="rlwrap replim"
