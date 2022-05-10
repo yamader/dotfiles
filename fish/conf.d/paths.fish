@@ -3,6 +3,7 @@
 set -x JAVA_HOME /opt/openjdk-bin-17
 
 set -x GOPATH ~/.go
+set -x PNPM_HOME ~/.node/pnpm
 set -x ANDROID_HOME ~/SDK/Android
 
 ## ENV
@@ -21,15 +22,16 @@ set -x PATH ~/.bin \
 	~/.nimble/bin \
 	~/.opam/default/bin \
 	~/.pub-cache/bin \
-	$GOPATH/bin \
-	~/.local/share/gem/ruby/3.0.0/bin \
 	~/SDK/flutter/bin \
 	~/SDK/depot_tools \
 	~/SDK/haxe \
 	~/SDK/neko \
+	$PNPM_HOME \
+	$GOPATH/bin \
+	$JAVA_HOME/bin \
 	$ANDROID_HOME/emulator \
 	$ANDROID_HOME/tools \
 	$ANDROID_HOME/tools/bin \
 	$ANDROID_HOME/platform-tools \
-	$JAVA_HOME/bin \
+	/opt/android-ndk \
 	$PATH
