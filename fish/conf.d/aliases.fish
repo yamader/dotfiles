@@ -16,7 +16,7 @@ alias vivaldi="vivaldi-snapshot --force-dark-mode"
 
 #alias d="rdmd"
 alias drepl="dub run -q drepl --"
-alias dfmt="dub run -q dfmt --"
+#alias dfmt="dub run -q dfmt --"
 alias dpp="dub run -q dpp --"
 alias p="python"
 
