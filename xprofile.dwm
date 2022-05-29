@@ -28,5 +28,7 @@ fcitx -rd
   sands &
 ) &
 
+xset s 1800
+
 xcompmgr &
 light-locker &
