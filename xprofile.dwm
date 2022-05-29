@@ -9,14 +9,10 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 #export MOZ_DISABLE_RDD_SANDBOX=1
 
 nitrogen --restore
-
-while true; do
-  {
-    _FREE=($(free -h --si))
-    xsetroot -name " MEM: ${_FREE[8]} / ${_FREE[7]} | BAT: $(cat /sys/class/power_supply/BAT0/capacity)% | $(date +%y-%m-%d\ %H:%M:%S) "
-  }&
-  sleep 1
-done &
+pulseaudio --start
+xcompmgr &
+xscreensaver 6
+light-locker &
 
 #xinput set-prop Elan\ Touchpad Device\ Enabled 0
 
@@ -28,7 +24,10 @@ fcitx -rd
   sands &
 ) &
 
-xset s 1800
-
-xcompmgr &
-light-locker &
+while true; do
+  {
+    _FREE=($(free -h --si))
+    xsetroot -name " MEM: ${_FREE[8]} / ${_FREE[7]} | BAT: $(cat /sys/class/power_supply/BAT0/capacity)% | $(date +%y-%m-%d\ %H:%M:%S) "
+  }&
+  sleep 1
+done &
