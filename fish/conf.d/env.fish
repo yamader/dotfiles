@@ -1,4 +1,6 @@
-## my
+## ENV
+
+source ~/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
 
 set -x JAVA_HOME /opt/openjdk-bin-17
 
@@ -6,9 +8,7 @@ set -x GOPATH ~/.go
 set -x PNPM_HOME ~/.node/pnpm
 set -x ANDROID_HOME ~/SDK/Android
 
-## ENV
-
-source ~/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
+set -x DOTNET_CLI_TELEMETRY_OPTOUT true
 
 ## PATH
 
