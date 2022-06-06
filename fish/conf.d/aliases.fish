@@ -6,11 +6,15 @@ alias s="subl"
 alias c="qalc"
 alias x="hexdump -C"
 
-alias b="HOMEBREW_NO_AUTO_UPDATE=1 brew"
 alias dc="docker rm (docker ps -aq); docker network rm (docker network ls -q); docker rmi (docker images -aq);"
 
 alias silicon="silicon --shadow-blur-radius 32"
 alias vivaldi="vivaldi-snapshot --force-dark-mode"
+
+## os specific
+
+#alias eq="equery"
+#alias b="HOMEBREW_NO_AUTO_UPDATE=1 brew"
 
 ## lang
 
