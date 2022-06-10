@@ -5,6 +5,7 @@ source ~/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
 set -x JAVA_HOME /opt/openjdk-bin-17
 
 set -x GOPATH ~/.go
+set -x DENO_INSTALL ~/.deno
 set -x PNPM_HOME ~/.node/pnpm
 set -x ANDROID_HOME ~/SDK/Android
 
@@ -17,6 +18,7 @@ set -x LD_LIBRARY_PATH ~/SDK/neko \
 
 set -x PATH ~/.bin \
 	~/.local/bin \
+  ~/.deno/bin \
 	~/.node/bin \
 	~/.cargo/bin \
 	~/.nimble/bin \
