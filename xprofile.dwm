@@ -12,7 +12,10 @@ nitrogen --restore
 pulseaudio --start
 xcompmgr &
 xscreensaver --no-splash &
-#light-locker &
+light-locker \
+  --late-after-screensaver=5 \
+  --lock-on-suspend \
+  --lock-on-lid &
 
 #xinput set-prop Elan\ Touchpad Device\ Enabled 0
 setxkbmap -option ctrl:nocaps
