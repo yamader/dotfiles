@@ -26,6 +26,7 @@ set -x PATH ~/.bin \
 	~/.pub-cache/bin \
 	~/SDK/flutter/bin \
 	~/SDK/depot_tools \
+  ~/SDK/FPGA/intel_lite_211/quartus/bin \
 	~/SDK/haxe \
 	~/SDK/neko \
 	$PNPM_HOME \
