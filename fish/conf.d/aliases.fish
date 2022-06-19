@@ -1,7 +1,6 @@
 ## my
 
 alias l="ll"
-alias v="vim"
 alias s="subl"
 alias c="qalc"
 alias x="hexdump -C"

@@ -16,25 +16,38 @@ set -x DOTNET_CLI_TELEMETRY_OPTOUT true
 set -x LD_LIBRARY_PATH ~/SDK/neko \
 	$LD_LIBRARY_PATH
 
-set -x PATH ~/.bin \
-	~/.local/bin \
-  ~/.deno/bin \
-	~/.node/bin \
-	~/.cargo/bin \
-	~/.nimble/bin \
-	~/.opam/default/bin \
-	~/.pub-cache/bin \
+### LANG
+set -x PATH \
+	~/repos/lang/v \
+	$JAVA_HOME/bin \
+	$PATH
+
+### SDK
+set -x PATH \
+	~/SDK/FPGA/intel_lite_211/quartus/bin \
 	~/SDK/flutter/bin \
-	~/SDK/depot_tools \
-  ~/SDK/FPGA/intel_lite_211/quartus/bin \
 	~/SDK/haxe \
 	~/SDK/neko \
-	$PNPM_HOME \
-	$GOPATH/bin \
-	$JAVA_HOME/bin \
 	$ANDROID_HOME/emulator \
 	$ANDROID_HOME/tools \
 	$ANDROID_HOME/tools/bin \
 	$ANDROID_HOME/platform-tools \
 	/opt/android-ndk \
+#	~/SDK/depot_tools \
+	$PATH
+
+### PM
+set -x PATH
+	~/.cargo/bin \
+	$GOPATH/bin \
+	$PNPM_HOME \
+	~/.node/bin \
+	~/.nimble/bin \
+	~/.opam/default/bin \
+	$PATH
+
+### MISC
+set -x PATH \
+	~/.bin \
+	~/.local/bin \
 	$PATH
