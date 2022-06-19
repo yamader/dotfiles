@@ -37,7 +37,7 @@ set -x PATH \
 	$PATH
 
 ### PM
-set -x PATH
+set -x PATH \
 	~/.cargo/bin \
 	$GOPATH/bin \
 	$PNPM_HOME \
