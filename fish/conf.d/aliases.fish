@@ -20,7 +20,9 @@ alias vivaldi="vivaldi-snapshot --force-dark-mode"
 #alias d="rdmd"
 alias drepl="dub run -q drepl --"
 #alias dfmt="dub run -q dfmt --"
+# LIBRARY_PATH=/usr/lib/llvm/14/lib64 dub fetch dpp
 alias dpp="dub run -q dpp --"
+alias ddox="dub run -q ddox --"
 alias p="python"
 
 ## git
