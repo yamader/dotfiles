@@ -12,7 +12,8 @@ alias vivaldi="vivaldi-snapshot --force-dark-mode"
 
 ## os specific
 
-#alias eq="equery"
+alias eq="equery"
+alias pq="portageq"
 #alias b="HOMEBREW_NO_AUTO_UPDATE=1 brew"
 
 ## lang
