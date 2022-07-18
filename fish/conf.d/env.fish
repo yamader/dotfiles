@@ -7,6 +7,7 @@ set -x JAVA_HOME /opt/openjdk-bin-17
 set -x GOPATH ~/.go
 set -x DENO_INSTALL ~/.deno
 set -x PNPM_HOME ~/.node/pnpm
+set -x BUN_INSTALL ~/.bun
 set -x ANDROID_HOME ~/SDK/Android
 
 set -x DOTNET_CLI_TELEMETRY_OPTOUT true
@@ -19,6 +20,7 @@ set -x LD_LIBRARY_PATH ~/SDK/neko \
 ### LANG
 set -x PATH \
 	~/repos/lang/v \
+	$BUN_INSTALL/bin \
 	$JAVA_HOME/bin \
 	$PATH
 
