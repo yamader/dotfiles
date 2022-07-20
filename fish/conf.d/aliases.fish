@@ -5,7 +5,7 @@ alias s="subl"
 alias c="qalc"
 alias x="hexdump -C"
 
-alias dc="docker rm (docker ps -aq); docker network rm (docker network ls -q); docker rmi (docker images -aq);"
+alias dc="docker system prune"
 
 alias silicon="silicon --shadow-blur-radius 32"
 alias vivaldi="vivaldi-snapshot --force-dark-mode"

@@ -73,7 +73,7 @@ cursor:
     blinking: On
   blink_interval: 500
   blink_timeout: 0
-  #unfocused_hollow: false
+  unfocused_hollow: false
   thickness: 0.25
 
 shell:
