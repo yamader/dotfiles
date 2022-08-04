@@ -20,9 +20,14 @@ alias b="HOMEBREW_NO_AUTO_UPDATE=1 brew"
 
 alias cc="clang"
 alias c++="clang++"
+alias as="llvm-as"
+
+alias objdump="llvm-objdump"
+alias objcopy="llvm-objcopy"
+alias strip="llvm-strip"
+alias size="llvm-size"
 alias nm="llvm-nm"
 alias ar="llvm-ar"
-alias ranlib="llvm-ranlib"
 
 ## lang
 
