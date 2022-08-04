@@ -16,6 +16,14 @@ alias eq="equery"
 alias pq="portageq"
 alias b="HOMEBREW_NO_AUTO_UPDATE=1 brew"
 
+## llvm
+
+alias cc="clang"
+alias c++="clang++"
+alias nm="llvm-nm"
+alias ar="llvm-ar"
+alias ranlib="llvm-ranlib"
+
 ## lang
 
 #alias d="rdmd"
