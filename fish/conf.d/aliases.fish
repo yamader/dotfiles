@@ -25,7 +25,7 @@ alias ld="ld.lld"
 
 alias objdump="llvm-objdump"
 alias objcopy="llvm-objcopy"
-alais undname="llvm-undname"
+alias undname="llvm-undname"
 alias strip="llvm-strip"
 alias size="llvm-size"
 alias nm="llvm-nm"
