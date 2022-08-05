@@ -5,6 +5,9 @@ source ~/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
 #set -x CC clang
 #set -x CXX clang++
 
+set RDMDFLAGS \
+  -preview=shortenedMethods
+
 set -x JAVA_HOME (java-config -O)
 set -x GOPATH ~/.go
 set -x PNPM_HOME ~/.node/pnpm

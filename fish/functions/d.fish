@@ -1,6 +1,6 @@
 function d
   if [ -n "$argv" ]
-    rdmd $argv
+    rdmd $RDMDFLAGS $argv
   else
     drepl
   end
