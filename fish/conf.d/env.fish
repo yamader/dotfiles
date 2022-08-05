@@ -2,8 +2,8 @@
 
 source ~/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
 
-set -x CC clang
-set -x CXX clang++
+#set -x CC clang
+#set -x CXX clang++
 
 set -x JAVA_HOME (java-config -O)
 set -x GOPATH ~/.go
