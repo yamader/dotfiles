@@ -23,13 +23,13 @@ set -x LD_LIBRARY_PATH ~/SDK/neko \
 	$LD_LIBRARY_PATH
 
 ### LANG
-fish_add_path -aP \
+fish_add_path -P \
 	~/repos/lang/v \
 	$BUN_INSTALL/bin \
 	$JAVA_HOME/bin
 
 ### SDK
-fish_add_path -aP \
+fish_add_path -P \
 	~/SDK/FPGA/intel_lite_211/quartus/bin \
 	~/SDK/flutter/bin \
 	~/SDK/haxe \
@@ -42,7 +42,7 @@ fish_add_path -aP \
 #	~/SDK/depot_tools
 
 ### PM
-fish_add_path -aP \
+fish_add_path -P \
 	~/.cargo/bin \
 	$GOPATH/bin \
 	$PNPM_HOME \
@@ -50,7 +50,7 @@ fish_add_path -aP \
 	~/.nimble/bin \
 	~/.opam/default/bin
 
-### MISC
-fish_add_path -aP \
+### LOCAL
+fish_add_path -P \
 	~/.bin \
 	~/.local/bin
