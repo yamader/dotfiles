@@ -8,6 +8,7 @@ alias x="hexdump -C"
 alias serve="python3 -m http.server"
 alias dc="docker system prune"
 
+alias at="rlwrap at -u $USER"
 alias silicon="silicon --shadow-blur-radius 32"
 alias vivaldi="vivaldi-snapshot --force-dark-mode"
 
