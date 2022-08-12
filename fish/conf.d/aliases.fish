@@ -5,6 +5,7 @@ alias s="subl"
 alias c="qalc"
 alias x="hexdump -C"
 
+alias serve="python3 -m http.server"
 alias dc="docker system prune"
 
 alias silicon="silicon --shadow-blur-radius 32"
