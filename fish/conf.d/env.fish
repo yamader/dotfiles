@@ -8,6 +8,8 @@ source ~/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
 set RDMDFLAGS \
   -preview=shortenedMethods
 
+set -x EIX_LIMIT 0
+
 set -x JAVA_HOME (java-config -O)
 set -x GOPATH ~/.go
 set -x PNPM_HOME ~/.node/pnpm
