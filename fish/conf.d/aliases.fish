@@ -56,6 +56,7 @@ alias gp="git push"
 alias gs="git stash"
 alias gt="git tag"
 alias gr="git reset"
+alias grb="git rebase"
 
 ## rlwrap
 
