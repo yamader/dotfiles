@@ -27,7 +27,8 @@ set -x DOTNET_CLI_TELEMETRY_OPTOUT true
 
 ## PATH
 fish_add_path -P \
-	$BREW_PREF/bin
+	$BREW_PREF/bin \
+	$BREW_PREF/sbin
 set -x LD_LIBRARY_PATH ~/SDK/neko \
 	$LD_LIBRARY_PATH
 
