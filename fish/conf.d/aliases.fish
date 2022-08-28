@@ -8,7 +8,6 @@ alias x="hexdump -C"
 alias serve="python3 -m http.server"
 alias dc="docker system prune"
 
-alias at="rlwrap at -u $USER"
 alias silicon="silicon --shadow-blur-radius 32"
 alias vivaldi="vivaldi-snapshot --force-dark-mode"
 
@@ -16,7 +15,6 @@ alias vivaldi="vivaldi-snapshot --force-dark-mode"
 
 alias eq="equery"
 alias pq="portageq"
-alias b="HOMEBREW_NO_AUTO_UPDATE=1 brew"
 
 ## llvm
 
@@ -60,6 +58,7 @@ alias grb="git rebase"
 
 ## rlwrap
 
+alias at="rlwrap at -u $USER"
 alias sqlite="rlwrap sqlite3"
 alias ocaml="rlwrap ocaml"
 alias gosh="rlwrap gosh"
