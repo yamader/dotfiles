@@ -11,10 +11,10 @@ set RDMDFLAGS \
 set -x EIX_LIMIT 0
 set -x HOMEBREW_NO_AUTO_UPDATE 1
 
-if which java-config > /dev/null 2>&1
+if type -q java-config
   set -x JAVA_HOME (java-config -O)
 end
-if which brew > /dev/null 2>&1
+if type -q brew
   set -x BREW_PREF (brew --prefix)
 end
 set -x GOPATH ~/.go
