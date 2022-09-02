@@ -5,7 +5,7 @@ alias s="subl"
 alias c="qalc"
 alias x="hexdump -C"
 
-alias serve="python3 -m http.server"
+alias serve="p -m http.server"
 alias dc="docker system prune"
 
 alias silicon="silicon --shadow-blur-radius 32"
@@ -40,6 +40,7 @@ alias drepl="dub run -q drepl --"
 alias dpp="dub run -q dpp --"
 alias ddox="dub run -q ddox --"
 alias p="python"
+alias pip="p -m pip"
 
 ## git
 
