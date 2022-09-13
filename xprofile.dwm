@@ -1,6 +1,6 @@
-export XMODIFIERS=@im=fcitx
-export QT_IM_MODULE=fcitx
-export GTK_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx5
+export QT_IM_MODULE=fcitx5
+export GTK_IM_MODULE=fcitx5
 
 export _JAVA_AWT_WM_NONREPARENTING=1
 
@@ -19,9 +19,9 @@ light-locker \
 
 #xinput set-prop Elan\ Touchpad Device\ Enabled 0
 setxkbmap -option ctrl:nocaps
-fcitx -rd
+fcitx5 -rd
 (
-  sleep 3;
+  sleep 3
   sands &
 ) &
 

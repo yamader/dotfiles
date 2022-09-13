@@ -31,7 +31,7 @@ static const Rule rules[] = {
 	{ "st",         NULL,       NULL,       0,            1,           -1 },
 	{ "Alacritty",  NULL,       NULL,       0,            1,           -1 },
 	{ "terminology",NULL,       NULL,       0,            1,           -1 },
-	{ "terminator", NULL,       NULL,       0,            1,           -1 },
+	{ "Terminator", NULL,       NULL,       0,            1,           -1 },
 };
 
 /* layout(s) */
