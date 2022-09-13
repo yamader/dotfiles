@@ -1,7 +1,7 @@
 [global_config]
   borderless = True
-  broadcast_default = all
   scroll_tabbar = True
+  enabled_plugins = ,
   title_use_system_font = False
   title_font = FirgeNerd 9
 [keybindings]
