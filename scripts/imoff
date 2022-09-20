@@ -1,0 +1,3 @@
+#!/bin/sh
+killall fcitx5
+killall xcape; setxkbmap -option ctrl:nocaps
