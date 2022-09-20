@@ -1,3 +1,6 @@
 import XMonad
+import XMonad.Config.Desktop
 
-main = xmonad $ def
+main = xmonad desktopConfig
+  { terminal  = "terminator"
+  }
