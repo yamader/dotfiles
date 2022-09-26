@@ -14,8 +14,8 @@ set -x HOMEBREW_NO_AUTO_UPDATE 1
 if type -q java-config
   set -x JAVA_HOME (java-config -O)
 end
-if type -q brew
-  set -x BREW_PREF (brew --prefix)
+if test -d /opt/homebrew
+  set BREW_PREF (/opt/homebrew/bin/brew --prefix)
 end
 set -x GOPATH ~/.go
 set -x PNPM_HOME ~/.node/pnpm
@@ -28,7 +28,8 @@ set -x DOTNET_CLI_TELEMETRY_OPTOUT true
 ## PATH
 fish_add_path -P \
 	$BREW_PREF/bin \
-	$BREW_PREF/sbin
+	$BREW_PREF/sbin \
+	$BREW_PREF/opt/coreutils/libexec/gnubin
 set -x LD_LIBRARY_PATH ~/SDK/neko \
 	$LD_LIBRARY_PATH
 
