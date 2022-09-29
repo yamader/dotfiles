@@ -2,6 +2,6 @@
 fcitx5 -rd
 killall xcape; setxkbmap -option ctrl:nocaps
 (
-  sleep 3
+  sleep 2
   sands &
 ) &
