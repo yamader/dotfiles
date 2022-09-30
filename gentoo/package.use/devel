@@ -1,0 +1,5 @@
+*/* dmd-2_096
+dev-lang/dmd -dmd-2_096 static-libs
+dev-lang/ldc2 abi_x86_32 static-libs
+sys-devel/clang default-compiler-rt default-libcxx default-lld
+sys-devel/gcc d graphite

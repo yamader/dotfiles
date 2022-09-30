@@ -1,0 +1,11 @@
+CC="clang"
+CXX="clang++"
+AR="llvm-ar"
+NM="llvm-nm"
+RANLIB="llvm-ranlib"
+
+LDFLAGS="-Wl,-O2"
+
+COMMON_FLAGS="${COMMON_FLAGS} -O3"
+CFLAGS="${COMMON_FLAGS} -flto=thin"
+CXXFLAGS="${COMMON_FLAGS} -flto=thin"

@@ -1,0 +1,4 @@
+dev-lang/python tk
+sys-libs/libcxx static-libs
+sys-libs/llvm-libunwind static-libs
+sys-libs/ncurses static-libs

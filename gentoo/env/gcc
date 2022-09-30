@@ -1,0 +1,5 @@
+CC="gcc"
+CXX="g++"
+
+CFLAGS="${COMMON_FLAGS}"
+CXXFLAGS="${COMMON_FLAGS}"

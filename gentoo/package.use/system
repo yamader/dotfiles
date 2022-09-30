@@ -1,0 +1,7 @@
+app-doc/doxygen -clang
+dev-libs/leveldb -tcmalloc
+dev-libs/libpcre -readline
+dev-libs/libpcre2 pcre32 -readline
+media-plugins/alsa-plugins pulseaudio
+media-sound/spotify pulseaudio
+sys-libs/libomp hwloc

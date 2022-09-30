@@ -1,0 +1,3 @@
+media-video/ffmpeg nvenc
+sys-libs/libomp llvm_targets_NVPTX
+x11-drivers/nvidia-drivers abi_x86_32

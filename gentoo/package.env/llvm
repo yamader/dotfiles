@@ -1,0 +1,9 @@
+*/llvm-* llvm
+dev-lang/* llvm
+dev-lang/gforth gcc
+dev-lang/ocaml gcc
+dev-lang/python gcc
+sys-devel/* llvm
+sys-devel/distcc gcc
+sys-devel/gcc gcc
+sys-libs/libomp llvm
