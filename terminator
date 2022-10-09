@@ -24,4 +24,13 @@
     use_system_font = False
     bold_is_bright = True
 [layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+      size = 640, 400
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
 [plugins]
