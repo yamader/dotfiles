@@ -1,9 +1,15 @@
-*/llvm-* llvm
 dev-lang/* llvm
 dev-lang/gforth gcc
 dev-lang/ocaml gcc
 dev-lang/python gcc
+dev-ml/llvm-ocaml llvm
 sys-devel/* llvm
+sys-devel/binutils gcc # llvm-ar
 sys-devel/distcc gcc
 sys-devel/gcc gcc
+sys-libs/compiler-rt llvm
+sys-libs/compiler-rt-sanitizers llvm
+sys-libs/libcxx llvm
+sys-libs/libcxxabi llvm
 sys-libs/libomp llvm
+sys-libs/llvm-libunwind llvm
