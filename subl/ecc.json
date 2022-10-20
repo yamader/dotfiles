@@ -1,0 +1,18 @@
+{
+  "common_flags" : [
+    "-I/usr/include",
+    "-I$project_base_path/src",
+    "-I$project_base_path/include", //
+    "-I/usr/lib/clang/$clang_version/include",
+    "-I$file_path",
+    "-I$file_path/include", //
+  ],
+  "flags_sources": [
+    {"file": "CMakeLists.txt"},
+    {"file": "compile_commands.json"},
+    {"file": "compile_commands.json", "search_in": "$project_base_path/builddir"}, //
+    {"file": "CppProperties.json"},
+    {"file": "c_cpp_properties.json"},
+    {"file": ".clang_complete"},
+  ]
+}
