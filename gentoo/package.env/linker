@@ -1,2 +1,4 @@
 */* mold
 sys-apps/hwloc lld
+sys-devel/clang lld
+sys-libs/glibc bfd
