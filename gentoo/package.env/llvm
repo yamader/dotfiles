@@ -3,6 +3,7 @@ dev-lang/gforth gcc
 dev-lang/ocaml gcc
 dev-lang/python gcc
 dev-ml/llvm-ocaml llvm
+media-libs/mesa llvm # USE
 sys-devel/* llvm
 sys-devel/binutils gcc # llvm-ar
 sys-devel/distcc gcc
