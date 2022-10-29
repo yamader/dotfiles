@@ -13,7 +13,6 @@ pulseaudio --start
 picom -b --experimental-backends
 xscreensaver --no-splash &
 light-locker \
-  --late-after-screensaver=5 \
   --lock-on-suspend \
   --lock-on-lid &
 
