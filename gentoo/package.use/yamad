@@ -1,7 +1,8 @@
 */* PYTHON_TARGETS: pypy3
+*/* nerdfonts
 app-crypt/gnupg tools
-app-emulation/qemu qemu_softmmu_targets_aarch64 qemu_softmmu_targets_ppc64
-app-emulation/qemu qemu_user_targets_aarch64 qemu_user_targets_ppc64
+app-emulation/qemu qemu_softmmu_targets_aarch64 qemu_softmmu_targets_arm qemu_softmmu_targets_ppc64
+app-emulation/qemu qemu_user_targets_aarch64 qemu_user_targets_arm qemu_user_targets_ppc64
 app-emulation/qemu static-user
 dev-libs/nss utils
 media-gfx/fontforge woff2
@@ -9,6 +10,7 @@ media-video/vlc lua
 net-misc/curl adns
 net-misc/networkmanager iwd
 sys-apps/busybox -pam static
+sys-apps/fwupd gnutls nvme synaptics tpm uefi
 sys-apps/util-linux tty-helpers
 www-client/vivaldi proprietary-codecs widevine
 www-client/vivaldi-snapshot proprietary-codecs widevine
