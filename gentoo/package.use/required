@@ -5,3 +5,4 @@ dev-libs/libpcre2 pcre32 -readline
 media-plugins/alsa-plugins pulseaudio
 media-sound/spotify pulseaudio
 sys-libs/libomp hwloc
+sys-libs/libxcrypt static-libs
