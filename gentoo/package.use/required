@@ -1,4 +1,5 @@
 app-doc/doxygen -clang
+dev-lang/spidermonkey -lto
 dev-libs/leveldb -tcmalloc
 dev-libs/libpcre -readline
 dev-libs/libpcre2 pcre32 -readline
