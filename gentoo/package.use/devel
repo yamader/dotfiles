@@ -1,7 +1,7 @@
-*/* dmd-2_096
-*/gcc -lto
-dev-lang/dmd -dmd-2_096 static-libs
-dev-lang/ldc2 abi_x86_32 static-libs
+*/* dmd-2_099
+*/gcc -lto # save time
+dev-lang/dmd -dmd-2_099 selfhost static-libs
+dev-lang/ldc2 abi_x86_32 -dmd-2_099 ldc2-1_30 static-libs
 dev-lang/rust llvm_targets_WebAssembly wasm
 sys-devel/clang-common default-compiler-rt default-libcxx default-lld
 sys-devel/gcc graphite #d

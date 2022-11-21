@@ -30,12 +30,15 @@ fish_add_path -P \
 	$BREW_PREF/bin \
 	$BREW_PREF/sbin \
 	$BREW_PREF/opt/coreutils/libexec/gnubin
-set -x LD_LIBRARY_PATH ~/SDK/neko \
+set -x LD_LIBRARY_PATH \
+	~/SDK/neko \
+	/opt/dmd/linux/lib64 \
 	$LD_LIBRARY_PATH
 
 ### LANG
 fish_add_path -P \
 	~/repos/lang/v \
+	/opt/dmd/linux/bin64 \
 	$BUN_INSTALL/bin \
 	$JAVA_HOME/bin
 

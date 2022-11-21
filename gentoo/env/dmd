@@ -1,0 +1,4 @@
+LDFLAGS="-L-O2 -L--as-needed"
+
+# -L-fuse-ld doesn't work in dev-lang/dmd
+LDFLAGS="${LDFLAGS} -Xcc=-fuse-ld=mold"
