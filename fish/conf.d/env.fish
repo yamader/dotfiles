@@ -21,6 +21,7 @@ set -x GOPATH ~/.go
 set -x PNPM_HOME ~/.node/pnpm
 set -x DENO_INSTALL ~/.deno
 set -x BUN_INSTALL ~/.bun
+set -x FLYCTL_INSTALL ~/.fly
 set -x ANDROID_HOME ~/SDK/Android
 
 set -x DOTNET_CLI_TELEMETRY_OPTOUT true
@@ -48,6 +49,7 @@ fish_add_path -P \
 	~/SDK/flutter/bin \
 	~/SDK/haxe \
 	~/SDK/neko \
+  $FLYCTL_INSTALL/bin \
 	$ANDROID_HOME/emulator \
 	$ANDROID_HOME/tools \
 	$ANDROID_HOME/tools/bin \
