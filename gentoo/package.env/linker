@@ -1,5 +1,6 @@
 */* mold
 */*::dlang dmd
+dev-lang/ghc lld
 dev-lang/ldc2 ldc
 sys-apps/hwloc lld
 sys-libs/glibc bfd
