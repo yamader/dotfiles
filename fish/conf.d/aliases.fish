@@ -39,7 +39,7 @@ alias drepl="dub run -q drepl --"
 # LIBRARY_PATH=/usr/lib/llvm/14/lib64 dub fetch dpp
 alias dpp="dub run -q dpp --"
 alias ddox="dub run -q ddox --"
-alias p="python"
+alias p="bpython"
 alias pip="p -m pip"
 
 ## git
