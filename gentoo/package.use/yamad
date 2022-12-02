@@ -2,6 +2,8 @@
 */* nerdfonts
 app-crypt/gnupg tools
 app-emulation/qemu static-user
+app-emulation/qemu qemu_softmmu_targets_aarch64 qemu_softmmu_targets_arm qemu_softmmu_targets_ppc64
+app-emulation/qemu qemu_user_targets_aarch64 qemu_user_targets_arm qemu_user_targets_ppc64
 dev-libs/nss utils
 media-gfx/fontforge woff2
 media-video/vlc lua
@@ -13,4 +15,5 @@ sys-apps/util-linux tty-helpers
 www-client/vivaldi proprietary-codecs widevine
 www-client/vivaldi-snapshot proprietary-codecs widevine
 www-client/w3m imlib
+www-servers/nginx nginx_modules_http_addition nginx_modules_http_fancyindex
 x11-misc/xscreensaver suid
