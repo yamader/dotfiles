@@ -8,6 +8,9 @@ alias x="hexdump -C"
 alias serve="p -m http.server"
 alias dc="docker system prune"
 
+alias man="w3mman"
+alias jman="LANG=ja_JP.UTF-8 man"
+
 alias silicon="silicon --shadow-blur-radius 32"
 alias vivaldi="vivaldi-snapshot --force-dark-mode"
 
