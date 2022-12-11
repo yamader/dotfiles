@@ -64,7 +64,8 @@ fish_add_path -P \
 	$PNPM_HOME \
 	~/.node/bin \
 	~/.nimble/bin \
-	~/.opam/default/bin
+	~/.opam/default/bin \
+	~/bin # gem
 
 ### LOCAL
 fish_add_path -P \
