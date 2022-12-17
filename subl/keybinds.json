@@ -1,5 +1,5 @@
 [
-	{ "command": "next_view", "keys": ["ctrl+tab"] },
-	{ "command": "prev_view", "keys": ["ctrl+shift+tab"] },
+  { "command": "next_view", "keys": ["ctrl+tab"] },
+  { "command": "prev_view", "keys": ["ctrl+shift+tab"] },
   { "command": "js_prettier", "keys": ["alt+shift+j"] },
 ]
