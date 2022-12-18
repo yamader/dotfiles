@@ -4,4 +4,5 @@ dev-lang/dmd -dmd-2_099 selfhost static-libs
 dev-lang/ldc2 abi_x86_32 -dmd-2_099 ldc2-1_30 static-libs
 dev-lang/rust llvm_targets_WebAssembly wasm
 sys-devel/clang-common default-compiler-rt default-libcxx default-lld
-sys-devel/gcc:13 d go graphite rust
+sys-devel/gcc d graphite
+sys-devel/gcc:13 go rust
