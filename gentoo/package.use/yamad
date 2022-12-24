@@ -6,6 +6,7 @@ app-emulation/qemu qemu_softmmu_targets_aarch64 qemu_softmmu_targets_arm qemu_so
 app-emulation/qemu qemu_user_targets_aarch64 qemu_user_targets_arm qemu_user_targets_ppc64
 dev-libs/nss utils
 media-gfx/fontforge woff2
+media-gfx/imagemagick heif jpeg2k raw webp
 media-video/vlc lua
 net-misc/curl adns
 net-misc/networkmanager iwd
