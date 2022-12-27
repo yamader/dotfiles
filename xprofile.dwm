@@ -10,7 +10,7 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 
 nitrogen --restore
 pulseaudio --start
-picom -b --experimental-backends
+picom -b
 xscreensaver --no-splash &
 light-locker \
   --lock-on-suspend \
