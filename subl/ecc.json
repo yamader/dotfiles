@@ -7,6 +7,12 @@
     "-I$file_path",
     "-I$file_path/include", //
   ],
+  "lang_flags": {
+    "C": ["-std=c11"],
+    "CPP": ["-std=c++20"], //
+    "OBJECTIVE_C": ["-std=c11"],
+    "OBJECTIVE_CPP": ["-std=c++20"], //
+  },
   "flags_sources": [
     {"file": "CMakeLists.txt"},
     {"file": "compile_commands.json"},
