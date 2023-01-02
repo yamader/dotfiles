@@ -3,4 +3,5 @@
 dev-lang/ghc lld
 dev-lang/ldc2 ldc
 sys-apps/hwloc lld
+sys-apps/sandbox lld
 sys-libs/glibc bfd
