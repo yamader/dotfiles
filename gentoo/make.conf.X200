@@ -1,0 +1,32 @@
+CHOST=x86_64-gentoo-linux-musl
+
+MAKEOPTS="-j2"
+
+COMMON_FLAGS="-march=core2 -O2 -pipe"
+CFLAGS="${COMMON_FLAGS}"
+CXXFLAGS="${COMMON_FLAGS}"
+FCFLAGS="${COMMON_FLAGS}"
+FFLAGS="${COMMON_FLAGS}"
+DCFLAGS="-O -release"
+DMDFLAGS="${DCFLAGS}"
+LDCFLAGS="${DCFLAGS}"
+
+LC_MESSAGES=C
+
+FEATURES="buildpkg parallel-fetch parallel-install"
+EMERGE_DEFAULT_OPTS="--tree --verbose --keep-going"
+
+#DISTDIR=/var/cache/distfiles
+#PKGDIR=/var/cache/binpkgs
+
+GENTOO_MIRRORS="https://ftp.jaist.ac.jp/pub/Linux/Gentoo/ https://ftp.riken.jp/Linux/gentoo/ http://ftp.iij.ad.jp/pub/linux/gentoo/"
+
+#ACCEPT_KEYWORDS="~amd64"
+ACCEPT_LICENSE="* -@EULA"
+
+USE="X branding bluetooth cdr cjk crypt curl dvd libedit llvm-libunwind offensive sixel vaapi zstd"
+
+L10N="ja"
+CPU_FLAGS_X86="mmx mmxext sse sse2 sse3 sse4_1 ssse3"
+VIDEO_CARDS="intel i915"
+GRUB_PLATFORMS="pc"
