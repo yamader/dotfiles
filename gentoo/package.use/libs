@@ -1,5 +1,6 @@
 dev-lang/python tk
 dev-libs/openssl static-libs
 sys-libs/libcxx static-libs
+sys-libs/libcxxabi static-libs
 sys-libs/llvm-libunwind static-libs
 sys-libs/ncurses static-libs

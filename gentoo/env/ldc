@@ -1,2 +1,0 @@
-LDFLAGS="-Wl,-O2 -Wl,--as-needed"
-LDFLAGS="${LDFLAGS} -fuse-ld=mold"
