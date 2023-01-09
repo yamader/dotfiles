@@ -1,7 +1,8 @@
 */* mold
 */*::dlang dmd
-dev-lang/ghc lld
+dev-lang/ghc vanilla-ld
 dev-lang/ldc2 mold
-sys-apps/hwloc lld
-sys-apps/sandbox lld
+sys-apps/hwloc vanilla-ld
+sys-apps/sandbox vanilla-ld
+sys-devel/gcc:11 vanilla-ld
 sys-libs/glibc bfd
