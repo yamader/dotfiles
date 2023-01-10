@@ -1,4 +1,6 @@
+*/* RUBY_TARGETS: ruby31
 app-doc/doxygen -clang
+app-misc/mime-types nginx
 dev-lang/spidermonkey -lto
 dev-libs/leveldb -tcmalloc
 dev-libs/libpcre -readline
