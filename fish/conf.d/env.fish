@@ -23,6 +23,7 @@ set -x DENO_INSTALL ~/.deno
 set -x BUN_INSTALL ~/.bun
 set -x FLYCTL_INSTALL ~/.fly
 set -x ANDROID_HOME ~/SDK/Android
+set -x NDK_HOME /opt/android-ndk
 
 set -x DOTNET_CLI_TELEMETRY_OPTOUT true
 

@@ -1,5 +1,7 @@
 app-editors/vscode Microsoft-vscode
 app-text/cpdf Coherent-Graphics
+dev-util/android-ndk android
+dev-util/android-sdk-update-manager android
 dev-util/nvidia-cuda-toolkit NVIDIA-CUDA
 games-action/minecraft-launcher Mojang
 www-client/google-chrome-unstable google-chrome
