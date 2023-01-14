@@ -5,6 +5,7 @@ app-crypt/gnupg tools
 app-emulation/qemu static-user
 app-emulation/qemu qemu_softmmu_targets_aarch64 qemu_softmmu_targets_arm qemu_softmmu_targets_ppc64
 app-emulation/qemu qemu_user_targets_aarch64 qemu_user_targets_arm qemu_user_targets_ppc64
+app-emulation/wine-* openal pulseaudio
 dev-libs/nss utils
 media-gfx/fontforge woff2
 media-gfx/imagemagick heif jpeg2k raw webp
@@ -14,6 +15,7 @@ net-misc/networkmanager iwd
 sys-apps/busybox -pam static
 sys-apps/fwupd gnutls nvme synaptics tpm uefi
 sys-apps/util-linux tty-helpers
+virtual/wine proton
 www-client/vivaldi proprietary-codecs widevine
 www-client/vivaldi-snapshot proprietary-codecs widevine
 www-client/w3m imlib
