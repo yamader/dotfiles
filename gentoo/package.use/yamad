@@ -1,4 +1,5 @@
 */* PYTHON_TARGETS: pypy3
+*/* LUA_TARGETS: luajit
 */* nerdfonts
 app-crypt/gnupg tools
 app-emulation/qemu static-user
@@ -18,3 +19,4 @@ www-client/vivaldi-snapshot proprietary-codecs widevine
 www-client/w3m imlib
 www-servers/nginx nginx_modules_http_addition nginx_modules_http_fancyindex
 x11-misc/xscreensaver suid
+x11-wm/awesome -lua_single_target_lua5-1 lua_single_target_luajit
