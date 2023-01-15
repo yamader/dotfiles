@@ -4,6 +4,7 @@
   "draw_white_space": ["all"],
   "font_face": "Firge",
   "font_size": 9,
+  "hardware_acceleration": "opengl",
   "hide_new_tab_button": true,
   "hide_tab_scrolling_buttons": true,
   "highlight_line": true,
