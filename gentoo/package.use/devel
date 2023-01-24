@@ -2,6 +2,7 @@
 */gcc -lto # save time
 dev-lang/dmd -dmd-2_099 static-libs
 dev-lang/ldc2 abi_x86_32 -dmd-2_099 ldc2-1_30 static-libs
+dev-lang/php exif ffi fpm mysqli postgres sqlite threads zip
 dev-lang/rust llvm_targets_AArch64 llvm_targets_WebAssembly
 dev-lang/rust rust-analyzer system-llvm wasm
 sys-devel/clang-common default-compiler-rt default-libcxx default-lld
