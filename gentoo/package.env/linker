@@ -1,5 +1,7 @@
 */* mold
 */*::dlang dmd
+app-emulation/libvirt vanilla-ld
+cross-*/* vanilla-ld
 dev-lang/ghc vanilla-ld
 dev-lang/ldc2 mold
 sys-apps/hwloc vanilla-ld
