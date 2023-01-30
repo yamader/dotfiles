@@ -4,6 +4,7 @@ app-emulation/libvirt vanilla-ld
 cross-*/* vanilla-ld
 dev-lang/ghc vanilla-ld
 dev-lang/ldc2 mold
+sys-apps/fwupd-efi vanilla-ld
 sys-apps/hwloc vanilla-ld
 sys-apps/sandbox vanilla-ld
 sys-devel/gcc:11 vanilla-ld
