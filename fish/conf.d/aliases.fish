@@ -4,6 +4,7 @@ alias l="ll"
 alias s="subl"
 alias c="qalc"
 alias x="hexdump -C"
+alias psre="ps -aux | grep -P"
 
 alias serve="p -m http.server"
 alias dc="docker system prune"
