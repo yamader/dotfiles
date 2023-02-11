@@ -54,6 +54,7 @@ set -x LD_LIBRARY_PATH \
 ## lang
 fish_add_path -P \
 	~/repos/lang/v \
+	/opt/ldc/bin \
 	/opt/dmd/linux/bin64 \
 	$BUN_INSTALL/bin \
 	$JAVA_HOME/bin
