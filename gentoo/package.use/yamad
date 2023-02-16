@@ -2,7 +2,7 @@
 */* LUA_TARGETS: luajit
 */* nerdfonts
 app-crypt/gnupg tools
-app-emulation/qemu static-user
+app-emulation/qemu static-user virgl
 app-emulation/qemu qemu_softmmu_targets_aarch64 qemu_softmmu_targets_arm qemu_softmmu_targets_ppc64
 app-emulation/qemu qemu_user_targets_aarch64 qemu_user_targets_arm qemu_user_targets_ppc64
 app-emulation/wine-* openal pulseaudio
