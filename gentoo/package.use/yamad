@@ -15,10 +15,13 @@ net-misc/networkmanager iwd
 sys-apps/busybox -pam static
 sys-apps/fwupd gnutls nvme synaptics tpm uefi
 sys-apps/util-linux tty-helpers
+sys-auth/pambase -passwdqc
+sys-firmware/intel-microcode initramfs
 virtual/wine proton
 www-client/vivaldi proprietary-codecs widevine
 www-client/vivaldi-snapshot proprietary-codecs widevine
 www-client/w3m imlib
 www-servers/nginx nginx_modules_http_addition nginx_modules_http_fancyindex
+x11-misc/nitrogen xinerama
 x11-misc/xscreensaver suid
 x11-wm/awesome -lua_single_target_lua5-1 lua_single_target_luajit
