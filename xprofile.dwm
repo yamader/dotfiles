@@ -8,6 +8,9 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 #export LIBVA_DRIVERS_PATH=/usr/lib64/dri
 #export MOZ_DISABLE_RDD_SANDBOX=1
 
+#export GDK_SCALE=1.5
+#export GDK_DPI_SCALE=1.5
+
 nitrogen --restore
 pulseaudio --start
 picom -b
