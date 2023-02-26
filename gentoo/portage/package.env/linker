@@ -1,12 +1,12 @@
-*/* mold
-*/*::dlang dmd
-app-emulation/libvirt vanilla-ld
-cross-*/* vanilla-ld
-dev-lang/ghc vanilla-ld
-dev-lang/ldc2 mold
-net-misc/spice-gtk vanilla-ld
-sys-apps/fwupd-efi vanilla-ld
-sys-apps/hwloc vanilla-ld
-sys-apps/sandbox vanilla-ld
-sys-devel/gcc:11 vanilla-ld
-sys-libs/glibc bfd
+#*/*::dlang dmd
+#dev-lang/ldc2 mold
+
+#app-emulation/libvirt vanilla-ld
+#cross-*/* vanilla-ld
+#dev-lang/ghc vanilla-ld
+#net-misc/spice-gtk vanilla-ld
+#sys-apps/fwupd-efi vanilla-ld
+#sys-apps/hwloc vanilla-ld
+#sys-apps/sandbox vanilla-ld
+#sys-devel/gcc:11 vanilla-ld
+#sys-libs/glibc bfd

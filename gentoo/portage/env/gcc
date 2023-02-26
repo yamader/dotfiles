@@ -1,5 +1,15 @@
 CC="gcc"
 CXX="g++"
 
-CFLAGS="${COMMON_FLAGS}"
-CXXFLAGS="${COMMON_FLAGS}"
+# binutils (from gentoo:features/llvm/make.defaults)
+AR=""
+AS=""
+CPP=""
+NM=""
+STRIP=""
+RANLIB=""
+OBJCOPY=""
+STRINGS=""
+OBJDUMP=""
+READELF=""
+ADDR2LINE=""

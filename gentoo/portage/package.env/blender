@@ -1,8 +1,0 @@
-dev-libs/imath llvm
-dev-libs/log4cplus llvm
-media-gfx/blender llvm
-media-gfx/openvdb llvm
-media-libs/opencolorio llvm
-media-libs/openexr llvm
-media-libs/openimageio llvm
-media-libs/osl llvm
