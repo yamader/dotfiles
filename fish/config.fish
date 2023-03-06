@@ -1,4 +1,6 @@
-#ufetch
+if status is-interactive
+  ufetch
+end
 
 ################################################################
 ##  DEV
