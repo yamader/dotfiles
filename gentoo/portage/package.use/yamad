@@ -1,16 +1,18 @@
-*/* PYTHON_TARGETS: pypy3
 */* LUA_TARGETS: luajit
+*/* PYTHON_TARGETS: pypy3
+*/* RUBY_TARGETS: ruby31 ruby32
 */* nerdfonts
 app-crypt/gnupg tools
+app-crypt/rnp doc
+app-emulation/qemu QEMU_SOFTMMU_TARGETS: aarch64 arm ppc64
+app-emulation/qemu QEMU_USER_TARGETS: aarch64 arm ppc64
 app-emulation/qemu static-user virgl
-app-emulation/qemu qemu_softmmu_targets_aarch64 qemu_softmmu_targets_arm qemu_softmmu_targets_ppc64
-app-emulation/qemu qemu_user_targets_aarch64 qemu_user_targets_arm qemu_user_targets_ppc64
 app-emulation/wine-* openal pulseaudio
+app-text/texlive-core xetex
 dev-libs/nss utils
 media-gfx/fontforge woff2
 media-gfx/imagemagick heif jpeg2k raw webp
 media-video/vlc lua
-net-misc/curl adns
 net-misc/networkmanager iwd
 sys-apps/busybox -pam static
 sys-apps/fwupd gnutls nvme synaptics tpm uefi
@@ -19,9 +21,8 @@ sys-auth/pambase -passwdqc
 sys-firmware/intel-microcode initramfs
 virtual/wine proton
 www-client/vivaldi proprietary-codecs widevine
-www-client/vivaldi-snapshot proprietary-codecs widevine
 www-client/w3m imlib
-www-servers/nginx nginx_modules_http_addition nginx_modules_http_fancyindex
+www-servers/nginx NGINX_MODULES_HTTP: addition fancyindex
 x11-misc/nitrogen xinerama
 x11-misc/xscreensaver suid
-x11-wm/awesome -lua_single_target_lua5-1 lua_single_target_luajit
+x11-wm/awesome LUA_SINGLE_TARGET: -lua5-1 luajit
