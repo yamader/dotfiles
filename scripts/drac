@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+KVER=${1:-`uname -r`}
+echo -n generating initramfs for $KVER. ok?; read
+exec doas dracut --hostonly --no-kernel --zstd \
+  --kver $KVER /boot/initramfs-$KVER.img ${@:1}
