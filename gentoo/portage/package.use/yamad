@@ -15,7 +15,7 @@ media-gfx/imagemagick heif jpeg2k raw webp
 media-video/vlc lua
 net-misc/networkmanager iwd
 sys-apps/busybox -pam static
-sys-apps/fwupd gnutls nvme synaptics tpm uefi
+sys-apps/fwupd gnutls logitech nvme synaptics tpm uefi
 sys-apps/util-linux tty-helpers
 sys-auth/pambase -passwdqc
 sys-firmware/intel-microcode initramfs
