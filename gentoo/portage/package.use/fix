@@ -1,0 +1,2 @@
+sys-apps/shadow -pam # Login incorrect
+sys-devel/llvm:15 binutils-plugin # python: clang: LLVMgold.so: No such file or directory

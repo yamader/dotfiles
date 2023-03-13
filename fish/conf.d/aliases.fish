@@ -4,39 +4,41 @@ alias l="ll"
 alias s="subl"
 alias c="qalc"
 alias x="hexdump -C"
+alias rp="realpath"
 alias psre="ps -aux | grep -P"
 
 alias serve="p -m http.server"
 alias dc="docker system prune"
 
 alias silicon="silicon --shadow-blur-radius 32"
-alias vivaldi="vivaldi-snapshot --force-dark-mode"
+alias vivaldi="vivaldi --force-dark-mode"
 
 ## os specific
 
 alias eq="equery"
 alias pq="portageq"
 
-## llvm
+## llvm and mold
 
 alias cc="clang"
 alias c++="clang++"
-alias as="llvm-as"
-alias ld="ld.lld"
+alias ld="ld.mold"
 
-alias objdump="llvm-objdump"
-alias objcopy="llvm-objcopy"
-alias undname="llvm-undname"
-alias strip="llvm-strip"
-alias size="llvm-size"
-alias nm="llvm-nm"
 alias ar="llvm-ar"
+alias as="clang -c"
+alias cpp="clang-cpp"
+alias nm="llvm-nm"
+alias strip="llvm-strip"
+alias ranlib="llvm-ranlib"
+alias objcopy="llvm-objcopy"
+alias strings="llvm-strings"
+alias objdump="llvm-objdump"
+alias readelf="llvm-readelf"
+alias addr2line="llvm-addr2line"
 
 ## lang
 
-#alias d="rdmd"
 alias drepl="dub run -q drepl --"
-#alias dfmt="dub run -q dfmt --"
 # LIBRARY_PATH=/usr/lib/llvm/14/lib64 dub fetch dpp
 alias dpp="dub run -q dpp --"
 alias ddox="dub run -q ddox --"
@@ -47,17 +49,22 @@ alias pip="p -m pip"
 
 alias ga="git add"
 alias gb="git branch"
+alias gbs="git bisect"
 alias gc="git commit -S"
 alias gch="git checkout"
+alias gcp="git cherry-pick"
 alias gd="git diff"
 alias gl="git log"
 alias gm="git merge"
 alias gp="git push"
+alias gpf="git push --force-with-lease"
 alias gs="git stash"
 alias gt="git tag"
 alias gr="git reset"
 alias grb="git rebase"
 alias grs="git restore"
+
+alias gpl="gs; git pull; gs pop"
 
 ## rlwrap
 
