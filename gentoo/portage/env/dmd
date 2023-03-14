@@ -1,2 +1,0 @@
-# -L-fuse-ld doesn't work with dmd
-LDFLAGS="-Xcc=-fuse-ld=mold -L-O2 -L--as-needed"

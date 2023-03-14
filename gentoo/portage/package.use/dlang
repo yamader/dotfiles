@@ -1,6 +1,4 @@
-*/* ldc2-1_30
-dev-lang/dmd -ldc2-1_30 static-libs
+*/* dmd-2_099
+dev-lang/dmd -selfhost static-libs tools
 dev-lang/ldc2 ABI_X86: 32
 dev-lang/ldc2 static-libs
-dev-util/dfmt -ldc2-1_30 dmd-2_099
-dev-util/dlang-tools -ldc2-1_30 dmd-2_099

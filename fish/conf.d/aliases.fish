@@ -64,8 +64,6 @@ alias gr="git reset"
 alias grb="git rebase"
 alias grs="git restore"
 
-alias gpl="gs; git pull; gs pop"
-
 ## rlwrap
 
 alias at="rlwrap at -u $USER"
