@@ -5,3 +5,4 @@ sys-apps/fwupd-efi gcc # lvm-objcopy: error: unknown argument '--section-alignme
 sys-boot/refind gcc # clang-15: error: unknown argument: '-fno-tree-loop-distribute-patterns'
 sys-process/btop gcc # clang++ is not a supported compiler. Please use sys-devel/gcc instead.
 sys-process/tini gcc # mold: error: undefined symbol: __letf2 __unordtf2
+dev-libs/libsecp256k1 gcc # clang: error: unrecognized command-line option -Wconditional-uninitialized’,‘-Wreserved-identifier’
