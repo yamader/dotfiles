@@ -1,4 +1,4 @@
 */* dmd-2_099
 dev-lang/dmd -selfhost static-libs tools
 dev-lang/ldc2 ABI_X86: 32
-dev-lang/ldc2 static-libs
+dev-lang/ldc2 -dmd-2_099 ldc2-1_30 static-libs

@@ -1,3 +1,4 @@
+media-sound/spotify pulseaudio # without pulseaudio, requires apulse which conflict with alsa-plugins (pulled by pulseaudio-daemon)
 net-misc/networkmanager -lto # Clang does not support -flto-partition
 sys-apps/shadow -pam # Login incorrect
 sys-devel/llvm:15 binutils-plugin # python: clang: LLVMgold.so: No such file or directory
