@@ -33,8 +33,10 @@ set -x BUN_INSTALL ~/.bun
 set -x DENO_INSTALL ~/.deno
 
 ## sdk
+set -x PICO_SDK_PATH ~/SDK/pico-sdk
+set -x IDF_PATH /usr/share/esp-idf
 set -x ANDROID_HOME ~/SDK/Android
-set -x NDK_HOME /opt/android-ndk
+#set -x NDK_HOME /opt/android-ndk
 
 ## pm
 set -x PNPM_HOME ~/.node/pnpm
