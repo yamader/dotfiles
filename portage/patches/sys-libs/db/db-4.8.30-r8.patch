@@ -1,0 +1,8 @@
+--- a/dist/aclocal/tls.m4
++++ b/dist/aclocal/tls.m4
+@@ -24 +24 @@
+-              template<typename T> ] $ax_tls_defn_keyword [ T* TLSClass<T>::tlsvar = NULL;]
++              template<typename T> ] $ax_tls_defn_keyword [ T* TLSClass<T>::tlsvar = nullptr;]
+@@ -27 +27 @@
+-              [TLSClass<int>::tlsvar = NULL; TLSClass2::tlsvar = 1;],
++              [TLSClass<int>::tlsvar = nullptr; TLSClass2::tlsvar = 1;],

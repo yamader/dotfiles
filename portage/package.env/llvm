@@ -1,10 +1,14 @@
 #www-client/firefox no-mold # mold: library not found
 app-emulation/qemu gcc # mold: error: undefined symbol: __letf2 __unordtf2
 dev-libs/ffcall gcc # avcall-x86_64.s: error: changed section flags for .eh_frame, expected: 0x2
+dev-libs/leveldb libstdcxx # ref: net-p2p/bitcoin-qt
 dev-libs/libsecp256k1 gcc # clang: error: unrecognized command-line option -Wconditional-uninitialized’,‘-Wreserved-identifier’
+net-p2p/bitcoin-qt libstdcxx # ref: sys-libs/db
 sys-apps/busybox gcc # mold: error: undefined symbol: __letf2 __unordtf2
 sys-apps/fwupd-efi gcc # lvm-objcopy: error: unknown argument '--section-alignment'
 sys-boot/refind gcc # clang-15: error: unknown argument: '-fno-tree-loop-distribute-patterns'
+sys-boot/syslinux gcc # clang: error: unsupported option '--print-libgcc'
 sys-devel/gcc gcc #
+sys-libs/db:4.8 libstdcxx # not compatible with libcxx
 sys-process/btop gcc # clang++ is not a supported compiler. Please use sys-devel/gcc instead.
 sys-process/tini gcc # mold: error: undefined symbol: __letf2 __unordtf2

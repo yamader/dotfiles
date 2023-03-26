@@ -1,5 +1,6 @@
 CC="gcc"
 CXX="g++"
+LD="ld.bfd"
 
 # binutils (from gentoo:features/llvm/make.defaults)
 AR=""
