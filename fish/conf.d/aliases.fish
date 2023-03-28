@@ -7,6 +7,7 @@ alias x="hexdump -C"
 alias rp="realpath"
 alias psre="ps -aux | grep -P"
 
+alias six="img2sixel"
 alias serve="p -m http.server"
 alias dc="docker system prune"
 
