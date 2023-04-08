@@ -1,0 +1,15 @@
+app-arch/p7zip default # clang: error: typedef redefinition with different types
+dev-java/openjdk default #
+dev-libs/ffcall default # avcall-x86_64.s: error: changed section flags for .eh_frame, expected: 0x2
+dev-libs/leveldb libstdcxx # -> net-p2p/bitcoin-qt
+dev-qt/qt-creator wno-everything # clang++: error: [-Wenum-constexpr-conversion]
+gui-wm/hyprland default # Hyprland requires >=sys-devel/gcc-12.1.0 to build
+media-video/ffmpeg wno-everything # clang: error: [-Wint-conversion]
+net-misc/networkmanager wno-everything # clang: error: [-Wincompatible-function-pointer-types]
+net-misc/spice-gtk bfd libgcc # ld.lld: error: unknown directive: spice_audio_get, bfd: crt: undefined reference to
+net-p2p/bitcoin-qt libstdcxx # -> sys-libs/db
+sys-apps/busybox O0 # (a)sh segv
+sys-apps/fwupd-efi default # llvm-objcopy: error: unknown argument '--section-alignment'
+sys-boot/refind default # clang-16: error: unknown argument: '-fno-tree-loop-distribute-patterns'
+sys-boot/syslinux default # clang: error: unsupported option '--print-libgcc'
+sys-process/btop default # clang++ is not a supported compiler. Please use sys-devel/gcc instead.

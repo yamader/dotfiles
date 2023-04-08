@@ -1,0 +1,3 @@
+*/*::dlang dc # dmd/ldc2 (unrecognized switch|Unknown command line argument) '-fuse-ld=mold'
+dev-lang/dmd default-ld # dmd doesn't work with mold for now
+dev-util/dlang-tools default-ld # ditto

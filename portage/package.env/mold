@@ -1,7 +1,0 @@
-*/* mold
-app-emulation/libvirt vanilla-ld # meson.build: ERROR: Problem encountered: No supported version script link argument found.
-cross-*/* vanilla-ld
-dev-lang/ldc2 mold
-net-misc/spice-gtk vanilla-ld # mold: fatal: unknown linker script token
-sys-apps/sandbox vanilla-ld # configure: error: Unable to determine LIBC PATH ()
-www-client/firefox vanilla-ld # mold: library not found

@@ -1,0 +1,5 @@
+dev-libs/libsecp256k1:0/2 default # clang: error: unrecognized command-line option ‘-Wconditional-uninitialized’, ‘-Wreserved-identifier’
+net-dialup/ppp:0/2.4.9 wno-everything # clang: error: [-Wincompatible-function-pointer-types]
+sys-libs/db:5.8 libstdcxx # not compatible with libcxx
+x11-libs/gtk+:2 wno-everything # clang: error: [-Wincompatible-function-pointer-types]
+x11-wm/mutter:0/12 wno-everything # clang: error: [-Wimplicit-function-declaration, -Wint-conversion]

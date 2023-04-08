@@ -1,0 +1,6 @@
+*/* mold
+app-emulation/libvirt default-ld # meson.build: ERROR: Problem encountered: No supported version script link argument found.
+cross-*/* default-ld
+dev-lang/ldc2 mold
+sys-apps/sandbox default-ld # configure: error: Unable to determine LIBC PATH ()
+www-client/firefox default-ld # mold: library not found
