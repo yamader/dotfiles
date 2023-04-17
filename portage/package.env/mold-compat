@@ -3,4 +3,5 @@ app-emulation/libvirt default-ld # meson.build: ERROR: Problem encountered: No s
 cross-*/* default-ld
 dev-lang/ldc2 mold
 sys-apps/sandbox default-ld # configure: error: Unable to determine LIBC PATH ()
+sys-libs/libnvidia-container default-ld # mold: unknown linker script token
 www-client/firefox default-ld # mold: library not found
