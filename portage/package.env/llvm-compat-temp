@@ -1,5 +1,4 @@
 app-arch/p7zip default # clang: error: typedef redefinition with different types
-dev-java/openjdk default #
 dev-libs/ffcall default # avcall-x86_64.s: error: changed section flags for .eh_frame, expected: 0x2
 dev-libs/leveldb libstdcxx # -> net-p2p/bitcoin-qt
 dev-libs/xmlsec wno-everything # clang: error: no newline at end of file [-Wnewline-eof]
@@ -14,4 +13,3 @@ sys-apps/fwupd-efi default # llvm-objcopy: error: unknown argument '--section-al
 sys-boot/refind default # clang-16: error: unknown argument: '-fno-tree-loop-distribute-patterns'
 sys-boot/syslinux default # clang: error: unsupported option '--print-libgcc'
 sys-libs/libnvidia-container default # clang-16: error: unknown argument: '-fplan9-extensions'
-sys-process/btop default # clang++ is not a supported compiler. Please use sys-devel/gcc instead.

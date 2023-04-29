@@ -21,7 +21,7 @@ sys-apps/util-linux tty-helpers
 sys-auth/pambase -passwdqc
 sys-firmware/intel-microcode initramfs
 virtual/wine proton
-www-client/firefox pulseaudio
+www-client/firefox pulseaudio -telemetry
 www-client/vivaldi proprietary-codecs widevine
 www-client/w3m imlib
 www-servers/nginx NGINX_MODULES_HTTP: addition fancyindex
