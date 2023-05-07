@@ -1,3 +1,4 @@
+<=media-libs/gexiv2-0.14.1 libstdcxx # error: no template named 'auto_ptr' in namespace 'std'; did you mean simply 'auto_ptr'?
 app-arch/p7zip default # clang: error: typedef redefinition with different types
 dev-libs/ffcall default # avcall-x86_64.s: error: changed section flags for .eh_frame, expected: 0x2
 dev-libs/leveldb libstdcxx # -> net-p2p/bitcoin-qt

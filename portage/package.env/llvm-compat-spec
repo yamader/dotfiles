@@ -1,5 +1,6 @@
-=app-emulation/wine-proton-8.0.1d default # bfd: error: undefined reference to '__register_frame_info', '__deregister_frame_info'
-=sys-apps/baobab-44.0 wnoe-icit-fptr-intc # clang: error: [-Wincompatible-function-pointer-types]
+<=app-accessibility/caribou-0.4.21-r5 wnoe-icit-fptr-intc # clang: error: [-Wincompatible-function-pointer-types]
+<=sys-apps/baobab-44.0 wnoe-icit-fptr-intc # clang: error: [-Wincompatible-function-pointer-types]
+app-emulation/wine-proton:8.0.2c default # bfd: error: undefined reference to '__register_frame_info', '__deregister_frame_info'
 dev-db/postgresql:15 wnoe-icit-fptr-intc # clang: error: [-Wimplicit-function-declaration, -Wint-conversion]
 dev-java/openjdk:17 default # nanka
 dev-java/openjdk:8 default # nanka
