@@ -1,0 +1,6 @@
+<=app-accessibility/caribou-0.4.21-r5 wnoe-icit-fptr-intc # clang: error: [-Wincompatible-function-pointer-types]
+<=dev-libs/pkcs11-helper-1.29.0-r1 wnoe-icit-fptr-intc # clang: error: [-Wincompatible-function-pointer-types]
+<=net-misc/networkmanager-1.42.6-r1 wnoe-icit-fptr-intc # clang: error: [-Wincompatible-function-pointer-types]
+<=sys-apps/baobab-44.0 wnoe-icit-fptr-intc # clang: error: [-Wincompatible-function-pointer-types]
+dev-db/postgresql:15 wnoe-icit-fptr-intc # clang: error: [-Wimplicit-function-declaration, -Wint-conversion]
+x11-wm/mutter:0/12 wnoe-icit-fptr-intc # clang: error: [-Wimplicit-function-declaration, -Wint-conversion]

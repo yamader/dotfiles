@@ -1,16 +1,26 @@
+*/*::crossdev default #
 <=media-libs/gexiv2-0.14.1 libstdcxx # error: no template named 'auto_ptr' in namespace 'std'; did you mean simply 'auto_ptr'?
+<=sys-libs/libnvidia-container-1.12.1 default # clang-16: error: unknown argument: '-fplan9-extensions'
+<=sys-process/btop-1.2.13-r1 default # clang++ is not a supported compiler. Please use sys-devel/gcc instead.
 app-arch/p7zip default # clang: error: typedef redefinition with different types
+app-emulation/wine-proton:8.0.2c default # bfd: error: undefined reference to '__register_frame_info', '__deregister_frame_info'
+dev-java/openjdk:17 default # nanka
+dev-java/openjdk:8 default # nanka
+dev-lang/apl default #
 dev-libs/ffcall default # avcall-x86_64.s: error: changed section flags for .eh_frame, expected: 0x2
 dev-libs/leveldb libstdcxx # -> net-p2p/bitcoin-qt
+dev-libs/libsecp256k1:0/2 default # clang: error: unrecognized command-line option '-Wconditional-uninitialized', '-Wreserved-identifier'
 dev-libs/xmlsec wno-everything # clang: error: no newline at end of file [-Wnewline-eof]
 dev-qt/qt-creator wno-everything # clang++: error: [-Wenum-constexpr-conversion]
 gui-wm/hyprland default # Hyprland requires >=sys-devel/gcc-12.1.0 to build
 media-video/ffmpeg wno-everything # clang: error: [-Wint-conversion]
-net-misc/networkmanager wnoe-icit-fptr-intc # clang: error: [-Wincompatible-function-pointer-types]
 net-misc/spice-gtk bfd libgcc # ld.lld: error: unknown directive: spice_audio_get, bfd: crt: undefined reference to
 net-p2p/bitcoin-qt libstdcxx # -> sys-libs/db
 sys-apps/busybox O0 # (a)sh segv
 sys-apps/fwupd-efi default # llvm-objcopy: error: unknown argument '--section-alignment'
 sys-boot/refind default # clang-16: error: unknown argument: '-fno-tree-loop-distribute-patterns'
 sys-boot/syslinux default # clang: error: unsupported option '--print-libgcc'
-sys-libs/libnvidia-container default # clang-16: error: unknown argument: '-fplan9-extensions'
+sys-devel/binutils:2.40 default # pgo
+sys-devel/gcc default #
+sys-libs/db:5.8 libstdcxx # not compatible with libcxx
+x11-libs/gtk+:2 wnoe-icit-fptr-intc # clang: error: [-Wincompatible-function-pointer-types]
