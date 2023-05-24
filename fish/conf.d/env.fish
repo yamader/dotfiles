@@ -18,6 +18,7 @@ set -x NEXT_TELEMETRY_DISABLED 1
 ## tools
 set -x GPG_TTY (tty)
 set -x EIX_LIMIT 0
+set -x EIX_LIMIT_COMPACT 0
 
 ################################################################
 ##  ENV
