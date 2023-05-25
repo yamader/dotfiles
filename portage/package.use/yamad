@@ -1,5 +1,5 @@
 */* LUA_TARGETS: luajit
-*/* PYTHON_TARGETS: pypy3
+*/* PYTHON_TARGETS: pypy3 python3_12
 */* RUBY_TARGETS: ruby31 ruby32
 */* nerdfonts
 app-crypt/gnupg tools
