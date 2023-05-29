@@ -6,7 +6,7 @@ set tabstop=2
 set shiftwidth=2
 set smarttab
 
-set backupdir=$HOME/.vim
+set directory=$HOME/.vim
 
 set mouse=
 "set paste
