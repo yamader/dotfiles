@@ -1,4 +1,5 @@
 */*::crossdev default #
+<=dev-util/bazel-6.2.0 default # clang: error: [-Wdeprecated-builtins, -Wgnu-offsetof-extensions]
 <=media-libs/gexiv2-0.14.1 libstdcxx # error: no template named 'auto_ptr' in namespace 'std'; did you mean simply 'auto_ptr'?
 <=sys-libs/libnvidia-container-1.12.1 default # clang-16: error: unknown argument: '-fplan9-extensions'
 <=sys-process/btop-1.2.13-r1 default # clang++ is not a supported compiler. Please use sys-devel/gcc instead.
