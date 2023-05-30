@@ -3,5 +3,6 @@
 <=dev-python/lxml-4.9.2 wnoe-icit-fptr-intc # clang: error: [-Wimplicit-function-declaration]
 <=net-misc/networkmanager-1.42.6-r1 wnoe-icit-fptr-intc # clang: error: [-Wincompatible-function-pointer-types]
 <=sys-apps/baobab-44.0 wnoe-icit-fptr-intc # clang: error: [-Wincompatible-function-pointer-types]
+<=x11-apps/xcur2png-0.7.1 default # clang: error: [-Wimplicit-int]
 dev-db/postgresql:15 wnoe-icit-fptr-intc # clang: error: [-Wimplicit-function-declaration, -Wint-conversion]
 x11-wm/mutter:0/12 wnoe-icit-fptr-intc # clang: error: [-Wimplicit-function-declaration, -Wint-conversion]

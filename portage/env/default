@@ -1,5 +1,5 @@
-CC=""
-CXX=""
+CC="cc"
+CXX="c++"
 LD=""
 
 # binutils (from gentoo:features/llvm/make.defaults)

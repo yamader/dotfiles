@@ -1,5 +1,6 @@
 */*::crossdev default #
 <=dev-util/bazel-6.2.0 default # clang: error: [-Wdeprecated-builtins, -Wgnu-offsetof-extensions]
+<=gui-apps/hyprpaper-0.2.0-r1 default # clang-16: error: invalid value 'c++23'
 <=media-libs/gexiv2-0.14.1 libstdcxx # error: no template named 'auto_ptr' in namespace 'std'; did you mean simply 'auto_ptr'?
 <=sys-libs/libnvidia-container-1.12.1 default # clang-16: error: unknown argument: '-fplan9-extensions'
 <=sys-process/btop-1.2.13-r1 default # clang++ is not a supported compiler. Please use sys-devel/gcc instead.
@@ -15,6 +16,7 @@ dev-libs/libsecp256k1:0/2 default # clang: error: unrecognized command-line opti
 dev-libs/xmlsec wno-everything # clang: error: no newline at end of file [-Wnewline-eof]
 dev-qt/qt-creator wno-everything # clang++: error: [-Wenum-constexpr-conversion]
 gui-wm/hyprland default # Hyprland requires >=sys-devel/gcc-12.1.0 to build
+media-gfx/exiv2 libstdcxx # -> media-libs/gexiv
 media-video/ffmpeg wno-everything # clang: error: [-Wint-conversion]
 net-misc/spice-gtk bfd libgcc # ld.lld: error: unknown directive: spice_audio_get, bfd: crt: undefined reference to
 net-p2p/bitcoin-qt libstdcxx # -> sys-libs/db
