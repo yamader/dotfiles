@@ -4,6 +4,7 @@
 <=sys-process/btop-1.2.13-r1 default # clang++ is not a supported compiler. Please use sys-devel/gcc instead.
 app-arch/p7zip default # clang: error: typedef redefinition with different types
 app-emulation/wine-proton:8.0.2c default # bfd: error: undefined reference to '__register_frame_info', '__deregister_frame_info'
+dev-java/openjdk:11 default # nanka
 dev-java/openjdk:17 default # nanka
 dev-java/openjdk:8 default # nanka
 dev-lang/apl default #
