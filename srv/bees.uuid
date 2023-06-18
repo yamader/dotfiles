@@ -1,0 +1,13 @@
+#!/sbin/openrc-run
+
+UUID=${SVCNAME#*.}
+
+name=${SVCNAME%.*}
+command=/usr/sbin/beesd
+command_args="--no-timestamps $UUID"
+command_background=true
+pidfile=/run/$name/$UUID.pid
+
+stop_post() {
+  umount /run/$name/mnt/$UUID || true
+}

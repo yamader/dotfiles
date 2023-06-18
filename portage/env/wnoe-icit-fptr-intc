@@ -1,6 +1,4 @@
-COMMON_FLAGS="${COMMON_FLAGS} -Wno-error=implicit-function-declaration"
-COMMON_FLAGS="${COMMON_FLAGS} -Wno-error=incompatible-function-pointer-types"
-COMMON_FLAGS="${COMMON_FLAGS} -Wno-error=int-conversion"
+WNOE_FLAGS="-Wno-error=implicit-function-declaration -Wno-error=incompatible-function-pointer-types -Wno-error=int-conversion"
 
-CFLAGS="${CFLAGS} ${COMMON_FLAGS}"
-CXXFLAGS="${CXXFLAGS} ${COMMON_FLAGS}"
+CFLAGS="${CFLAGS} ${WNOE_FLAGS}"
+CXXFLAGS="${CXXFLAGS} ${WNOE_FLAGS}"

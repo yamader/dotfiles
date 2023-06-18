@@ -1,5 +1,5 @@
 */* LUA_TARGETS: luajit
-*/* PYTHON_TARGETS: pypy3
+*/* PYTHON_TARGETS: pypy3 python3_12
 */* RUBY_TARGETS: ruby31 ruby32
 */* nerdfonts
 app-crypt/gnupg tools
@@ -21,7 +21,7 @@ sys-apps/util-linux tty-helpers
 sys-auth/pambase -passwdqc
 sys-firmware/intel-microcode initramfs
 virtual/wine proton
-www-client/firefox pulseaudio
+www-client/firefox pulseaudio -pgo -telemetry
 www-client/vivaldi proprietary-codecs widevine
 www-client/w3m imlib
 www-servers/nginx NGINX_MODULES_HTTP: addition fancyindex
