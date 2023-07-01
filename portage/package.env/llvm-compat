@@ -13,8 +13,8 @@
 <=sys-boot/refind-0.13.3.1 default # clang-16: error: unknown argument: '-fno-tree-loop-distribute-patterns'
 <=sys-boot/syslinux-6.04_pre1-r5 default # clang: error: unsupported option '--print-libgcc'
 <=sys-devel/binutils-2.40-r5 default # pgo
-<=sys-libs/libnvidia-container-1.13.1 cc # clang-16: error: unknown argument: '-fplan9-extensions'
 <=sys-process/btop-1.2.13-r1 default # clang++ is not a supported compiler. Please use sys-devel/gcc instead.
+=sys-libs/libnvidia-container-1.13* cc # clang-16: error: unknown argument: '-fplan9-extensions'
 app-emulation/wine-proton:8.0.2c default # bfd: error: undefined reference to '__register_frame_info', '__deregister_frame_info'
 dev-java/openjdk:11 default # nanka
 dev-java/openjdk:17 default # nanka
