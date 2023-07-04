@@ -8,8 +8,10 @@ alias rp="realpath"
 alias psre="ps -aux | grep -P"
 
 alias six="img2sixel"
-alias serve="p -m http.server"
 alias dc="docker system prune"
+
+alias server="p -m http.server"
+alias cprof="p -m cProfile"
 
 alias silicon="silicon --shadow-blur-radius 32"
 alias vivaldi="vivaldi --force-dark-mode"
