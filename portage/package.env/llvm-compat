@@ -7,7 +7,6 @@
 <=dev-util/bazel-6.2.0 default # clang: error: [-Wdeprecated-builtins, -Wgnu-offsetof-extensions]
 <=gui-apps/hyprpaper-0.2.0-r1 default # clang-16: error: invalid value 'c++23'
 <=gui-wm/hyprland-0.26.0 default # Hyprland requires >=sys-devel/gcc-12.1.0 to build
-<=media-libs/gexiv2-0.14.1 libstdcxx # error: no template named 'auto_ptr' in namespace 'std'; did you mean simply 'auto_ptr'?
 <=net-misc/spice-gtk-0.42-r2 bfd libgcc # ld.lld: error: unknown directive: spice_audio_get, bfd: crt: undefined reference to
 <=sys-apps/fwupd-efi-1.4 default # llvm-objcopy: error: unknown argument '--section-alignment'
 <=sys-boot/refind-0.13.3.1 default # clang-16: error: unknown argument: '-fno-tree-loop-distribute-patterns'
@@ -21,7 +20,7 @@ dev-java/openjdk:17 default # nanka
 dev-java/openjdk:8 default # nanka
 dev-lang/apl default #
 dev-libs/leveldb libstdcxx # -> net-p2p/bitcoin-qt
-media-gfx/exiv2 libstdcxx # -> media-libs/gexiv
+media-libs/OpenSiv3D default
 net-p2p/bitcoin-qt libstdcxx # -> sys-libs/db
 sys-apps/busybox O0 # (a)sh segv
 sys-devel/gcc default #
