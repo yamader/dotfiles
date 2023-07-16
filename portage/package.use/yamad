@@ -20,6 +20,7 @@ sys-apps/fwupd gnutls logitech nvme synaptics tpm uefi
 sys-apps/util-linux tty-helpers
 sys-auth/pambase -passwdqc
 sys-firmware/intel-microcode initramfs
+sys-fs/squashfs-tools lzma
 virtual/wine proton
 www-client/firefox pulseaudio -pgo -telemetry
 www-client/vivaldi proprietary-codecs widevine
