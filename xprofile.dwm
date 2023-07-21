@@ -12,7 +12,7 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 #export GDK_DPI_SCALE=1.5
 
 nitrogen --restore
-pulseaudio --start
+gentoo-pipewire-launcher &
 picom -b
 xscreensaver --no-splash &
 light-locker \

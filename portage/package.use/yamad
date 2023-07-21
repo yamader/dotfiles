@@ -13,6 +13,7 @@ dev-libs/nss utils
 gnome-base/gvfs mtp
 media-gfx/fontforge woff2
 media-gfx/imagemagick heif jpeg2k raw webp
+media-video/pipewire sound-server
 media-video/vlc lua
 net-misc/networkmanager iwd
 sys-apps/busybox -pam static
