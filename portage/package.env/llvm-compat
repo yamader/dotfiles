@@ -1,7 +1,6 @@
 */*::crossdev default #
 <=app-arch/p7zip-17.05-r1 default # clang: error: typedef redefinition with different types
 <=app-editors/imhex-1.30.1 default #
-<=app-emulation/wine-proton-8.0.2c default # bfd: error: undefined reference to '__register_frame_info', '__deregister_frame_info'
 <=dev-java/openjdk-17.9999 default #
 <=dev-libs/ffcall-2.4-r1 default # avcall-x86_64.s: error: changed section flags for .eh_frame, expected: 0x2
 <=dev-libs/libsecp256k1-0.3.2 default # clang: error: unrecognized command-line option '-Wconditional-uninitialized', '-Wreserved-identifier'
