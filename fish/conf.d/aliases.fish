@@ -8,8 +8,10 @@ alias rp="realpath"
 alias psre="ps -aux | grep -P"
 
 alias six="img2sixel"
-alias serve="p -m http.server"
 alias dc="docker system prune"
+
+alias serve="p -m http.server"
+alias cprof="p -m cProfile"
 
 alias silicon="silicon --shadow-blur-radius 32"
 alias vivaldi="vivaldi --force-dark-mode"
@@ -43,7 +45,7 @@ alias drepl="dub run -q drepl --"
 # LIBRARY_PATH=/usr/lib/llvm/14/lib64 dub fetch dpp
 alias dpp="dub run -q dpp --"
 alias ddox="dub run -q ddox --"
-alias p="bpython"
+alias p="ipython --no-confirm-exit"
 alias pip="p -m pip"
 
 ## git

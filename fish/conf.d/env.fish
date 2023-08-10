@@ -85,6 +85,7 @@ fish_add_path -P \
 	~/.node/bin \
 	~/.nimble/bin \
 	~/.opam/default/bin \
+	~/.pub-cache/bin \
 	~/bin # gem
 
 ## local

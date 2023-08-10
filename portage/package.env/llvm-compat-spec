@@ -1,8 +1,0 @@
-=app-emulation/wine-proton-8.0.1d default # bfd: error: undefined reference to '__register_frame_info', '__deregister_frame_info'
-dev-db/postgresql:15 wnoe-icit-fptr-intc # clang: error: [-Wimplicit-function-declaration, -Wint-conversion]
-dev-libs/libsecp256k1:0/2 default # clang: error: unrecognized command-line option '-Wconditional-uninitialized', '-Wreserved-identifier'
-net-dialup/ppp:0/2.4.9 wnoe-icit-fptr-intc # clang: error: [-Wincompatible-function-pointer-types]
-sys-devel/binutils:2.40 default # pgo
-sys-libs/db:5.8 libstdcxx # not compatible with libcxx
-x11-libs/gtk+:2 wnoe-icit-fptr-intc # clang: error: [-Wincompatible-function-pointer-types]
-x11-wm/mutter:0/12 wnoe-icit-fptr-intc # clang: error: [-Wimplicit-function-declaration, -Wint-conversion]

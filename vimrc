@@ -1,6 +1,8 @@
 syntax on
 set nowrap
 
+au FileType * set fo-=cro
+
 set expandtab
 set tabstop=2
 set shiftwidth=2
