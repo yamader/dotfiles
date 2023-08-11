@@ -1,0 +1,6 @@
+*/*-bin nobinpkg
+app-editors/vscode nobinpkg
+dev-perl/* nobinpkg
+virtual/* nobinpkg
+www-client/google-chrome* nobinpkg
+www-client/vivaldi nobinpkg
