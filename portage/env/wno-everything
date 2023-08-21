@@ -1,4 +1,2 @@
-WNOE_FLAGS="-Wno-everything"
-
-CFLAGS="${CFLAGS} ${WNOE_FLAGS}"
-CXXFLAGS="${CXXFLAGS} ${WNOE_FLAGS}"
+CFLAGS="${CFLAGS} -Wno-everything"
+CXXFLAGS="${CXXFLAGS} -Wno-everything"

@@ -6,4 +6,3 @@ sys-kernel/*-sources nobinpkg
 sys-kernel/linux-firmware nobinpkg
 virtual/* nobinpkg
 www-client/google-chrome* nobinpkg
-www-client/vivaldi nobinpkg

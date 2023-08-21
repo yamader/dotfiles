@@ -1,1 +1,2 @@
+LD="mold"
 LDFLAGS="${LDFLAGS} -fuse-ld=mold"
