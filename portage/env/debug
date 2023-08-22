@@ -1,0 +1,4 @@
+CFLAGS="${CFLAGS} -g3"
+CXXFLAGS="${CXXFLAGS} -g3"
+
+FEATURES="${FEATURES} splitdebug compressdebug -nostrip"
