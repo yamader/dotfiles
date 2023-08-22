@@ -1,2 +1,0 @@
-#LDFLAGS="-Xcc=-fuse-ld=mold -L-O2 -L--as-needed"
-LDFLAGS="-L-O2 -L--as-needed"

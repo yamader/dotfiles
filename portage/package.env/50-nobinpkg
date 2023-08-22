@@ -1,0 +1,8 @@
+*/*-bin nobinpkg
+app-editors/vscode nobinpkg
+dev-perl/* nobinpkg
+media-sound/spotify nobinpkg
+sys-kernel/*-sources nobinpkg
+sys-kernel/linux-firmware nobinpkg
+virtual/* nobinpkg
+www-client/google-chrome* nobinpkg

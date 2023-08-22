@@ -1,0 +1,17 @@
+*/*::crossdev vanilla
+*/gcc cc
+<=app-arch/p7zip-17.05-r1 cc # clang-16: typedef redefinition with different types
+<=app-editors/imhex-1.30.1 libstdcxx wno-everything # clang: [-Wunused-command-line-argument], no member named 'back_inserter' in namespace 'std'
+<=dev-java/openjdk-17.9999 vanilla # lld: recompile with -fPIC
+<=dev-lang/apl-1.8 cc # clang: invalid operands to binary expression
+<=dev-libs/ffcall-2.4-r1 cc # clang-16: changed section flags for .eh_frame, expected: 0x2
+<=dev-libs/libsecp256k1-0.3.2 cc # clang-16: unrecognized command-line option '-Wconditional-uninitialized', '-Wreserved-identifier'
+<=dev-util/bazel-6.2.0 cc # clang-16: [-Werror, -Wgnu-offsetof-extensions]
+<=sys-apps/fwupd-efi-1.4 vanilla # llvm-objcopy: unknown argument '--section-alignment'
+<=sys-boot/refind-0.13.3.1 vanilla # clang-16: unknown argument: '-fno-tree-loop-distribute-patterns'
+<=sys-boot/syslinux-6.04_pre1-r5 cc bfd # clang-16: unsupported option '--print-libgcc'
+<=sys-libs/libnvidia-container-1.13.9999 cc # clang-16: unknown argument: '-fplan9-extensions'
+dev-libs/leveldb libstdcxx # -> net-p2p/bitcoin-qt
+media-libs/opencv libstdcxx # cuda isn't compatible with libcxx
+net-p2p/bitcoin-qt libstdcxx # -> sys-libs/db
+sys-libs/db:4.8 libstdcxx # not compatible with libcxx

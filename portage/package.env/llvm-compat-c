@@ -1,6 +1,0 @@
-<=dev-lang/moarvm-2023.02 wnoe-icit-fptr-intc # clang: error: [-Wincompatible-function-pointer-types]
-<=dev-libs/pkcs11-helper-1.29.0-r1 wnoe-icit-fptr-intc # clang: error: [-Wincompatible-function-pointer-types]
-<=dev-python/multidict-6.0.4 wnoe-icit-fptr-intc # clang: error: [-Wint-conversion]
-<=dev-python/ruamel-yaml-clib-0.2.7 wnoe-icit-fptr-intc # clang: error: [-Wincompatible-function-pointer-types]
-<=net-misc/networkmanager-1.42.8 wnoe-icit-fptr-intc # clang: error: [-Wincompatible-function-pointer-types]
-<=x11-apps/xcur2png-0.7.1 default # clang: error: [-Wimplicit-int]

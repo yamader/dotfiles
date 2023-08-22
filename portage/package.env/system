@@ -1,3 +1,0 @@
-*/*::crossdev generic-cpu
-sys-libs/glibc debugsyms
-www-client/firefox libgcc # widevine segv
