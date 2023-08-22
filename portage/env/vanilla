@@ -1,7 +1,6 @@
 CC=""
 CXX=""
 LD=""
-LDFLAGS="-Wl,-O2 -Wl,--as-needed"
 
 # binutils (from gentoo:features/llvm/make.defaults)
 AR=""

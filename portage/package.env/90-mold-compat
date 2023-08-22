@@ -1,5 +1,5 @@
 */* mold
-*/*::dlang dc-mold # dmd/ldc2 (unrecognized switch|Unknown command line argument) '-fuse-ld=mold'
+*/*::dlang dc-ldflags # dmd: unrecognized switch '-fuse-ld=mold'
 dev-lang/ldc2 mold # -> */*::dlang
 dev-lang/python lld # mold: REL-type relocation table is not supported for this target
 sys-libs/libnvidia-container lld # mold: unknown linker script token

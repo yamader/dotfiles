@@ -1,3 +1,0 @@
-# make.conf's default
-LDFLAGS="-L-O2 -L--as-needed"
-LDFLAGS="${LDFLAGS} -Xcc=-fuse-ld=mold"
