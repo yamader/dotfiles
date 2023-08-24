@@ -4,3 +4,4 @@ dev-lang/ldc2 mold # -> */*::dlang
 dev-lang/python lld # mold: REL-type relocation table is not supported for this target
 sys-libs/libnvidia-container lld # mold: unknown linker script token
 www-client/firefox lld # mold: Too many open files
+x11-drivers/nvidia-drivers lld # mold does not support `-b binary`.
