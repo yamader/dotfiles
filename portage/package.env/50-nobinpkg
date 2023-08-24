@@ -1,4 +1,5 @@
 */*-bin nobinpkg
+acct-*/* nobinpkg
 app-editors/vscode nobinpkg
 dev-perl/* nobinpkg
 media-sound/spotify nobinpkg
