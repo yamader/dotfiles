@@ -7,6 +7,7 @@
 <=dev-lang/apl-1.8 cc # clang: invalid operands to binary expression
 <=dev-libs/ffcall-2.4-r1 cc # clang-16: changed section flags for .eh_frame, expected: 0x2
 <=dev-libs/libsecp256k1-0.3.2 cc # clang-16: unrecognized command-line option '-Wconditional-uninitialized', '-Wreserved-identifier'
+<=dev-qt/qt-creator-8.0.2 wno-everything # clang-16: [-Wenum-constexpr-conversion]
 <=dev-util/bazel-6.2.0 cc # clang-16: [-Werror, -Wgnu-offsetof-extensions]
 <=sys-apps/fwupd-efi-1.4 vanilla # llvm-objcopy: unknown argument '--section-alignment'
 <=sys-boot/refind-0.13.3.1 vanilla # clang-16: unknown argument: '-fno-tree-loop-distribute-patterns'
