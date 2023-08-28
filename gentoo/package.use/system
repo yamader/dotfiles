@@ -1,1 +1,5 @@
-media-sound/spotify pulseaudio # without pulseaudio, requires apulse which conflict with alsa-plugins (pulled by pulseaudio-daemon)
+media-video/pipewire pipewire-alsa sound-server
+net-misc/networkmanager iwd
+sys-apps/fwupd logitech nvme synaptics tpm uefi
+sys-auth/pambase -passwdqc
+sys-firmware/intel-microcode initramfs
