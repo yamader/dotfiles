@@ -1,3 +1,4 @@
+media-libs/mesa zink
 media-video/pipewire pipewire-alsa sound-server
 net-misc/networkmanager iwd
 sys-apps/fwupd logitech nvme synaptics tpm uefi
