@@ -1,5 +1,5 @@
 */gcc -lto -pgo # save the time
-cross-*/gcc -openmp # libgomp fails build
+cross-*/gcc -openmp -sanitize # libgomp,libbacktrace fails build
 dev-lang/php exif ffi fpm mysqli postgres sqlite threads zip
 dev-lang/rust LLVM_TARGETS: AArch64 WebAssembly
 dev-lang/rust rust-analyzer system-bootstrap system-llvm wasm

@@ -1,3 +1,4 @@
+<=dev-db/postgresql-15.4 wnoe-icit-fptr-intc # clang-16: [-Wimplicit-function-declaration, -Wint-conversion]
 <=dev-lang/moarvm-2023.02 wnoe-icit-fptr-intc # clang-16: [-Wincompatible-function-pointer-types]
 <=dev-libs/pkcs11-helper-1.29.0-r1 wnoe-icit-fptr-intc # clang-16: [-Wincompatible-function-pointer-types]
 <=dev-python/ruamel-yaml-clib-0.2.7 wnoe-icit-fptr-intc # clang-16: [-Wincompatible-function-pointer-types]
