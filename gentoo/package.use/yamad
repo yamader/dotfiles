@@ -19,4 +19,5 @@ www-client/firefox -telemetry
 www-client/w3m imlib
 www-servers/nginx NGINX_MODULES_HTTP: addition fancyindex
 x11-misc/nitrogen xinerama
+x11-misc/xremap -X hypr
 x11-misc/xscreensaver suid
