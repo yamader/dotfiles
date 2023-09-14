@@ -20,12 +20,8 @@ light-locker \
   --lock-on-lid &
 
 #xinput set-prop Elan\ Touchpad Device\ Enabled 0
-setxkbmap -option ctrl:nocaps
+xremap --watch=device ~/.config/xremap/config.yml &
 fcitx5 -rd
-(
-  sleep 3
-  sands &
-) &
 
 while true; do
   {
