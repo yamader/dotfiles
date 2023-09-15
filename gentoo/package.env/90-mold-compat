@@ -6,5 +6,4 @@ dev-lang/python lld # mold: REL-type relocation table is not supported for this 
 media-sound/mpg123 lld # mold: remocation can not be used; recompile with -fPIC
 sys-kernel/* lld # mold: unknown linker
 sys-libs/libnvidia-container lld # mold: unknown linker script token
-www-client/firefox lld # mold: Too many open files
 x11-drivers/nvidia-drivers lld # mold does not support `-b binary`.
