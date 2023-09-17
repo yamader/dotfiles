@@ -1,4 +1,4 @@
-function stf --wraps="sort"
+function sf --wraps="sort"
   for i in $argv
     sort -o $i $i
   end
