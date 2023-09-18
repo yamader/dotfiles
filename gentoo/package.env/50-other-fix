@@ -1,0 +1,5 @@
+*/*::crossdev march-generic
+net-fs/samba nodistcc
+sys-libs/ldb nodistcc
+sys-libs/talloc nodistcc
+sys-libs/tevent nodistcc

@@ -1,0 +1,6 @@
+modmap:
+  - remap:
+      CapsLock: Ctrl_L
+  - name: SandS
+    remap:
+      Space: [Shift_L, Space]

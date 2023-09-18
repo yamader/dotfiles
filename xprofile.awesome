@@ -1,7 +1,0 @@
-export GTK_IM_MODULE=fcitx
-export QT_IM_MODULE=fcitx
-export XMODIFIERS=@im=fcitx
-
-#export LIBVA_DRIVER_NAME=nvidia
-#export LIBVA_DRIVERS_PATH=/usr/lib64/dri
-#export MOZ_DISABLE_RDD_SANDBOX=1

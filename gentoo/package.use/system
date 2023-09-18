@@ -1,0 +1,7 @@
+<=sys-apps/dbus-1.15.8 -elogind # ABI_x86=32 fail
+media-libs/mesa zink
+media-video/pipewire pipewire-alsa sound-server
+net-misc/networkmanager iwd
+sys-apps/fwupd logitech nvme synaptics tpm uefi
+sys-auth/pambase -passwdqc
+sys-firmware/intel-microcode initramfs
