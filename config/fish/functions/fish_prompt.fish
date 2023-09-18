@@ -4,20 +4,20 @@ function fish_prompt
   set -l normal (set_color normal)
   set -l usercolor (set_color $fish_color_user)
 
-  set -l delim "%"
+  set -l delim ";"
   fish_is_root_user; and set delim "#"
 
   set -l cwd (set_color $fish_color_cwd)
   if command -sq cksum
     # randomized cwd color
-    set -l shas (pwd -P | cksum | string split -f1 ' ' | math --base=hex | string sub -s 3 | string pad -c 0 -w 6 | string match -ra ..)
+    set -l shas (pwd -P | cksum | string split -f1 " " | math --base=hex | string sub -s 3 | string pad -c 0 -w 6 | string match -ra ..)
     set -l col 0x$shas[1..3]
     while test (math 0.2126 x $col[1] + 0.7152 x $col[2] + 0.0722 x $col[3]) -lt 120
       set col[1] (math --base=hex "min(255, $col[1] + 60)")
       set col[2] (math --base=hex "min(255, $col[2] + 60)")
       set col[3] (math --base=hex "min(255, $col[3] + 60)")
     end
-    set -l col (string replace 0x '' $col | string pad -c 0 -w 2 | string join "")
+    set -l col (string replace 0x "" $col | string pad -c 0 -w 2 | string join "")
     set cwd (set_color $col)
   end
 
@@ -40,7 +40,7 @@ function fish_prompt
   # Shorten pwd if prompt is too long
   set -l pwd (prompt_pwd)
 
-  echo -n -s $prompt_host $cwd $pwd $normal $prompt_status $delim
+  echo -ns ": " $prompt_host $cwd $pwd $normal $prompt_status $delim
 end
 
 function fish_right_prompt
@@ -67,16 +67,18 @@ function fish_right_prompt
   set -g __fish_git_prompt_color_stashstate $fish_color_normal
   set -g __fish_git_prompt_color_untrackedfiles cyan
 
-  # The git prompt's default format is ' (%s)'.
-  set -l vcs (fish_vcs_prompt '(%s)' 2>/dev/null)
+  set -l bang (set_color 444)\#(set_color normal)
+
+  # The git prompt's default format is " (%s)".
+  set -l vcs (fish_vcs_prompt "$bang(%s)" 2>/dev/null)
 
   set -l duration "$cmd_duration$CMD_DURATION"
   if test $duration -gt 100
-    set duration (math $duration / 1000)s
+    set duration $bang(math $duration / 1000)s
   else
     set duration
   end
 
   set_color normal
-  string join " " -- $duration $vcs ""
+  echo -ns $duration $vcs
 end
