@@ -5,16 +5,15 @@ alias s="subl"
 alias v="vim"
 alias x="hexdump -C"
 
-# double
+# more
+alias cprof="p -m cProfile"
 alias dc="docker system prune"
+alias ei="eix -c"
 alias eq="equery"
-alias si="img2sixel"
 alias pq="portageq"
 alias pr="ps -aux | grep -P"
-
-# more
 alias serve="p -m http.server"
-alias cprof="p -m cProfile"
+alias si="img2sixel"
 
 # wrap
 alias at="rlwrap at -u $USER"

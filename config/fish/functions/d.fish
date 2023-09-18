@@ -1,5 +1,5 @@
 function d
-  if [ -n "$argv" ]
+  if count $argv > /dev/null
     rdmd $RDMDFLAGS $argv
   else
     drepl
