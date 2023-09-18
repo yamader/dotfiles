@@ -10,6 +10,7 @@
 <=dev-libs/libsecp256k1-0.3.2 cc # clang-16: unrecognized command-line option '-Wconditional-uninitialized', '-Wreserved-identifier'
 <=dev-qt/qt-creator-8.0.2 wno-everything # clang-16: [-Wenum-constexpr-conversion]
 <=dev-util/bazel-6.2.0 cc # clang-16: [-Werror, -Wgnu-offsetof-extensions]
+<=sci-libs/lapack-3.11 cc # clang, mold: undefined symbol: VerifyFortran
 <=sys-apps/fwupd-efi-1.4 vanilla # llvm-objcopy: unknown argument '--section-alignment'
 <=sys-boot/gnu-efi-3.0.17 vanilla # to support 'efi-app-x86_64'
 <=sys-boot/refind-0.14.0.2-r1 vanilla # clang-16: unknown argument: '-fno-tree-loop-distribute-patterns'
