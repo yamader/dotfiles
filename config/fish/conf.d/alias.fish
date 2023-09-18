@@ -1,5 +1,5 @@
 # single
-alias l="ll"
+alias l="la"
 alias p="ipython --no-confirm-exit"
 alias s="subl"
 alias v="vim"
