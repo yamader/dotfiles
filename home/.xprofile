@@ -20,7 +20,7 @@ light-locker \
   --lock-on-lid &
 
 #xinput set-prop Elan\ Touchpad Device\ Enabled 0
-xremap --watch=device ~/.config/xremap/config.yml &
+xremap --watch=device,config ~/.config/xremap/config.yml &
 fcitx5 -rd
 
 while true; do
