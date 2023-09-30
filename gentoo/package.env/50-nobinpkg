@@ -1,6 +1,7 @@
 */*-bin nobinpkg
 acct-*/* nobinpkg
 app-editors/vscode nobinpkg
+app-eselect/* nobinpkg
 dev-perl/* nobinpkg
 media-sound/spotify nobinpkg
 sys-kernel/*-sources nobinpkg
