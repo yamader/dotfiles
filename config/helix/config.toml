@@ -1,0 +1,6 @@
+theme = "ayu_dark"
+
+[editor.cursor-shape]
+insert = "underline"
+normal = "underline"
+select = "block"
