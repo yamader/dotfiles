@@ -10,6 +10,7 @@ app-emulation/qemu static-user virgl
 app-text/texlive-core xetex
 dev-libs/nss utils
 gnome-base/gvfs mtp
+gui-apps/xremap -X hypr
 media-gfx/fontforge woff2
 media-video/vlc lua
 sys-apps/busybox -pam static
@@ -19,5 +20,4 @@ www-client/firefox -telemetry
 www-client/w3m imlib
 www-servers/nginx NGINX_MODULES_HTTP: addition fancyindex
 x11-misc/nitrogen xinerama
-x11-misc/xremap -X hypr
 x11-misc/xscreensaver suid
