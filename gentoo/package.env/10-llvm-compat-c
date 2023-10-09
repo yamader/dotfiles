@@ -4,5 +4,5 @@
 <=dev-lang/moarvm-2023.02 wnoe-most # clang-16: [-Wincompatible-function-pointer-types]
 <=dev-libs/pkcs11-helper-1.29.0-r1 wnoe-most # clang-16: [-Wincompatible-function-pointer-types]
 <=dev-python/ruamel-yaml-clib-0.2.7 wnoe-most # clang-16: [-Wincompatible-function-pointer-types]
-<=net-misc/networkmanager-1.44.0 wnoe-most # clang-16: [-Wincompatible-function-pointer-types]
+<=net-misc/networkmanager-1.44.9999 wnoe-most # clang-16: [-Wincompatible-function-pointer-types]
 <=x11-apps/xcur2png-0.7.1 wnoe-most # clang-16: [-Wimplicit-int]
