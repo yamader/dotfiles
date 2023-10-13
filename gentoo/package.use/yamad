@@ -7,7 +7,7 @@ app-crypt/rnp doc
 app-emulation/qemu QEMU_SOFTMMU_TARGETS: aarch64 arm ppc64
 app-emulation/qemu QEMU_USER_TARGETS: aarch64 arm ppc64
 app-emulation/qemu static-user virgl
-app-text/texlive-core xetex
+app-text/texlive extra games science
 dev-libs/nss utils
 gnome-base/gvfs mtp
 gui-apps/xremap -X hypr
