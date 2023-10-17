@@ -18,4 +18,5 @@ dev-libs/leveldb libstdcxx # -> net-p2p/bitcoin-qt
 media-libs/opencv libstdcxx # cuda isn't compatible with libcxx
 net-p2p/bitcoin-core libstdcxx # -> sys-libs/db:4.8
 net-p2p/bitcoin-qt libstdcxx # -> sys-libs/db:4.8
+sys-devel/gcc cc # mold: error: undefined symbol
 sys-libs/db:4.8 libstdcxx # not compatible with libcxx

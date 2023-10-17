@@ -1,0 +1,6 @@
+inherits = "dark_high_contrast"
+
+"ui.cursor.primary" = { fg = "white", bg = "black", modifiers = ["slow_blink"] }
+"ui.cursor.secondary" = { bg = "white", fg = "black" }
+
+"ui.selection.primary" = { fg = "white", bg = "deep_blue" }
