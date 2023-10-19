@@ -1,4 +1,4 @@
-<=app-admin/syslog-ng-4.4.0 cc # clang: error: cannot initialize a parameter of type 'gssize *' (aka 'long *') with an rvalue of type 'void *'
+<=app-admin/syslog-ng-4.4.9999 cc # clang: error: cannot initialize a parameter of type 'gssize *' (aka 'long *') with an rvalue of type 'void *'
 <=app-editors/helix-23.05 wnoe-most # tree-sitter: clang-16: [-Wimplicit-function-declaration, -Wimplicit-int]
 <=dev-db/postgresql-16.0 wnoe-most # clang-16: [-Wimplicit-function-declaration, -Wint-conversion]
 <=dev-lang/moarvm-2023.02 wnoe-most # clang-16: [-Wincompatible-function-pointer-types]
