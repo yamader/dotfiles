@@ -2,7 +2,7 @@
 >=sys-devel/gcc-13 d go graphite
 dev-lang/php cgi exif ffi fpm mysqli postgres sqlite threads zip
 dev-lang/rust LLVM_TARGETS: AArch64 WebAssembly
-dev-lang/rust rust-analyzer system-llvm wasm
+dev-lang/rust rust-analyzer system-bootstrap system-llvm wasm
 net-libs/nodejs corepack
 sys-devel/gdb multitarget
 virtual/rust rustfmt
