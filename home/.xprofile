@@ -5,7 +5,8 @@ export XMODIFIERS=@im=fcitx
 export _JAVA_AWT_WM_NONREPARENTING=1
 
 #export LIBVA_DRIVER_NAME=nvidia
-#export LIBVA_DRIVERS_PATH=/usr/lib64/dri
+#export LIBVA_DRIVERS_PATH=/usr/lib64/va/drivers
+#export NVD_BACKEND=direct
 #export MOZ_DISABLE_RDD_SANDBOX=1
 
 #export GDK_SCALE=1.5
