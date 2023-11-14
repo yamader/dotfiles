@@ -4,7 +4,7 @@
 <=app-editors/imhex-1.30.1 libstdcxx wno-everything # clang: [-Wunused-command-line-argument], no member named 'back_inserter' in namespace 'std'
 <=app-emulation/wine-proton-8.0.9999 vanilla # bfd: undefined reference to `__register_frame_info'
 <=dev-java/openjdk-21.9999 vanilla # lld: recompile with -fPIC
-<=dev-lang/apl-1.8 cc # clang: invalid operands to binary expression
+<=dev-lang/gnu-apl-1.8 cc # clang: invalid operands to binary expression
 <=dev-libs/ffcall-2.4-r1 cc # clang-16: changed section flags for .eh_frame, expected: 0x2
 <=dev-libs/libsecp256k1-0.4.0 cc # clang-16: unrecognized command-line option '-Wconditional-uninitialized', '-Wreserved-identifier'
 <=dev-util/bazel-6.2.0 cc # clang-16: [-Wgnu-offsetof-extensions]
