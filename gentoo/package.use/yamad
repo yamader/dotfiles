@@ -15,7 +15,7 @@ media-gfx/fontforge woff2
 media-video/vlc lua
 sys-apps/busybox -pam static
 sys-apps/util-linux tty-helpers
-sys-kernel/installkernel grub
+sys-kernel/installkernel-gentoo grub
 virtual/wine proton
 www-client/firefox -telemetry
 www-client/w3m imlib
