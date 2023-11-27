@@ -2,7 +2,7 @@
 alias l="la"
 alias p="ipython --no-confirm-exit"
 alias s="subl"
-alias v="vim"
+alias v="nvim"
 alias x="hexdump -C"
 
 # more

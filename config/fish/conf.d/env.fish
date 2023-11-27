@@ -5,6 +5,7 @@ set -x LC_COLLATE C
 # dev
 set RDMDFLAGS \
   -preview=shortenedMethods
+set -x CMAKE_INSTALL_PREFIX ~/.root
 
 # tools
 set -x EIX_LIMIT 0

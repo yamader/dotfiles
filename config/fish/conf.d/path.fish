@@ -71,4 +71,5 @@ fish_add_path -P \
 # local
 fish_add_path -P \
   ~/.bin \
-  ~/.local/bin
+  ~/.local/bin \
+  ~/.root/bin
