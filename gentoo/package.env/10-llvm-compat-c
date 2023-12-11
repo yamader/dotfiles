@@ -1,6 +1,9 @@
-<=dev-db/postgresql-16.0 wnoe-icit-fptr-intc # clang-16: [-Wimplicit-function-declaration, -Wint-conversion]
-<=dev-lang/moarvm-2023.02 wnoe-icit-fptr-intc # clang-16: [-Wincompatible-function-pointer-types]
-<=dev-libs/pkcs11-helper-1.29.0-r1 wnoe-icit-fptr-intc # clang-16: [-Wincompatible-function-pointer-types]
-<=dev-python/ruamel-yaml-clib-0.2.7 wnoe-icit-fptr-intc # clang-16: [-Wincompatible-function-pointer-types]
-<=net-misc/networkmanager-1.44.0 wnoe-icit-fptr-intc # clang-16: [-Wincompatible-function-pointer-types]
-<=x11-apps/xcur2png-0.7.1 wno-everything # clang-16: [-Wimplicit-int]
+<=app-admin/syslog-ng-4.4.9999 cc # clang: error: cannot initialize a parameter of type 'gssize *' (aka 'long *') with an rvalue of type 'void *'
+<=app-editors/helix-23.9999 wnoe-most # tree-sitter: clang-16: [-Wimplicit-function-declaration, -Wimplicit-int]
+<=dev-db/postgresql-16.0 wnoe-most # clang-16: [-Wimplicit-function-declaration, -Wint-conversion]
+<=dev-lang/moarvm-2023.02 wnoe-most # clang-16: [-Wincompatible-function-pointer-types]
+<=dev-libs/pkcs11-helper-1.29.0-r1 wnoe-most # clang-16: [-Wincompatible-function-pointer-types]
+<=dev-python/ruamel-yaml-clib-0.2.7 wnoe-most # clang-16: [-Wincompatible-function-pointer-types]
+<=net-misc/networkmanager-1.44.9999 wnoe-most # clang-16: [-Wincompatible-function-pointer-types]
+<=net-misc/whois-5.5.9999 cc # clang: error: 'malloc' attribute takes no arguments
+<=x11-apps/xcur2png-0.7.1 wnoe-most # clang-16: [-Wimplicit-int]

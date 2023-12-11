@@ -1,4 +1,0 @@
-WNOE_FLAGS="-Wno-error=implicit-function-declaration -Wno-error=incompatible-function-pointer-types -Wno-error=int-conversion"
-
-CFLAGS="${CFLAGS} ${WNOE_FLAGS}"
-CXXFLAGS="${CXXFLAGS} ${WNOE_FLAGS}"

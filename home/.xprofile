@@ -5,7 +5,8 @@ export XMODIFIERS=@im=fcitx
 export _JAVA_AWT_WM_NONREPARENTING=1
 
 #export LIBVA_DRIVER_NAME=nvidia
-#export LIBVA_DRIVERS_PATH=/usr/lib64/dri
+#export LIBVA_DRIVERS_PATH=/usr/lib64/va/drivers
+#export NVD_BACKEND=direct
 #export MOZ_DISABLE_RDD_SANDBOX=1
 
 #export GDK_SCALE=1.5
@@ -20,7 +21,7 @@ light-locker \
   --lock-on-lid &
 
 #xinput set-prop Elan\ Touchpad Device\ Enabled 0
-xremap --watch=device ~/.config/xremap/config.yml &
+xremap --watch=device,config ~/.config/xremap/config.yml &
 fcitx5 -rd
 
 while true; do
