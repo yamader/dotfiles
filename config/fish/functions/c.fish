@@ -11,6 +11,7 @@ function c
       case "*.cc";  set cmd c++
       case "*.d";   set cmd d
       case "*.tex"; set cmd lualatex
+      case "*.pdf"; set cmd cpdf
     end
   end
   $cmd $argv
