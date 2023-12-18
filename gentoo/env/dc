@@ -1,0 +1,2 @@
+LDCFLAGS="--gcc=clang --Xcc=-fuse-ld=mold"
+LDFLAGS="-Wl,-O2 -Wl,--as-needed"
