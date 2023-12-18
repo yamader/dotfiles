@@ -7,7 +7,6 @@ alias x="hexdump -C"
 
 # more
 alias cprof="p -m cProfile"
-alias dc="docker system prune"
 alias ei="eix"
 alias ei-="eix -c"
 alias eq="equery"

@@ -1,6 +1,10 @@
+*/* ldc2-1_35
 */gcc -lto -pgo # save the time
 */rust* rust-src rustfmt
 >=sys-devel/gcc-13 d go graphite
+dev-lang/dmd -selfhost static-libs tools
+dev-lang/ldc2 ABI_X86: 32
+dev-lang/ldc2 static-libs
 dev-lang/php cgi exif ffi fpm mysqli postgres sqlite threads zip
 dev-lang/rust LLVM_TARGETS: AArch64 WebAssembly
 dev-lang/rust rust-analyzer system-bootstrap system-llvm wasm

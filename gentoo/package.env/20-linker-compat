@@ -1,5 +1,4 @@
 */* mold
-*/*::dlang dc-ldflags # dmd: unrecognized switch '-fuse-ld=mold'
 <=dev-lang/python-3.12.9999 lld # mold: REL-type relocation table is not supported for this target
 <=dev-libs/libffi-3.4.9999 bfd # no version information available
 <=dev-util/rr-5.6.0-r4 lld # mold: unknown linker script token
@@ -7,9 +6,8 @@
 <=media-libs/libmpg123-1.32.9999 lld # mold: remocation can not be used; recompile with -fPIC
 <=media-sound/mpg123-1.32.9999 lld # mold: remocation can not be used; recompile with -fPIC
 <=net-libs/nodejs-20.9999 lld # mold: takes too long time
-<=sys-devel/binutils-2.41-r2 cc # (automake bug: can't use bfd) lld: error: version script assignment of 'LIBCTF_1.0' to symbol 'ctf_*' failed: symbol not defined
 <=sys-libs/libnvidia-container-1.9999 lld # mold: unknown linker script token
 <=x11-drivers/nvidia-drivers-545.9999 lld # mold does not support `-b binary`.
-dev-lang/dmd dc-ldflags # dmd: unrecognized switch '-fuse-ld=mold'
-dev-lang/ldc2 mold # -> */*::dlang
+<sys-devel/binutils-2.42 cc # lld: error: symbol not defined
+<sys-libs/binutils-libs-2.42 cc # lld: error: symbol not defined
 sys-kernel/* lld # mold: unknown linker

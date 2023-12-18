@@ -1,4 +1,0 @@
-*/* dmd-2_099
-dev-lang/dmd -dmd-2_099 static-libs tools
-dev-lang/ldc2 -dmd-2_099 ldc2-1_30 static-libs
-dev-lang/ldc2 ABI_X86: 32
