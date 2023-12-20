@@ -3,6 +3,8 @@ function e
   for i in $argv
     switch $i
       case "*.pdf"; set cmd zathura
+      case "*.html"; set cmd firefox
+      case "*.svg"; set cmd firefox
       case "*.png" "*.jpg";
         img2sixel $argv
         return
