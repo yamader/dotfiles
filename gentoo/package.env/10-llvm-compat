@@ -9,11 +9,11 @@
 <=dev-libs/libsecp256k1-0.4.0 cc # clang-16: unrecognized command-line option '-Wconditional-uninitialized', '-Wreserved-identifier'
 <=dev-util/bazel-6.2.0 cc # clang-16: [-Wgnu-offsetof-extensions]
 <=sci-libs/lapack-3.9999 cc # clang, mold: undefined symbol: VerifyFortran
-<=sys-apps/fwupd-efi-1.4 vanilla # llvm-objcopy: unknown argument '--section-alignment'
 <=sys-boot/gnu-efi-3.0.17 vanilla # to support 'efi-app-x86_64'
 <=sys-boot/refind-0.14.0.2-r1 vanilla # clang-16: unknown argument: '-fno-tree-loop-distribute-patterns'
 <=sys-boot/syslinux-6.04_pre1-r5 cc bfd # clang-16: unsupported option '--print-libgcc'
 <=sys-libs/libnvidia-container-1.13.9999 cc # clang-16: unknown argument: '-fplan9-extensions'
+<sys-apps/fwupd-efi-1.5 vanilla # llvm-objcopy: unknown argument '--section-alignment'
 dev-libs/leveldb libstdcxx # -> net-p2p/bitcoin-qt
 media-libs/opencv libstdcxx # cuda isn't compatible with libcxx
 net-p2p/bitcoin-core libstdcxx # -> sys-libs/db:4.8
