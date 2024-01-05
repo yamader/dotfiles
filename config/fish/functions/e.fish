@@ -3,9 +3,9 @@ function e
   for i in $argv
     switch $i
       case "*.pdf"; set cmd zathura
-      case "*.html"; set cmd firefox
-      case "*.svg"; set cmd firefox
-      case "*.xlsx"; set cmd libreoffice
+      case "*.svg"; set cmd feh
+      case "*.htm*"; set cmd firefox
+      case "*.xls*"; set cmd libreoffice
       case "*.png" "*.jpg";
         img2sixel $argv
         return
