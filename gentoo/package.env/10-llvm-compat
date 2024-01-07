@@ -1,16 +1,16 @@
 */*::crossdev vanilla
-<=app-admin/syslog-ng-4.4.0-r1 cc # clang: error: cannot initialize a parameter of type 'gssize *' (aka 'long *') with an rvalue of type 'void *'
-<=app-editors/helix-23.10-r2 wnoe-most # tree-sitter: clang-16: [-Wimplicit-int -Wimplicit-function-declaration]
-<=app-emulation/wine-proton-8.0.4 vanilla # bfd: undefined reference to `__register_frame_info', cc: unknown type name ‘WINBOOL’
-<=dev-java/openjdk-21.9999 vanilla # lld: recompile with -fPIC, cc: clang compiler is required
-<=dev-lang/gnu-apl-1.8 cc # libcxx11: invalid operands to binary expression; libstdcxx: lld: *.o is incompatible with elf32-i386
-<=dev-libs/ffcall-2.4-r1 cc # clang-16: changed section flags for .eh_frame, expected: 0x2
-<=dev-util/bazel-6.2.0 cc # clang-16: [-Wgnu-offsetof-extensions]
-<=net-misc/networkmanager-1.44.2 wnoe-most # clang-16: [-Wincompatible-function-pointer-types]
 <=net-p2p/bitcoin-core-26.0 libstdcxx # *sys-libs/db:4.8
-<=sys-apps/fwupd-efi-1.4-r1 vanilla # llvm-objcopy: invalid output format: 'efi-app-x86_64'
+<dev-java/openjdk-22 vanilla # lld: recompile with -fPIC, cc: clang compiler is required
 dev-libs/leveldb libstdcxx # *net-p2p/bitcoin-qt
 media-libs/opencv libstdcxx # libc++ is not supported on x86 system
 net-p2p/bitcoin-qt libstdcxx # *sys-libs/db:4.8
 sys-devel/gcc cc # mold: error: undefined symbol
 sys-libs/db:4.8 libstdcxx # not compatible with libcxx
+~app-admin/syslog-ng-4.4.0 cc # clang: error: cannot initialize a parameter of type 'gssize *' (aka 'long *') with an rvalue of type 'void *'
+~app-editors/helix-23.10 wnoe-most # tree-sitter: clang-16: [-Wimplicit-int -Wimplicit-function-declaration]
+~app-emulation/wine-proton-8.0.4 vanilla # bfd: undefined reference to `__register_frame_info', cc: unknown type name ‘WINBOOL’
+~dev-lang/gnu-apl-1.8 cc # libcxx11: invalid operands to binary expression; libstdcxx: lld: *.o is incompatible with elf32-i386
+~dev-libs/ffcall-2.4 cc # clang-16: changed section flags for .eh_frame, expected: 0x2
+~dev-util/bazel-6.2.0 cc # clang-16: [-Wgnu-offsetof-extensions]
+~net-misc/networkmanager-1.44.2 wnoe-most # clang-16: [-Wincompatible-function-pointer-types]
+~sys-apps/fwupd-efi-1.4 vanilla # llvm-objcopy: invalid output format: 'efi-app-x86_64'
