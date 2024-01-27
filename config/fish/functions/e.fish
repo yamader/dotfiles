@@ -9,6 +9,7 @@ function e
       case "*.png" "*.jpg";
         img2sixel $argv
         return
+      case "*.mp4"; set cmd mpv
     end
   end
   $cmd $argv 1>/dev/null 2>&1 &

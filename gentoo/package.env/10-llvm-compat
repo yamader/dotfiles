@@ -6,6 +6,7 @@ media-libs/opencv libstdcxx # libc++ is not supported on x86 system
 net-p2p/bitcoin-qt libstdcxx # *sys-libs/db:4.8
 sys-devel/gcc cc # mold: error: undefined symbol
 sys-libs/db:4.8 libstdcxx # not compatible with libcxx
+sys-process/btop libstdcxx # https://github.com/aristocratos/btop/issues/619
 ~app-admin/syslog-ng-4.4.0 cc # clang: error: cannot initialize a parameter of type 'gssize *' (aka 'long *') with an rvalue of type 'void *'
 ~app-editors/helix-23.10 wnoe-most # tree-sitter: clang-16: [-Wimplicit-int -Wimplicit-function-declaration]
 ~app-emulation/wine-proton-8.0.4 vanilla # bfd: undefined reference to `__register_frame_info', cc: unknown type name ‘WINBOOL’
