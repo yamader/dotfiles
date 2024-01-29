@@ -31,9 +31,11 @@ end
 
 # linker
 set -x LD_LIBRARY_PATH \
-  ~/SDK/neko \
-  /opt/dmd/linux/lib64 \
+  ~/.root/lib \
   $LD_LIBRARY_PATH
+set -x LD_RUN_PATH \
+  ~/.root/lib \
+  $LD_RUN_PATH
 
 # lang
 fish_add_path -P \
