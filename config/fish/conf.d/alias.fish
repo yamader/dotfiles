@@ -14,7 +14,7 @@ alias pq="portageq"
 alias pr="ps -aux | grep -P"
 alias serve="p -m http.server"
 alias si="img2sixel"
-alias uniq="awk '!seen[\$0]++'"
+alias unq="awk '!seen[\$0]++'"
 
 # wrap
 alias at="rlwrap at -u $USER"
