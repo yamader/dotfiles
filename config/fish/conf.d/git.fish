@@ -1,16 +1,26 @@
 alias ga="git add"
+alias gam="gc --amend"
 alias gb="git branch"
 alias gbs="git bisect"
 alias gc="git commit -S"
 alias gch="git checkout"
 alias gcp="git cherry-pick"
+alias gd--="gd HEAD^ HEAD"
+alias gd-="gd HEAD"
 alias gd="git diff"
+alias ge='gd $argv && git add'
 alias gl="git log"
 alias gm="git merge"
 alias gp="git push"
-alias gpf="git push --force-with-lease"
+alias gpf="gp --force-with-lease"
+alias gpo="gp origin"
 alias gr="git reset"
 alias grb="git rebase"
 alias grs="git restore"
 alias gs="git stash"
+alias gst="git status"
 alias gt="git tag"
+
+function gcm --wraps gc
+  gc -m "$argv"
+end
