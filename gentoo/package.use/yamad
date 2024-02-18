@@ -1,7 +1,7 @@
 */* LUA_TARGETS: luajit
 */* PYTHON_TARGETS: pypy3 python3_12
 */* RUBY_TARGETS: ruby33
-*/* nerdfonts
+*/* lsp nerdfonts
 app-crypt/gnupg tools
 app-crypt/rnp doc
 app-emulation/qemu -pin-upstream-blobs static-user spice usbredir virgl

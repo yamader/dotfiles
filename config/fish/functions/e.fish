@@ -6,7 +6,7 @@ function e
       case "*.svg"; set cmd feh
       case "*.htm*"; set cmd firefox
       case "*.xls*"; set cmd libreoffice
-      case "*.png" "*.jpg";
+      case "*.png" "*.jpg" "*.jpeg";
         img2sixel $argv
         return
       case "*.mp4"; set cmd mpv
