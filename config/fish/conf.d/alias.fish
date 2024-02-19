@@ -7,8 +7,8 @@ alias x="hexdump -C"
 
 # more
 alias cprof="p -m cProfile"
-alias ei="eix"
-alias ei-="eix -c"
+alias ei="eix -c"
+alias ei-="eix -e"
 alias eq="equery"
 alias pq="portageq"
 alias pr="ps -aux | grep -P"

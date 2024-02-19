@@ -18,6 +18,7 @@ alias gr="git reset"
 alias grb="git rebase"
 alias grs="git restore"
 alias gs="git stash"
+alias gss="gs show"
 alias gst="git status"
 alias gt="git tag"
 
