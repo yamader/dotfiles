@@ -1,8 +1,8 @@
 */* mold
 <dev-lang/python-3.13 lld # mold: REL-type relocation table is not supported for this target
 sys-kernel/* lld # mold: unknown linker
-~dev-libs/libffi-3.4.4 bfd # no version information available
-~gui-libs/gtk-4.12.4 lld # mold does not support `-b binary`
+~dev-libs/libffi-3.4.6 bfd # no version information available
+~gui-libs/gtk-4.12.5 lld # mold does not support `-b binary`
 ~media-sound/mpg123-base-1.32.3 lld # mold: remocation can not be used; recompile with -fPIC
 ~net-libs/nodejs-20.9.0 lld # mold: takes too long time
 ~sys-devel/binutils-2.41 cc # lld: error: symbol not defined
