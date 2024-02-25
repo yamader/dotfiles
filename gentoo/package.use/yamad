@@ -19,7 +19,7 @@ sys-apps/busybox -pam static
 sys-apps/util-linux tty-helpers
 sys-kernel/installkernel grub
 virtual/wine proton
-www-client/firefox -telemetry
+www-client/firefox pgo -telemetry
 www-client/w3m imlib
 www-servers/nginx NGINX_MODULES_HTTP: addition fancyindex
 x11-misc/nitrogen xinerama
