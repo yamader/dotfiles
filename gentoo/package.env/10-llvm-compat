@@ -12,6 +12,7 @@ sys-process/btop libstdcxx # https://github.com/aristocratos/btop/issues/619
 ~app-emulation/wine-proton-8.0.4 vanilla # bfd: undefined reference to `__register_frame_info', cc: unknown type name ‘WINBOOL’
 ~dev-lang/gnu-apl-1.8 cc # libcxx11: invalid operands to binary expression; libstdcxx: lld: *.o is incompatible with elf32-i386
 ~dev-libs/ffcall-2.4 cc # clang-16: changed section flags for .eh_frame, expected: 0x2
+~dev-libs/libx86-1.1 wnoe-most # clang-16: [-Wincompatible-function-pointer-types]
 ~dev-util/bazel-6.2.0 cc # clang-16: [-Wgnu-offsetof-extensions]
 ~net-misc/networkmanager-1.44.2 wnoe-most # clang-16: [-Wincompatible-function-pointer-types]
 ~sys-apps/fwupd-efi-1.4 vanilla # llvm-objcopy: invalid output format: 'efi-app-x86_64'
