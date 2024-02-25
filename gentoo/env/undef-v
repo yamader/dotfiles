@@ -1,0 +1,2 @@
+# for lld
+LDFLAGS="${LDFLAGS} -Wl,--undefined-version"
