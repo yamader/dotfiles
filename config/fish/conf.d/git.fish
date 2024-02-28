@@ -9,6 +9,7 @@ alias gd--="gd HEAD^ HEAD"
 alias gd-="gd HEAD"
 alias gd="git diff"
 alias ge='gd $argv && git add'
+alias gf="git fetch"
 alias gl="git log"
 alias gm="git merge"
 alias gp="git push"
