@@ -1,3 +1,4 @@
+*/* -gnome-online-accounts
 */* LUA_TARGETS: luajit
 */* PYTHON_TARGETS: python3_13 python3_12
 */* RUBY_TARGETS: ruby33
@@ -17,7 +18,6 @@ media-gfx/fontforge woff2
 media-video/vlc lua
 sys-apps/busybox -pam static
 sys-apps/util-linux tty-helpers
-sys-kernel/installkernel grub
 virtual/wine proton
 www-client/firefox pgo -telemetry
 www-client/w3m imlib
