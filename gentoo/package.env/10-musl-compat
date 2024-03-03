@@ -1,1 +1,2 @@
-app-emulation/qemu symbol64 # 8.2.1
+#app-emulation/qemu symbol64 # 8.2.1
+#dev-lang/spidermonkey x86_64-unknown-linux-musl # 115.8.0
