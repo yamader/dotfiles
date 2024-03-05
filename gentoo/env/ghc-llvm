@@ -1,0 +1,2 @@
+USE="${USE} ghcbootstrap"
+EXTRA_ECONF="${EXTRA_ECONF} CC_STAGE0=clang CC=clang AR=llvm-ar"

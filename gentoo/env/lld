@@ -1,2 +1,3 @@
-LD="ld.lld"
 LDFLAGS="${LDFLAGS} -fuse-ld=lld"
+LD="ld.lld"
+EXTRA_ECONF="${EXTRA_ECONF} LD=${LD}"
