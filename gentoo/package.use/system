@@ -1,6 +1,7 @@
 media-video/pipewire pipewire-alsa sound-server
 net-misc/networkmanager iwd
 sys-apps/fwupd logitech nvme synaptics tpm uefi
+sys-apps/openrc sysv-utils
 sys-auth/pambase -passwdqc
 sys-firmware/intel-microcode initramfs
 sys-kernel/gentoo-kernel-bin modules-compress
