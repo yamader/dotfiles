@@ -23,4 +23,5 @@ www-client/firefox pgo -telemetry
 www-client/w3m imlib
 www-servers/nginx NGINX_MODULES_HTTP: addition fancyindex
 x11-misc/nitrogen xinerama
+x11-misc/polybar ipc mpd network
 x11-misc/xscreensaver suid

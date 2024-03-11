@@ -1,20 +1,18 @@
 */*::crossdev vanilla
 <=net-p2p/bitcoin-core-26.0 libstdcxx # *sys-libs/db:4.8
 <dev-java/openjdk-22 vanilla # lld: recompile with -fPIC; gcc: clang compiler is required
+dev-libs/darts libstdcxx # libcxx-17: no member named 'random_shuffle' in namespace 'std'
 dev-libs/leveldb libstdcxx # *net-p2p/bitcoin-qt
 media-libs/opencv libstdcxx # libc++ is not supported on x86 system
 net-p2p/bitcoin-qt libstdcxx # *sys-libs/db:4.8
 sys-libs/db:4.8 libstdcxx # not compatible with libcxx
 sys-process/btop libstdcxx # https://github.com/aristocratos/btop/issues/619
-~app-editors/helix-23.10 wnoe-most # tree-sitter: clang-16: [-Wimplicit-int -Wimplicit-function-declaration]
-~app-emulation/qemu-8.2.1 wnoe-most # clang-16: [-Wimplicit-function-declaration]
 ~app-emulation/wine-proton-8.0.4 vanilla # bfd: undefined reference to `__register_frame_info'; gcc: unknown type name ‘WINBOOL’
+~app-i18n/libskk-1.0.5_p20210830 gcc # incompatible pointer to integer conversion returning 'void *' from a function with result
+~dev-embedded/arduino-ctags-20161123 gcc # __unused__
+~dev-haskell/glib-0.13.10.0 hc-gcc # _Noreturn void: The symbol `void' does not fit here.
+~dev-haskell/hashtables-1.3.1 hc-gcc # clang: sse4_2: argument to '__builtin_ia32_pcmpistrm128' must be a constant integer
 ~dev-lang/gnu-apl-1.8 gcc # libcxx11: invalid operands to binary expression; libstdcxx: lld: *.o is incompatible with elf32-i386
-~dev-libs/ffcall-2.4 gcc # clang-16: changed section flags for .eh_frame, expected: 0x2
-~dev-libs/libtsm-4.0.2 wnoe-most # clang-16: [-Wimplicit-function-declaration]
-~dev-libs/libx86-1.1 wnoe-most # clang-16: [-Wincompatible-function-pointer-types]
-~dev-libs/newt-0.52.24 wnoe-most # clang-16: [-Wimplicit-function-declaration]
-~net-misc/networkmanager-1.46.0 wnoe-most # clang-16: [-Wincompatible-function-pointer-types]
 ~sys-apps/fwupd-efi-1.4 vanilla # llvm-objcopy: invalid output format: 'efi-app-x86_64'
 ~sys-boot/gnu-efi-3.0.17 vanilla # llvm-objcopy: invalid output format: 'efi-app-x86_64'
 ~sys-firmware/seabios-1.16.0 vanilla # llvm-objdump: keyerror

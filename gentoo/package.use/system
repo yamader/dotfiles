@@ -6,3 +6,4 @@ sys-auth/pambase -passwdqc
 sys-firmware/intel-microcode initramfs
 sys-kernel/gentoo-kernel-bin modules-compress
 sys-kernel/installkernel grub
+sys-libs/argp-standalone static-libs # app-containers/crun

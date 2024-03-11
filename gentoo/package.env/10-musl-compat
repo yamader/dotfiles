@@ -1,2 +1,3 @@
-#app-emulation/qemu symbol64 # 8.2.1
-#dev-lang/spidermonkey x86_64-unknown-linux-musl # 115.8.0
+*/* musl-compat
+#~dev-lang/spidermonkey-115.8.0 x86_64-unknown-linux-musl
+~x11-apps/igt-gpu-tools-1.28 gnu-source # PATH_MAX

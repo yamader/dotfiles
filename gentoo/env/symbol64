@@ -1,2 +1,0 @@
-# for musl
-CFLAGS="${CFLAGS} -D_LARGEFILE64_SOURCE"

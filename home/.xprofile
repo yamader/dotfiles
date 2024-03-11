@@ -12,22 +12,18 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 #export GDK_SCALE=1.5
 #export GDK_DPI_SCALE=1.5
 
+#----------------------------------------------------------------#
+
 nitrogen --restore
-gentoo-pipewire-launcher &
 picom -b
-xscreensaver --no-splash &
-light-locker \
-  --lock-on-suspend \
-  --lock-on-lid &
+taffybar &
+
+deadd-notification-center &
+xss-lock xlock &
+#xscreensaver --no-splash &
 
 #xinput set-prop Elan\ Touchpad Device\ Enabled 0
-xremap --watch=device,config ~/.config/xremap/config.yml &
 fcitx5 -rd
 
-while true; do
-  {
-    _FREE=($(free -h --si))
-    xsetroot -name " MEM: ${_FREE[8]} / ${_FREE[7]} | BAT: $(cat /sys/class/power_supply/BAT0/capacity)% | $(date +%y-%m-%d\ %H:%M:%S) "
-  }&
-  sleep 1
-done &
+{ sleep 1
+  gentoo-pipewire-launcher & }&

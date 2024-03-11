@@ -1,0 +1,10 @@
+#!/sbin/openrc-run
+
+command="/usr/bin/xremap"
+command_args="--watch=device,config /home/yamad/.config/xremap/config.yml"
+command_background="true"
+pidfile="/run/xremap.pid"
+
+depend() {
+	need localmount # modules(uinput)
+}

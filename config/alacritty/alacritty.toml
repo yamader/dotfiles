@@ -1,0 +1,76 @@
+#[colors]
+#draw_bold_text_with_bright_colors = true
+#transparent_background_colors = true
+#
+#[colors.bright]
+#black = "#666666"
+#blue = "#7aa6da"
+#cyan = "#54ced6"
+#green = "#9ec400"
+#magenta = "#b77ee0"
+#red = "#ff3334"
+#white = "#2a2a2a"
+#yellow = "#e7c547"
+#
+#[colors.normal]
+#black = "#000000"
+#blue = "#7aa6da"
+#cyan = "#70c0ba"
+#green = "#b9ca4a"
+#magenta = "#c397d8"
+#red = "#d54e53"
+#white = "#424242"
+#yellow = "#e6c547"
+
+[colors.primary]
+background = "#000000"
+foreground = "#eaeaea"
+
+#[cursor]
+#blink_interval = 500
+#blink_timeout = 0
+#thickness = 0.25
+#unfocused_hollow = false
+
+[cursor.style]
+blinking = "On"
+shape = "underline"
+
+[env]
+TERM = "xterm-256color"
+WINIT_X11_SCALE_FACTOR = "1"
+
+[font]
+size = 9
+
+[font.normal]
+family = "UDEV Gothic 35NFLG"
+style = "Regular"
+
+[[hints.enabled]]
+command = "xdg-open"
+hyperlinks = true
+post_processing = true
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp:)[^\u0000-\u001F\u007F-<>\"\\s{-}\\^⟨⟩`]+"
+
+[hints.enabled.mouse]
+enabled = true
+mods = "Control"
+
+#[scrolling]
+#history = 100000
+#multiplier = 2
+
+#[shell]
+#program = "/bin/fish"
+
+[window]
+opacity = 0.8
+
+#[window.dimensions]
+#columns = 100
+#lines = 25
+
+#[window.padding]
+#x = 2
+#y = 2
