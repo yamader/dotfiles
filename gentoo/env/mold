@@ -1,3 +1,2 @@
 LDFLAGS="${LDFLAGS} -fuse-ld=mold"
 LD="mold"
-EXTRA_ECONF="${EXTRA_ECONF} LD=${LD}"
