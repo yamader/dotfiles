@@ -1,6 +1,8 @@
+*/* aconf-llvm
 */*::crossdev vanilla
 <=net-p2p/bitcoin-core-26.0 libstdcxx # *sys-libs/db:4.8
 <dev-java/openjdk-22 vanilla # lld: recompile with -fPIC; gcc: clang compiler is required
+<sys-devel/gcc-13 gcc # clang+libcxx compat
 dev-libs/darts libstdcxx # libcxx-17: no member named 'random_shuffle' in namespace 'std'
 dev-libs/leveldb libstdcxx # *net-p2p/bitcoin-qt
 media-libs/opencv libstdcxx # libc++ is not supported on x86 system

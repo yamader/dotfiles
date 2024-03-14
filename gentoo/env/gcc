@@ -2,3 +2,6 @@ CC="gcc"
 CXX="g++"
 
 LDFLAGS="-Wl,-O2 -Wl,--as-needed"
+
+# aconf-llvm
+CC_FOR_BUILD="gcc"
