@@ -3,9 +3,11 @@
 dev-lang/ghc lld # mold: unknown linker script token: SECTIONS
 net-libs/nodejs lld # wtf
 sys-kernel/* lld # mold: unknown linker
+www-client/firefox lld # lto: mold: refers to a discarded COMDAT section probably due to an ODR violation
 x11-drivers/nvidia-drivers lld # mold does not support `-b binary`.
 ~dev-libs/libffi-3.4.6 bfd # no version information available
 ~gui-libs/gtk-4.12.5 lld # mold does not support `-b binary`
+~media-video/pipewire-1.0.4 lld # mold: /usr/lib/libasound.so: incompatible file type: x86_64 is expected but got i386
 ~sci-libs/lapack-3.12.0 lld # mold: undefined symbol: VerifyFortran
 ~sys-boot/refind-0.14.0.2 lld # mold: unknown linker script token: OUTPUT_ARCH
 ~sys-libs/libnvidia-container-1.13.2 lld # mold: unknown linker script token
