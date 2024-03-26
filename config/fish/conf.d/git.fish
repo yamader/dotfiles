@@ -8,6 +8,7 @@ alias gcp="git cherry-pick"
 alias gd--="gd HEAD^ HEAD"
 alias gd-="gd HEAD"
 alias gd="git diff"
+alias gds="gd --staged"
 alias ge-='gd- $argv && git add'
 alias ge='gd $argv && git add'
 alias gf="git fetch"
