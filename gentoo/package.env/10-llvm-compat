@@ -1,4 +1,3 @@
-*/* aconf-llvm
 */*::crossdev vanilla
 <=net-p2p/bitcoin-core-26.0 libstdcxx # *sys-libs/db:4.8
 <dev-java/openjdk-22 vanilla # lld: recompile with -fPIC; gcc: clang compiler is required

@@ -24,6 +24,7 @@ alias gs="git stash"
 alias gss="gs show"
 alias gst="git status"
 alias gt="git tag"
+alias vge='v $argv && ge'
 
 function gcm --wraps gc
   gc -m "$argv"

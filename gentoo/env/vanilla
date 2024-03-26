@@ -14,6 +14,3 @@ STRINGS=""
 OBJDUMP=""
 READELF=""
 ADDR2LINE=""
-
-# aconf-llvm
-CC_FOR_BUILD=""
