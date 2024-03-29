@@ -1,7 +1,7 @@
 */*::crossdev vanilla
 <dev-java/openjdk-22 vanilla # lld: recompile with -fPIC; gcc: clang compiler is required
 <sys-devel/gcc-13 gcc # clang+libcxx compat
-=sys-libs/libnvidia-container-1.14* vanilla # clang: unknown argument: '-fplan9-extensions'; lld: version script assignment of 'NVC_1.0' to symbol '__ubsan_default_options' failed: symbol not defined
+=sys-libs/libnvidia-container-1.14* gcc bfd # clang: unknown argument: '-fplan9-extensions'; lld: version script assignment of 'NVC_1.0' to symbol '__ubsan_default_options' failed: symbol not defined
 dev-libs/darts libstdcxx # libcxx-17: no member named 'random_shuffle' in namespace 'std'
 media-libs/opencv libstdcxx # libc++ is not supported on x86 system
 sys-process/btop libstdcxx # https://github.com/aristocratos/btop/issues/619
