@@ -1,4 +1,5 @@
 =app-emulation/qemu-8.2* wnoe-most # [-Wimplicit-function-declaration]
+=gnome-base/gnome-shell-45* wnoe-most # [-Wimplicit-function-declaration]
 ~app-editors/helix-23.10 wnoe-most # tree-sitter: [-Wimplicit-int -Wimplicit-function-declaration]
 ~dev-lang/gnucobol-3.2 wnoe-most # [-Wimplicit-function-declaration]
 ~dev-lang/php-8.3.3 wnoe-most # [-Wincompatible-function-pointer-types]
