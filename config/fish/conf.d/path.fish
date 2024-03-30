@@ -10,7 +10,6 @@ set -x WASMER_DIR ~/.wasmer
 
 # sdk
 set -x ANDROID_HOME ~/SDK/Android
-set -x IDF_PATH /usr/share/esp-idf
 set -x PICO_SDK_PATH ~/SDK/pico-sdk
 
 # tools

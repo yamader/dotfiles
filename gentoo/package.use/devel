@@ -1,5 +1,7 @@
 */gcc -lto -pgo # save the time
 */rust* rust-src rustfmt
+dev-embedded/esp-idf riscv32
+dev-embedded/esptool PYTHON_SINGLE_TARGET: -python3_11 python3_12
 dev-lang/php cgi cli exif ffi fpm mysqli postgres sqlite threads zip
 dev-lang/rust LLVM_TARGETS: AArch64 WebAssembly
 dev-lang/rust rust-analyzer system-bootstrap system-llvm wasm
