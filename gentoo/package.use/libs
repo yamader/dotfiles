@@ -1,4 +1,2 @@
-dev-lang/python tk
-dev-libs/openssl static-libs
-sys-libs/libcxx static-libs
-sys-libs/ncurses static-libs
+#sys-libs/libcxx static-libs
+#sys-libs/ncurses static-libs

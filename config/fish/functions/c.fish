@@ -11,6 +11,9 @@ function c
       case "*.cc";  set cmd c++
       case "*.d";   set cmd d
       case "*.tex"; set cmd lualatex
+      case "*.pdf"; set cmd cpdf
+      case "*.zip"; set cmd unzip
+      case "*.tar.*"; set cmd tar xpvf
     end
   end
   $cmd $argv

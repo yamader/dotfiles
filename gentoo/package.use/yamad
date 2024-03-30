@@ -1,25 +1,26 @@
+*/* -gnome-online-accounts
 */* LUA_TARGETS: luajit
-*/* PYTHON_TARGETS: pypy3 python3_12
-*/* RUBY_TARGETS: ruby32
-*/* nerdfonts
+*/* PYTHON_TARGETS: python3_13 python3_12
+*/* RUBY_TARGETS: ruby33
+*/* lsp nerdfonts
 app-crypt/gnupg tools
 app-crypt/rnp doc
 app-emulation/qemu -pin-upstream-blobs static-user spice usbredir virgl
 app-emulation/qemu QEMU_SOFTMMU_TARGETS: aarch64 arm ppc64
 app-emulation/qemu QEMU_USER_TARGETS: aarch64 arm ppc64
+app-i18n/fcitx-meta skk rime
 app-text/texlive extra games science
 dev-libs/nss utils
 dev-util/stylua lua52 lua53 lua54 luau
 gnome-base/gvfs mtp
-gui-apps/xremap -X hypr
 media-gfx/fontforge woff2
 media-video/vlc lua
 sys-apps/busybox -pam static
 sys-apps/util-linux tty-helpers
-sys-kernel/installkernel-gentoo grub
 virtual/wine proton
-www-client/firefox -telemetry
+www-client/firefox pgo -telemetry
 www-client/w3m imlib
 www-servers/nginx NGINX_MODULES_HTTP: addition fancyindex
 x11-misc/nitrogen xinerama
+x11-misc/polybar ipc mpd network
 x11-misc/xscreensaver suid

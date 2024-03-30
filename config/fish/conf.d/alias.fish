@@ -1,20 +1,21 @@
 # single
 alias l="la"
-alias p="ipython --no-confirm-exit"
+alias p="bpython"
 alias s="subl"
 alias v="nvim"
 alias x="hexdump -C"
 
 # more
 alias cprof="p -m cProfile"
-alias dc="docker system prune"
-alias ei="eix"
-alias ei-="eix -c"
+alias ei="eix -c"
+alias ei-="eix -e"
 alias eq="equery"
+alias lv="NVIM_APPNAME=lazyvim nvim"
 alias pq="portageq"
 alias pr="ps -aux | grep -P"
 alias serve="p -m http.server"
 alias si="img2sixel"
+alias unq='awk \'!a[$0]++\''
 
 # wrap
 alias at="rlwrap at -u $USER"

@@ -1,0 +1,3 @@
+*/* musl-compat
+#=dev-lang/spidermonkey-115* x86_64-unknown-linux-musl
+~x11-apps/igt-gpu-tools-1.28 gnu-source # PATH_MAX

@@ -1,6 +1,6 @@
 function d
   if count $argv > /dev/null
-    rdmd $RDMDFLAGS $argv
+    rdmd $argv
   else
     drepl
   end

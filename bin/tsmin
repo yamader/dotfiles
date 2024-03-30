@@ -1,0 +1,9 @@
+#!/usr/bin/env bun
+
+import { createMinifier } from "dts-minify"
+import * as ts from "typescript"
+
+var src = ""
+for await (const line of console) src += line
+
+console.log(createMinifier(ts).minify(src))
