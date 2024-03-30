@@ -1,4 +1,5 @@
 alias ga="git add"
+alias gaf="ga --force"
 alias gam="gc --amend"
 alias gb="git branch"
 alias gbs="git bisect"
@@ -11,6 +12,7 @@ alias gd="git diff"
 alias gds="gd --staged"
 alias ge-='gd- $argv && git add'
 alias ge='gd $argv && git add'
+alias gef='gd $argv && git add --force'
 alias gf="git fetch"
 alias gl="git log"
 alias gm="git merge"

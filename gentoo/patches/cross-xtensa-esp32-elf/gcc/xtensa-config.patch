@@ -63,10 +63,10 @@
 +#define XCHAL_HAVE_FP_RSQRT		1
  
 +#undef XCHAL_HAVE_FP_POSTINC
-+#define XCHAL_HAVE_FP_POSTINC		1
++#define XCHAL_HAVE_FP_POSTINC           1
 +
 +#undef XCHAL_HAVE_DFP_ACCEL
-+#define XCHAL_HAVE_DFP_ACCEL		0
++#define XCHAL_HAVE_DFP_ACCEL		1
 +/* For backward compatibility */
  #undef XCHAL_HAVE_DFP_accel
 -#define XCHAL_HAVE_DFP_accel			0
@@ -122,28 +122,19 @@
  
  
  #undef XCHAL_HAVE_DEBUG
-@@ -160,7 +165,7 @@
- 
- 
- #undef XCHAL_MAX_INSTRUCTION_SIZE
--#define XCHAL_MAX_INSTRUCTION_SIZE	3
-+#define XCHAL_MAX_INSTRUCTION_SIZE	4
- 
- #undef XCHAL_INST_FETCH_WIDTH
- #define XCHAL_INST_FETCH_WIDTH		4
 @@ -173,4 +178,15 @@
  #define XTHAL_ABI_WINDOWED		0
  #define XTHAL_ABI_CALL0			1
  
 +
 +#undef XCHAL_M_STAGE
-+#define XCHAL_M_STAGE			2
++#define XCHAL_M_STAGE			3
 +
 +#undef XTENSA_MARCH_LATEST
-+#define XTENSA_MARCH_LATEST		270012
++#define XTENSA_MARCH_LATEST		260003
 +
 +#undef XTENSA_MARCH_EARLIEST
-+#define XTENSA_MARCH_EARLIEST		270012
++#define XTENSA_MARCH_EARLIEST		260003
 +
 +
  #endif /* !XTENSA_CONFIG_H */
