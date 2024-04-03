@@ -1,0 +1,10 @@
+#!/sbin/openrc-run
+
+command="/usr/bin/xremap"
+command_args="--watch=device,config ${config}"
+command_background="true"
+pidfile="/run/xremap.pid"
+
+depend() {
+	need localmount # modules(uinput)
+}
