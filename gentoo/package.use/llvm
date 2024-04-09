@@ -1,2 +1,0 @@
-net-misc/networkmanager -lto # Clang does not support -flto-partition
-sys-devel/llvm binutils-plugin # python/firefox: clang: LLVMgold.so: No such file or directory
