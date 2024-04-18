@@ -13,6 +13,7 @@ app-text/texlive extra games science
 dev-libs/nss utils
 dev-util/stylua lua52 lua53 lua54 luau
 gnome-base/gvfs mtp
+media-fonts/noto-emoji icons
 sys-apps/busybox -pam static
 sys-apps/util-linux tty-helpers
 virtual/wine proton
@@ -22,3 +23,4 @@ www-servers/nginx NGINX_MODULES_HTTP: addition fancyindex
 x11-misc/nitrogen xinerama
 x11-misc/polybar ipc mpd network
 x11-misc/xscreensaver suid
+x11-misc/xsecurelock mpv xscreensaver

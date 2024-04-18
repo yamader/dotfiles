@@ -16,3 +16,4 @@ sys-process/btop libstdcxx # https://github.com/aristocratos/btop/issues/619
 ~gui-wm/hyprland-0.36.0 libstdcxx # not compatible with clang+libcxx
 ~sys-boot/gnu-efi-3.0.17 vanilla # llvm-objcopy: invalid output format: 'efi-app-x86_64'
 ~sys-firmware/seabios-1.16.0 vanilla # llvm-objdump: keyerror
+~x11-misc/xsecurelock-1.9.0 gcc # clang: embedding a #include directive within macro arguments is not supported

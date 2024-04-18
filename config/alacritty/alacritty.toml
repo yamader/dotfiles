@@ -1,0 +1,26 @@
+import = ["~/.config/alacritty/theme.toml"]
+
+[env]
+WINIT_X11_SCALE_FACTOR = "1.0"
+
+[window]
+dimensions = { columns = 80, lines = 24 }
+opacity = 0.95
+
+[scrolling]
+history = 100000
+
+[font]
+normal.family = "Firge"
+size = 9
+
+[cursor.style]
+shape = "Underline"
+blinking = "On"
+
+[[hints.enabled]]
+command = "xdg-open"
+hyperlinks = true
+post_processing = true
+mouse = { mods = "Control", enabled = true }
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"
