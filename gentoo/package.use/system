@@ -4,6 +4,7 @@ net-misc/networkmanager iwd
 sys-apps/fwupd logitech nvme synaptics tpm uefi
 sys-apps/openrc sysv-utils
 sys-auth/pambase -passwdqc
+sys-devel/llvm binutils-plugin # spidermonkey:115: LLVMgold.so: No such file or directory
 sys-firmware/intel-microcode initramfs
 sys-kernel/gentoo-kernel-bin modules-compress
 sys-kernel/installkernel dracut grub

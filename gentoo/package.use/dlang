@@ -1,7 +1,0 @@
-*/* ldc2-1_36
-<=dev-lang/dmd-2.106.1 dmd-2_106 -ldc2-1_36
-<=dev-util/dcd-0.15.2 dmd-2_106 -ldc2-1_36
-<=dev-util/dfmt-0.15.1 dmd-2_106 -ldc2-1_36
-<=dev-util/dscanner-0.15.2 dmd-2_106 -ldc2-1_36
-dev-lang/dmd -selfhost static-libs tools
-dev-lang/ldc2 static-libs ABI_X86: 32
