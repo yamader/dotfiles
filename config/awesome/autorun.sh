@@ -1,6 +1,6 @@
 #!/bin/sh
 
-gentoo-pipewire-launcher &
+(sleep 3; gentoo-pipewire-launcher)&
 xss-lock xsecurelock &
 
 fcitx5 -rd
