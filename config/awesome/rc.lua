@@ -230,12 +230,6 @@ globalkeys = gears.table.join(
     awful.screen.focus_relative(-1)
   end, { description = "focus the previous screen", group = "screen" }),
   awful.key({ modkey }, "u", awful.client.urgent.jumpto, { description = "jump to urgent client", group = "client" }),
-  awful.key({ modkey }, "Tab", function()
-    awful.client.focus.history.previous()
-    if client.focus then
-      client.focus:raise()
-    end
-  end, { description = "go back", group = "client" }),
 
   -- Standard program
   awful.key({ modkey, "Shift" }, "Return", function()
@@ -244,7 +238,13 @@ globalkeys = gears.table.join(
   awful.key({ modkey, "Shift" }, "s", function()
     awful.spawn { "flameshot", "gui" }
   end, { description = "screenshot", group = "launcher" }),
+  awful.key({}, "Print", function()
+    awful.spawn { "flameshot", "gui" }
+  end, { description = "screenshot", group = "launcher" }),
   awful.key({ modkey, "Control" }, "s", function()
+    awful.spawn { "flameshot", "screen" }
+  end, { description = "screenshot (screen)", group = "launcher" }),
+  awful.key({ "Control" }, "Print", function()
     awful.spawn { "flameshot", "screen" }
   end, { description = "screenshot (screen)", group = "launcher" }),
   awful.key({ modkey, "Control" }, "r", awesome.restart, { description = "reload awesome", group = "awesome" }),
@@ -431,21 +431,12 @@ awful.rules.rules = {
   {
     rule_any = {
       instance = {
-        "DTA", -- Firefox addon DownThemAll.
         "copyq", -- Includes session name in class.
         "pinentry",
       },
       class = {
+        "Alacritty",
         "Arandr",
-        "Blueman-manager",
-        "Gpick",
-        "Kruler",
-        "MessageWin", -- kalarm.
-        "Sxiv",
-        "Tor Browser", -- Needs a fixed window size to avoid fingerprinting by screen size.
-        "Wpa_gui",
-        "veromix",
-        "xtightvncviewer",
       },
 
       -- Note that the name property shown in xprop might be set slightly after creation of the client
@@ -454,8 +445,6 @@ awful.rules.rules = {
         "Event Tester", -- xev.
       },
       role = {
-        "AlarmWindow", -- Thunderbird's calendar.
-        "ConfigManager", -- Thunderbird's about:config.
         "pop-up", -- e.g. Google Chrome's (detached) Developer Tools.
       },
     },
