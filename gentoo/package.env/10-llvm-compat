@@ -1,6 +1,6 @@
 */*::crossdev vanilla
 <dev-java/openjdk-22 vanilla # lld: recompile with -fPIC; gcc: clang compiler is required
-<sys-apps/fwupd-efi-1.6 vanilla # llvm-objcopy: invalid output format: 'efi-app-x86_64'
+<sys-apps/fwupd-efi-1.7 vanilla # llvm-objcopy: invalid output format: 'efi-app-x86_64'
 <sys-boot/gnu-efi-3.1 vanilla # llvm-objcopy: invalid output format: 'efi-app-x86_64'
 <sys-devel/gcc-14 gcc # gdc
 =media-sound/easyeffects-7.1* libstdcxx # libcxx-18.1.4: error
