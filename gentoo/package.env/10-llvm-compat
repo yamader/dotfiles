@@ -1,6 +1,7 @@
 */*::crossdev vanilla
 <dev-java/openjdk-22 vanilla # lld: recompile with -fPIC; gcc: clang compiler is required
 <sys-apps/fwupd-efi-1.6 vanilla # llvm-objcopy: invalid output format: 'efi-app-x86_64'
+<sys-boot/gnu-efi-3.1 vanilla # llvm-objcopy: invalid output format: 'efi-app-x86_64'
 <sys-devel/gcc-14 gcc # gdc
 =media-sound/easyeffects-7.1* libstdcxx # libcxx-18.1.4: error
 =sys-libs/libnvidia-container-1.14* gcc bfd # clang: unknown argument: '-fplan9-extensions'; lld: version script assignment of 'NVC_1.0' to symbol '__ubsan_default_options' failed: symbol not defined
@@ -15,6 +16,5 @@ sys-process/btop libstdcxx # https://github.com/aristocratos/btop/issues/619
 ~dev-lang/gnu-apl-1.8 gcc # libcxx11: invalid operands to binary expression; libstdcxx: lld: *.o is incompatible with elf32-i386
 ~dev-libs/libgudev-238 gcc # clang: unknown argument: '-export-dynamic'
 ~gui-wm/hyprland-0.36.0 libstdcxx # not compatible with clang+libcxx
-~sys-boot/gnu-efi-3.0.17 vanilla # llvm-objcopy: invalid output format: 'efi-app-x86_64'
 ~sys-firmware/seabios-1.16.0 vanilla # llvm-objdump: keyerror
 ~x11-misc/xsecurelock-1.9.0 gcc # clang: embedding a #include directive within macro arguments is not supported

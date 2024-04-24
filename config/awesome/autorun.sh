@@ -4,4 +4,4 @@
 xss-lock xsecurelock &
 
 fcitx5 -rd
-picom -b
+picom -b #--legacy-backends
