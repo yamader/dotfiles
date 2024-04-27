@@ -1,4 +1,3 @@
-<sci-libs/opencascade-7.9 -ffmpeg # deps too old
 gnome-base/gnome -extras
 media-video/pipewire pipewire-alsa sound-server
 net-misc/networkmanager iwd
