@@ -207,6 +207,8 @@ end)
 -- }}}
 
 -- {{{ Mouse bindings
+awful.mouse.snap.edge_enabled = false
+
 root.buttons(gears.table.join(awful.button({}, 4, awful.tag.viewprev), awful.button({}, 5, awful.tag.viewnext)))
 -- }}}
 
@@ -352,9 +354,9 @@ clientkeys = gears.table.join(
     c:move_to_screen()
   end, { description = "move to screen", group = "client" }),
   awful.key({ modkey }, "t", function(c)
-    awful.client.floating.toggle(c)
+    c.floating = false
     c:lower()
-  end, { description = "toggle floating", group = "client" })
+  end, { description = "tiling", group = "client" })
 )
 
 -- Bind all key numbers to tags.
