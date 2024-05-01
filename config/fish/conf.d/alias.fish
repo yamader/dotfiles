@@ -20,6 +20,7 @@ alias unq='awk \'!a[$0]++\''
 # wrap
 alias at="rlwrap at -u $USER"
 alias ddox="dub run -q ddox --"
+alias dig="drill"
 alias dpp="dub run -q dpp --"
 alias drepl="dub run -q drepl --"
 alias gosh="rlwrap gosh"
