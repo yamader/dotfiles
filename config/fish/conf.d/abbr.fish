@@ -3,6 +3,7 @@ abbr -a rep --set-cursor ~/Docs/report/%
 
 abbr -a dl --set-cursor ~/DL/%
 abbr -a dv --set-cursor ~/dev/%
+abbr -a pl --set-cursor ~/playground/%
 abbr -a rp --set-cursor ~/repos/%
 abbr -a svc --set-cursor ~/service/%
 
