@@ -4,6 +4,7 @@
 <sys-boot/gnu-efi-3.1 vanilla # llvm-objcopy: invalid output format: 'efi-app-x86_64'
 <sys-devel/gcc-14 gcc # gdc
 =sys-libs/libnvidia-container-1.14* gcc bfd # clang: unknown argument: '-fplan9-extensions'; lld: version script assignment of 'NVC_1.0' to symbol '__ubsan_default_options' failed: symbol not defined
+dev-libs/elfutils libstdcxx # libcxx-18: <stack>: source file is not valid UTF-8
 ~app-emulation/wine-proton-8.0.4 vanilla # bfd: undefined reference to `__register_frame_info'; gcc: unknown type name ‘WINBOOL’
 ~app-i18n/libskk-1.0.5_p20210830 gcc # incompatible pointer to integer conversion returning 'void *' from a function with result
 ~dev-embedded/arduino-ctags-20161123 gcc # __unused__
