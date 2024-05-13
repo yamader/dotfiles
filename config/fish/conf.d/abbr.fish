@@ -8,4 +8,4 @@ abbr -a rp --set-cursor ~/repos/%
 abbr -a svc --set-cursor ~/service/%
 
 abbr -a m doas emerge
-abbr -a m1 doas emerge -1 -j1
+abbr -a mm doas emerge -1 -j1
