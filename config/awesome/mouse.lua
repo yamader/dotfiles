@@ -22,5 +22,9 @@ clientbuttons = gears.table.join(
     c.floating = true
     c:geometry(geo)
     awful.mouse.client.resize(c)
+  end),
+  awful.button({ Mod }, 2, function(c)
+    c.floating = false
+    c:lower()
   end)
 )
