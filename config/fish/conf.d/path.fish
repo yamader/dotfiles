@@ -45,7 +45,7 @@ fish_add_path -P \
 
 # sdk
 fish_add_path -P \
-  ~/SDK/FPGA/intel_lite_211/quartus/bin \
+  ~/SDK/FPGA/intel_lite_231/quartus/bin \
   ~/SDK/flutter/bin \
   ~/SDK/haxe \
   ~/SDK/neko \
