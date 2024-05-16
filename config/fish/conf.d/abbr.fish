@@ -1,3 +1,11 @@
+#---------------  utils  ----------------
+
+abbr -a b --set-cursor nohup % \&
+abbr -a m doas emerge
+abbr -a mm doas emerge -1 -j1
+
+#---------------  dirs  ----------------
+
 abbr -a blog --set-cursor ~/Docs/blog/src/content/blog/%
 abbr -a rep --set-cursor ~/Docs/report/%
 
@@ -6,6 +14,3 @@ abbr -a dv --set-cursor ~/dev/%
 abbr -a pl --set-cursor ~/playground/%
 abbr -a rp --set-cursor ~/repos/%
 abbr -a svc --set-cursor ~/service/%
-
-abbr -a m doas emerge
-abbr -a mm doas emerge -1 -j1

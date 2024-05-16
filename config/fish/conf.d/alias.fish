@@ -1,6 +1,6 @@
 # single
 alias l="la"
-alias p="bpython"
+alias p="python3"
 alias s="subl"
 alias v="nvim"
 alias x="hexdump -C"

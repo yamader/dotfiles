@@ -35,9 +35,12 @@ globalkeys = gears.table.join(
   awful.key({ Mod }, "u", awful.client.urgent.jumpto, { description = "jump to urgent client", group = "client" }),
 
   -- launcher
-  awful.key({ Mod, "Shift" }, "Return", function()
+  awful.key({ Mod }, "Return", function()
     awful.spawn(Term)
   end, { description = "open a terminal", group = "launcher" }),
+  awful.key({ Mod, "Shift" }, "Return", function()
+    awful.spawn(Term .. " --class term")
+  end, { description = "open a terminal (tile)", group = "launcher" }),
   awful.key({ Mod }, "p", function()
     menubar.show()
   end, { description = "show the menubar", group = "launcher" }),
@@ -147,6 +150,9 @@ end
 root.keys(globalkeys)
 
 clientkeys = gears.table.join(
+  awful.key({ Mod, "Control" }, "Return", function(c)
+    c:swap(awful.client.getmaster())
+  end, { description = "move to master", group = "client" }),
   awful.key({ Mod, "Control" }, "m", function(c)
     c.maximized_vertical = not c.maximized_vertical
     c:raise()
@@ -167,9 +173,6 @@ clientkeys = gears.table.join(
     c.ontop = not c.ontop
   end, { description = "toggle keep on top", group = "client" }),
 
-  awful.key({ Mod }, "Return", function(c)
-    c:swap(awful.client.getmaster())
-  end, { description = "move to master", group = "client" }),
   awful.key({ Mod }, "m", function(c)
     c.maximized = not c.maximized
     c:raise()
