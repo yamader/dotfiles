@@ -1,0 +1,29 @@
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+
+export _JAVA_AWT_WM_NONREPARENTING=1
+
+#export LIBVA_DRIVER_NAME=nvidia
+#export LIBVA_DRIVERS_PATH=/usr/lib64/va/drivers
+#export NVD_BACKEND=direct
+#export MOZ_DISABLE_RDD_SANDBOX=1
+
+#export GDK_SCALE=1.5
+#export GDK_DPI_SCALE=1.5
+
+#----------------------------------------------------------------#
+
+nitrogen --restore
+picom -b
+taffybar &
+
+deadd-notification-center &
+xss-lock xlock &
+#xscreensaver --no-splash &
+
+#xinput set-prop Elan\ Touchpad Device\ Enabled 0
+fcitx5 -rd
+
+{ sleep 1
+  gentoo-pipewire-launcher & }&

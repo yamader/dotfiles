@@ -1,6 +1,6 @@
 # single
 alias l="la"
-alias p="bpython"
+alias p="python3"
 alias s="subl"
 alias v="nvim"
 alias x="hexdump -C"
@@ -11,6 +11,7 @@ alias ei="eix -c"
 alias ei-="eix -e"
 alias eq="equery"
 alias lv="NVIM_APPNAME=lazyvim nvim"
+alias mp="mkdir -p"
 alias pq="portageq"
 alias pr="ps -aux | grep -P"
 alias serve="p -m http.server"
@@ -20,6 +21,7 @@ alias unq='awk \'!a[$0]++\''
 # wrap
 alias at="rlwrap at -u $USER"
 alias ddox="dub run -q ddox --"
+alias dig="drill"
 alias dpp="dub run -q dpp --"
 alias drepl="dub run -q drepl --"
 alias gosh="rlwrap gosh"

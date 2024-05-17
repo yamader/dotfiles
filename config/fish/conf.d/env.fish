@@ -1,5 +1,5 @@
 # global
-set -x EDITOR vim
+set -x EDITOR nvim
 set -x LC_COLLATE C
 
 # dev

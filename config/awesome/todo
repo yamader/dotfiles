@@ -1,0 +1,3 @@
+- fix alt-enter behavior
+- impl ^J ^K to move window to other screen
+- Alt+J Alt+K no raise

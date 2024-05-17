@@ -1,6 +1,12 @@
 modmap:
-  - remap:
+  - name: nocaps
+    remap:
       CapsLock: Ctrl_L
   - name: SandS
     remap:
       Space: [Shift_L, Space]
+  - name: JP Mac
+    remap:
+      Yen: Grave
+      Hanja: Alt_L
+      Hangeul: [Shift_L, Space]

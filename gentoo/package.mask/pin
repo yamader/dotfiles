@@ -1,2 +1,2 @@
->=dev-lang/rust-bin-1.74.0
+>dev-lang/rust-bin-1.76.0
 sys-kernel/cachyos-sources
