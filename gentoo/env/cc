@@ -1,4 +1,4 @@
-CC="gcc"
-CXX="g++"
+CC="cc"
+CXX="c++"
 
 LDFLAGS="-Wl,-O2 -Wl,--as-needed"
