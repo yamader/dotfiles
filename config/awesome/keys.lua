@@ -187,6 +187,5 @@ clientkeys = gears.table.join(
   end, { description = "move to screen", group = "client" }),
   awful.key({ Mod }, "t", function(c)
     c.floating = false
-    c:lower()
   end, { description = "tiling", group = "client" })
 )
