@@ -1,3 +1,4 @@
+<mail-client/thunderbird-116 libstdcxx # linker: undefined symbol: std::__1
 <media-sound/easyeffects-7.2 libstdcxx # libcxx-18.1.4: error
 <x11-libs/wxGTK-3.1 cxx14 # auto_ptr
 dev-libs/darts libstdcxx # libcxx-18: no member named 'random_shuffle' in namespace 'std'
