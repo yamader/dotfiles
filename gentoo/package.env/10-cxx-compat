@@ -1,3 +1,4 @@
+<games-util/xboxdrv-0.9 no1z # auto_ptr
 <mail-client/thunderbird-116 libstdcxx # linker: undefined symbol: std::__1
 <media-sound/easyeffects-7.2 libstdcxx # libcxx-18.1.4: error
 <x11-libs/wxGTK-3.1 cxx14 # auto_ptr
