@@ -17,6 +17,7 @@ alias pr="ps -aux | grep -P"
 alias serve="p -m http.server"
 alias si="img2sixel"
 alias unq='awk \'!a[$0]++\''
+alias v-='v "$argv" && c'
 
 # wrap
 alias at="rlwrap at -u $USER"
