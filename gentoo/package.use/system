@@ -1,3 +1,4 @@
+dev-util/ccache -static-c++
 gnome-base/gnome -extras
 media-video/pipewire pipewire-alsa sound-server
 net-misc/networkmanager iwd
