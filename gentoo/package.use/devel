@@ -1,6 +1,7 @@
 */gcc -lto -pgo # save the time
 */rust* rust-src rustfmt
 dev-lang/dmd static-libs tools
+dev-lang/ghc ghcbootstrap
 dev-lang/ldc2 static-libs ABI_X86: 32
 dev-lang/php cgi cli exif ffi fpm mysqli postgres sqlite threads zip
 dev-lang/rust LLVM_TARGETS: AArch64 WebAssembly
