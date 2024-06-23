@@ -1,5 +1,6 @@
 */* -gnome-online-accounts
 */* lsp nerdfonts
+app-alternatives/awk -gawk mawk
 app-crypt/gnupg tools
 app-crypt/rnp doc
 app-emulation/qemu -pin-upstream-blobs static-user spice usbredir virgl
@@ -7,7 +8,7 @@ app-emulation/qemu QEMU_SOFTMMU_TARGETS: aarch64 arm ppc64
 app-emulation/qemu QEMU_USER_TARGETS: aarch64 arm ppc64
 app-i18n/fcitx-meta skk rime
 app-text/texlive extra games graphics luatex music science
-#dev-lang/python jit
+dev-lang/python -gil jit
 dev-libs/nss utils
 dev-util/stylua lua52 lua53 lua54 luau
 gnome-base/gvfs mtp
