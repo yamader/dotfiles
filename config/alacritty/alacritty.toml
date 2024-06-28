@@ -15,6 +15,10 @@ history = 100000
 normal.family = "Firge"
 size = 9
 
+[bell]
+duration = 80
+color = "#444444"
+
 [cursor.style]
 shape = "Underline"
 blinking = "On"
