@@ -1,13 +1,14 @@
 <sys-devel/clang-19.0.0.9999 **
 <sys-devel/clang-common-19.0.0.9999 **
 <sys-devel/clang-runtime-19.0.0.9999 **
-<sys-devel/gcc-15.0.9999 **
 <sys-devel/lld-19.0.0.9999 **
 <sys-devel/llvm-19.0.0.9999 **
 <sys-libs/compiler-rt-19.0.0.9999 **
+<sys-libs/compiler-rt-sanitizers-19.0.0.9999 **
 <sys-libs/libcxx-19.0.0.9999 **
 <sys-libs/libcxxabi-19.0.0.9999 **
 <sys-libs/libomp-19.0.0.9999 **
+=sys-devel/gcc-15.0.0* **
 ~sys-devel/clang-toolchain-symlinks-19 **
 ~sys-devel/lld-toolchain-symlinks-19 **
 ~sys-devel/llvm-toolchain-symlinks-19 **
