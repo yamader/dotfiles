@@ -154,7 +154,9 @@ clientkeys = gears.table.join(
   end, { description = "close", group = "client" }),
   awful.key({ Mod, "Shift" }, "f", function(c)
     c.fullscreen = not c.fullscreen
-    c.ontop = c.floating
+    if not c.fullscreen then
+      c.ontop = c.floating
+    end
   end, { description = "toggle fullscreen", group = "client" }),
   awful.key({ Mod }, "t", function(c)
     c.floating = false
