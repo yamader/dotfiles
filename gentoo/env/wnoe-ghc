@@ -1,0 +1,2 @@
+HCFLAGS="${HCFLAGS}
+         -Wno-error=x-partial"

@@ -1,0 +1,11 @@
+--- a/library/NeatInterpolation/Prelude.hs
++++ b/library/NeatInterpolation/Prelude.hs
+@@ -28,7 +28,7 @@
+ import Data.Fixed as Exports
+ import Data.Foldable as Exports hiding (toList)
+ import Data.Function as Exports hiding (id, (.))
+-import Data.Functor as Exports
++import Data.Functor as Exports hiding (unzip)
+ import Data.Functor.Identity as Exports
+ import Data.Int as Exports
+ import Data.IORef as Exports
