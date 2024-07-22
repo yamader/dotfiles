@@ -8,6 +8,7 @@
 <sys-libs/libcxx-19.0.0.9999 **
 <sys-libs/libcxxabi-19.0.0.9999 **
 <sys-libs/libomp-19.0.0.9999 **
+=dev-lang/zig-9999 **
 =sys-devel/gcc-15.0.0* **
 ~sys-devel/clang-toolchain-symlinks-19 **
 ~sys-devel/lld-toolchain-symlinks-19 **
