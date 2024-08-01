@@ -1,0 +1,10 @@
+--- a/lib/libimhex/include/hex/helpers/types.hpp
++++ b/lib/libimhex/include/hex/helpers/types.hpp
+@@ -2,6 +2,7 @@
+ 
+ #include <cstddef>
+ #include <cstdint>
++#include <type_traits>
+ 
+ #include <concepts>
+ 
