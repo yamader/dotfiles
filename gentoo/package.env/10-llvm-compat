@@ -9,6 +9,7 @@ sys-devel/gcc cc # gdc
 ~app-i18n/libskk-1.0.5_p20210830 cc # incompatible pointer to integer conversion returning 'void *' from a function with result
 ~dev-embedded/arduino-ctags-20161123 cc # __unused__
 ~dev-lang/gnu-apl-1.8 cc # libcxx11: invalid operands to binary expression; libstdcxx: lld: *.o is incompatible with elf32-i386
+~dev-libs/ffcall-2.4 cc # changed section flags for .eh_frame, expected: 0x2
 ~dev-libs/libgudev-238 cc # clang: unknown argument: '-export-dynamic'
 ~sys-firmware/seabios-1.16.0 vanilla # llvm-objdump: keyerror
 ~x11-misc/xsecurelock-1.9.0 cc # clang: embedding a #include directive within macro arguments is not supported

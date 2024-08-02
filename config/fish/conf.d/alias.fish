@@ -1,4 +1,5 @@
 # single
+alias h="hyx"
 alias l="la"
 alias p="python3"
 alias s="subl"

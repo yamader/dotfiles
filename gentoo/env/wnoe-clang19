@@ -1,0 +1,5 @@
+WNOE_FLAGS="-Wno-error=c++11-narrowing \
+            -Wno-error=missing-template-arg-list-after-template-kw"
+
+CFLAGS="${CFLAGS} ${WNOE_FLAGS}"
+CXXFLAGS="${CXXFLAGS} ${WNOE_FLAGS}"
