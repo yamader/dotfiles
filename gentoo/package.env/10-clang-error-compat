@@ -1,0 +1,9 @@
+<dev-lang/gnucobol-3.3          wnoe-clang16 # [-Wimplicit-function-declaration]
+<dev-libs/libtsm-4.1            wnoe-clang16 # [-Wimplicit-function-declaration]
+<net-misc/networkmanager-1.49   wnoe-clang16 # [-Wincompatible-function-pointer-types]
+<sys-process/runit-2.1.3        wnoe-clang16 # [-Wimplicit-function-declaration]
+<x11-libs/fox-1.7               wnoe-clang16 # [-Wregister]
+
+<app-text/doxygen-1.12                  wnoe-clang19 # [-Wmissing-template-arg-list-after-template-kw]
+<gnome-extra/gnome-system-monitor-46.1  wnoe-clang19 # [-Wc++11-narrowing]
+<net-libs/webkit-gtk-2.45               wnoe-clang19 # [-Wmissing-template-arg-list-after-template-kw]

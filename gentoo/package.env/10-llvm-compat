@@ -1,15 +1,23 @@
 */*::crossdev vanilla
-<dev-java/openjdk-22 vanilla # lld: recompile with -fPIC; cc: clang compiler is required
-<sys-apps/fwupd-efi-1.7 vanilla # llvm-objcopy: invalid output format: 'efi-app-x86_64'
-<sys-boot/gnu-efi-3.1 vanilla # llvm-objcopy: invalid output format: 'efi-app-x86_64'
-=sys-libs/libnvidia-container-1.14* cc bfd # clang: unknown argument: '-fplan9-extensions'; lld: version script assignment of 'NVC_1.0' to symbol '__ubsan_default_options' failed: symbol not defined
-dev-libs/elfutils libstdcxx # libcxx-18: <stack>: source file is not valid UTF-8
 sys-devel/gcc cc # gdc
-~app-emulation/wine-proton-8.0.4 vanilla # bfd: undefined reference to `__register_frame_info'; gcc: unknown type name ‘WINBOOL’
-~app-i18n/libskk-1.0.5_p20210830 cc # incompatible pointer to integer conversion returning 'void *' from a function with result
-~dev-embedded/arduino-ctags-20161123 cc # __unused__
-~dev-lang/gnu-apl-1.8 cc # libcxx11: invalid operands to binary expression; libstdcxx: lld: *.o is incompatible with elf32-i386
-~dev-libs/ffcall-2.4 cc # changed section flags for .eh_frame, expected: 0x2
-~dev-libs/libgudev-238 cc # clang: unknown argument: '-export-dynamic'
-~sys-firmware/seabios-1.16.0 vanilla # llvm-objdump: keyerror
-~x11-misc/xsecurelock-1.9.0 cc # clang: embedding a #include directive within macro arguments is not supported
+
+<dev-lang/gnu-apl-1.9           cc # std::auto_ptr; clang-19: invalid operands to binary expression
+<dev-libs/ffcall-2.5            cc # clang-19: changed section flags for .eh_frame, expected: 0x2
+<gui-libs/wlroots-0.19.0        cc # clang-19: 'deprecated' attribute cannot be applied to types
+<sys-libs/libnvidia-container-1.15 cc bfd # clang-19: unknown argument: '-fplan9-extensions'; mold-2.32: unknown command line option: -d; lld-19: symbol not defined: 'NVC_1.0'
+
+<dev-libs/darts-0.33            libstdcxx # libcxx-19: no member named 'random_shuffle' in namespace 'std'
+<mail-client/thunderbird-115.14 libstdcxx # linker: undefined symbol: std::__1::*
+<media-sound/easyeffects-7.2    libstdcxx # libcxx-19: no member named 'par_unseq' in namespace 'std::execution'
+sys-process/btop                libstdcxx # segv: https://github.com/aristocratos/btop/issues/619
+
+<dev-java/openjdk-22            vanilla # lld: recompile with -fPIC; cc: clang compiler is required
+<sys-apps/fwupd-efi-1.7         vanilla # llvm-objcopy-19: error: invalid output format: 'efi-app-x86_64'
+<sys-firmware/seabios-1.17      vanilla # mold, lld-19, clang-19, llvm-objdump-19 incompat
+
+app-emulation/qemu      crt-static-compat
+sys-apps/busybox        crt-static-compat
+sys-process/tini        crt-static-compat
+
+# todo: check
+sys-fs/bcachefs-tools libgcc # compiler-rt-19: undefined symbol: __cpu_model

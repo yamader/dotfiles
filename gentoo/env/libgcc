@@ -1,1 +1,1 @@
-LDFLAGS="${LDFLAGS} -rtlib=libgcc -unwindlib=libgcc"
+LDFLAGS="${LDFLAGS} -rtlib=libgcc"

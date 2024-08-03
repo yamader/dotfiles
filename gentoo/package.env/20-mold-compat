@@ -1,0 +1,12 @@
+*/* mold undef-v
+
+<dev-libs/libffi-3.5            lld # /usr/lib64/libffi.so.8: no version information available
+<gui-libs/gtk-4.15              lld # mold-2.32: does not support `-b binary`
+<sys-boot/gnu-efi-3.1           lld # mold-2.32: unknown linker script token: OUTPUT_ARCH(i386:x86-64)
+<sys-boot/refind-0.15           lld # mold-2.32: unknown linker script token: OUTPUT_ARCH(i386:x86-64)
+sys-kernel/*                    lld # mold: unknown linker
+x11-drivers/nvidia-drivers      lld # mold-2.32: does not support `-b binary`.
+
+# todo: check
+#net-libs/nodejs                lld # wtf
+#www-client/firefox             lld # lto: mold: refers to a discarded COMDAT section probably due to an ODR violation

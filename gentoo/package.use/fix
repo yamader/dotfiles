@@ -1,0 +1,1 @@
+dev-java/openjdk -lto # gcc-15 lto leak

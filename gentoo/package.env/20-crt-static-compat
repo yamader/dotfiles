@@ -1,7 +1,0 @@
-# ld: error: undefined symbol: __addtf3
-# ld: error: undefined symbol: __letf2
-# ld: error: undefined symbol: __multf3
-# ld: error: undefined symbol: __unordtf2
-app-emulation/qemu crt-static-compat
-sys-apps/busybox crt-static-compat
-sys-process/tini crt-static-compat
