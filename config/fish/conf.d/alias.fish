@@ -8,10 +8,11 @@ alias x="hexdump -C"
 
 # more
 alias cprof="p -m cProfile"
-alias ei="eix -c"
 alias ei-="eix -e"
+alias ei="eix -c"
 alias eq="equery"
 alias lv="NVIM_APPNAME=lazyvim nvim"
+alias mk="mkdir"
 alias mp="mkdir -p"
 alias pq="portageq"
 alias pr="ps -aux | grep -P"

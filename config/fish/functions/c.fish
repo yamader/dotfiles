@@ -12,6 +12,8 @@ function c
       case "*.d";   set cmd d
       case "*.tex"; set cmd lualatex
       case "*.typ"; set cmd typst watch
+      case "*.png" "*.jpg";
+                    set cmd img2sixel
     end
   end
 
