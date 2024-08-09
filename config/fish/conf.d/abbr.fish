@@ -1,5 +1,6 @@
 #---------------  utils  ----------------
 
+abbr -a - " v ~/.local/share/fish/fish_history"
 abbr -a b --set-cursor nohup % \&
 abbr -a m doas emerge
 abbr -a mm doas emerge -1 -j1
