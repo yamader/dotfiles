@@ -1,2 +1,0 @@
-# 						?!?!
-LDFLAGS="${LDFLAGS} -Wl,-unresolved-symbols=ignore-in-object-files"

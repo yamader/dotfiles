@@ -1,6 +1,0 @@
-*/* DLANG_SINGLE_TARGET: ldc2-1_38
-*/* LUA_SINGLE_TARGET: -* luajit
-*/* LUA_TARGETS: luajit
-*/* PYTHON_TARGETS: python3_13 python3_12
-*/* RUBY_TARGETS: ruby33
-dev-lang/dmd -selfhost
