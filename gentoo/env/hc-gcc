@@ -1,1 +1,0 @@
-HCFLAGS="${HCFLAGS} -pgmc=gcc"

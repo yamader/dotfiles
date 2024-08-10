@@ -8,6 +8,10 @@ client.connect_signal("manage", function(c)
   end
 end)
 
+client.connect_signal("property::floating", function(c)
+  c.ontop = c.floating
+end)
+
 client.connect_signal("mouse::enter", function(c)
   c:emit_signal("request::activate", "mouse_enter")
 end)

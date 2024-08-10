@@ -1,4 +1,3 @@
 {
-  "$schema": "https://raw.githubusercontent.com/LuaLS/vscode-lua/master/setting/schema.json",
-  "diagnostics.disable": ["lowercase-global", "undefined-global"]
+  "diagnostics.disable": ["lowercase-global", "undefined-global", "unused-local"]
 }

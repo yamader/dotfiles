@@ -1,6 +1,0 @@
-<media-sound/easyeffects-7.2 libstdcxx # libcxx-18.1.4: error
-<x11-libs/wxGTK-3.1 cxx14 # auto_ptr
-dev-libs/darts libstdcxx # libcxx-18: no member named 'random_shuffle' in namespace 'std'
-net-p2p/bitcoin-core libstdcxx # db:4.8
-sys-libs/db:4.8 libstdcxx
-sys-process/btop libstdcxx # https://github.com/aristocratos/btop/issues/619

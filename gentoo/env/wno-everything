@@ -1,2 +1,0 @@
-CFLAGS="${CFLAGS} -Wno-everything"
-CXXFLAGS="${CXXFLAGS} -Wno-everything"

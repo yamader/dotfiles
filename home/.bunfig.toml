@@ -1,5 +1,6 @@
-[install]
-peer = true
-
 [install.lockfile]
+save = false
 #print = "yarn"
+
+[run]
+bun = true
