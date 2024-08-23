@@ -1,6 +1,6 @@
 function e
   if ! count $argv > /dev/null
-    x- thunar
+    b thunar
     return
   end
 
@@ -17,5 +17,5 @@ function e
     end
   end
 
-  x- $cmd $argv
+  b $cmd $argv
 end
