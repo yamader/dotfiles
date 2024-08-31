@@ -1,10 +1,24 @@
-#---------------  utils  ----------------
+abbr -a dig drill
+abbr -a eq equery
+abbr -a h hyx
+abbr -a pd pkgdev
+abbr -a pq portageq
+abbr -a s subl
 
 abbr -a - " v ~/.local/share/fish/fish_history"
+abbr -a ei eix -c
+abbr -a ei- eix -e
 abbr -a m doas emerge
 abbr -a m- doas emerge -1 -j1
+abbr -a pcs pkgcheck scan
+abbr -a cprof p -m cProfile
+abbr -a pdc pkgdev commit --signoff
+abbr -a pdp pkgdev push
+abbr -a pip p -m pip
+abbr -a serve p -m http.server
+abbr -a x hexdump -C
 
-#---------------  dirs  ----------------
+# --------------------------------------------------------------
 
 abbr -a blog --set-cursor ~/Docs/blog/src/content/blog/%
 abbr -a rep --set-cursor ~/Docs/report/%
