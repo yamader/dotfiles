@@ -5,18 +5,22 @@ abbr -a pd pkgdev
 abbr -a pq portageq
 abbr -a s subl
 
-abbr -a - " v ~/.local/share/fish/fish_history"
+abbr -a cprof p -m cProfile
 abbr -a ei eix -c
 abbr -a ei- eix -e
 abbr -a m doas emerge
 abbr -a m- doas emerge -1 -j1
 abbr -a pcs pkgcheck scan
-abbr -a cprof p -m cProfile
 abbr -a pdc pkgdev commit --signoff
 abbr -a pdp pkgdev push
 abbr -a pip p -m pip
+abbr -a ql qlist -e
 abbr -a serve p -m http.server
+abbr -a si sed -i
 abbr -a x hexdump -C
+
+abbr -a - v ~/.local/share/fish/fish_history
+abbr -a vc --set-cursor v ~/.config/fish/conf.d/%
 
 # --------------------------------------------------------------
 

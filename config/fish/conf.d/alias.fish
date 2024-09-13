@@ -3,7 +3,7 @@ alias p="python3"
 alias v="nvim"
 
 alias mk="mkdir -p"
-alias mkcd='mk $argv; cd $argv[-1]'
+alias mkcd='mk $argv; cd'
 alias pr="ps -aux | grep -P"
 alias unq='awk \'!a[$0]++\''
 alias v-='v "$argv" && c'
