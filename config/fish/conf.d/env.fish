@@ -6,6 +6,7 @@ set -x LC_COLLATE C
 set -x CMAKE_INSTALL_PREFIX ~/.root
 
 # tools
+set -x COREPACK_ENABLE_AUTO_PIN 0
 set -x EIX_LIMIT 0
 set -x EIX_LIMIT_COMPACT 0
 set -x GPG_TTY (tty)

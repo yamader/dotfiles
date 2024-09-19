@@ -1,7 +1,7 @@
 abbr -a dig drill
 abbr -a eq equery
 abbr -a h hyx
-abbr -a pd pkgdev
+abbr -a pk pkgdev
 abbr -a pq portageq
 abbr -a s subl
 
@@ -10,10 +10,10 @@ abbr -a ei eix -c
 abbr -a ei- eix -e
 abbr -a m doas emerge
 abbr -a m- doas emerge -1 -j1
-abbr -a pcs pkgcheck scan
-abbr -a pdc pkgdev commit --signoff
-abbr -a pdp pkgdev push
+abbr -a pc pkgcheck scan
 abbr -a pip p -m pip
+abbr -a pkc pkgdev commit --signoff
+abbr -a pkp pkgdev push -A
 abbr -a ql qlist -e
 abbr -a serve p -m http.server
 abbr -a si sed -i
