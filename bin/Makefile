@@ -1,7 +1,8 @@
 TARGETS = demangler
 
-CXXFLAGS = -std=c++2b
+CXXFLAGS = -std=c++2c
 
 all: $(TARGETS)
+
 clean:
-	rm -f $(TARGETS) *.o
+	rm -f $(TARGETS)

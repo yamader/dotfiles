@@ -13,6 +13,7 @@ abbr -a m- doas emerge -1 -j1
 abbr -a pc pkgcheck scan
 abbr -a pip p -m pip
 abbr -a pkc pkgdev commit --signoff
+abbr -a pkm pkgdev manifest -f
 abbr -a pkp pkgdev push -A
 abbr -a ql qlist -e
 abbr -a serve p -m http.server
