@@ -11,7 +11,7 @@ abbr -a ei- eix -e
 abbr -a m doas emerge
 abbr -a m- doas emerge -1 -j1
 abbr -a pc pkgcheck scan
-abbr -a pip p -m pip
+abbr -a pip uv pip
 abbr -a pkc pkgdev commit --signoff
 abbr -a pkm pkgdev manifest -f
 abbr -a pkp pkgdev push -A

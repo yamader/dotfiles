@@ -1,5 +1,5 @@
 alias l="la"
-alias p="python3"
+alias p="uv run python"
 alias v="nvim"
 
 alias mk="mkdir -p"
