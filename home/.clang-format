@@ -1,3 +1,4 @@
 BasedOnStyle: Google
 FixNamespaceComments: false
 IncludeBlocks: Preserve
+ColumnLimit: 0
