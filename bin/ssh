@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+CLOUDFLARED="https://github.com/cloudflare/cloudflared/releases/download/2024.11.1/cloudflared-linux-amd64"
+
+[ `docker images -q ssher` ] || docker build -t ssher - << EOS
+FROM alpine
+RUN apk add -q openssh \
+ && wget -O /usr/local/bin/cloudflared $CLOUDFLARED \
+ && chmod 755 /usr/local/bin/cloudflared
+EOS
+
+test -t 1 && TTYOPT=-t
+
+exec docker run --rm -i $TTYOPT --net=host \
+  -e TERM \
+  -v /etc/passwd:/etc/passwd:ro \
+  -v /etc/group:/etc/group:ro \
+  -v $HOME:$HOME \
+  -u `id -u` \
+  ssher `basename $0` "$@"
