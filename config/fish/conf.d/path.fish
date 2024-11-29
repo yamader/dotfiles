@@ -61,3 +61,7 @@ fish_add_path -P \
 # tools
 fish_add_path -P \
   $FLYCTL_INSTALL/bin
+
+# rel
+set -x PATH $PATH \
+  ./vendor/bin
