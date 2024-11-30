@@ -18,6 +18,7 @@ abbr -a pkp pkgdev push -A
 abbr -a ql qlist -e
 abbr -a serve p -m http.server
 abbr -a si sed -i
+abbr -a tf uv run tflocal
 abbr -a x hexdump -C
 
 abbr -a - v ~/.local/share/fish/fish_history
