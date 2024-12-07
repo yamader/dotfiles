@@ -10,7 +10,7 @@ abbr -a ei eix -c
 abbr -a ei- eix -e
 abbr -a m doas emerge
 abbr -a m- doas emerge -1 -j1
-abbr -a pc pkgcheck scan
+abbr -a pc pkgcheck scan --commits --net
 abbr -a pip uv pip
 abbr -a pkc pkgdev commit --signoff
 abbr -a pkm pkgdev manifest -f
@@ -21,7 +21,8 @@ abbr -a si sed -i
 abbr -a tf uv run tflocal
 abbr -a x hexdump -C
 
-abbr -a - v ~/.local/share/fish/fish_history
+abbr -a - prevd
+abbr -a _ v ~/.local/share/fish/fish_history
 abbr -a vc --set-cursor v ~/.config/fish/conf.d/%
 
 # --------------------------------------------------------------

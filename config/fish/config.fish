@@ -7,4 +7,3 @@ if test -e ~/.gcc
 end
 
 source ~/.opam/opam-init/init.fish > /dev/null 2>/dev/null; or true
-source $WASMER_DIR/wasmer.sh > /dev/null 2>/dev/null; or true
