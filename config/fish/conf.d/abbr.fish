@@ -21,9 +21,9 @@ abbr -a si sed -i
 abbr -a tf uv run tflocal
 abbr -a x hexdump -C
 
-abbr -a - prevd
-abbr -a _ v ~/.local/share/fish/fish_history
-abbr -a vc --set-cursor v ~/.config/fish/conf.d/%
+abbr -a -- - prevd
+abbr -a -- -- v ~/.local/share/fish/fish_history
+abbr -a --set-cursor -- -c ~/.config/%
 
 # --------------------------------------------------------------
 
