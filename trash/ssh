@@ -12,9 +12,10 @@ EOS
 test -t 1 && TTYOPT=-t
 
 exec docker run --rm -i $TTYOPT --net=host \
-  -e TERM \
   -v /etc/passwd:/etc/passwd:ro \
   -v /etc/group:/etc/group:ro \
-  -v $HOME:$HOME \
   -u `id -u` \
+  -v $HOME:$HOME \
+  -v /tmp:/tmp \
+  -w $PWD \
   ssher `basename $0` "$@"

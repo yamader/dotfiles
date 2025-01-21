@@ -1,3 +1,5 @@
+set -x GIT_SSH (which --skip-tilde ssh)
+
 # tools
 set -x FLYCTL_INSTALL ~/.fly
 
