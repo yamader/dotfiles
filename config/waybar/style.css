@@ -84,7 +84,7 @@ button:hover {
   background-color: #26a65b;
 }
 
-#battery.charging.full {
+#battery.full {
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: steps(12);
