@@ -18,9 +18,13 @@ abbr -a tf uv run tflocal
 abbr -a v nvim
 abbr -a x hexdump -C
 
-alias mkcd='mkdir -p "$argv"; cd'
+alias mkcd='mkdir -p $argv; cd'
 alias pr="ps -aux | grep -P"
 alias unq='awk \'!a[$0]++\''
+
+function adb -w adb
+  command adb -s (command adb devices | awk 'NR == 2 { print $1 }') $argv
+end
 
 for cmd in at idris2 sqlite3
   abbr -a $cmd rlwrap $cmd
@@ -69,8 +73,8 @@ abbr -a gt  git tag
 
 abbr -a --set-cursor gcm git commit -m '"%"'
 
-alias ge='git diff "$argv" && git add'
-alias ve='v "$argv" && ge'
+alias ge='git diff $argv && git add'
+alias ve='v $argv && ge'
 
 # dir
 abbr -a bl --set-cursor ~/Docs/blog/src/content/blog/%
