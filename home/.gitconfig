@@ -1,0 +1,38 @@
+[user]
+	name = YamaD
+	email = me@dyama.net
+	signingKey = 4FD07116FB91F292
+
+#-------------------------------
+
+[advice]
+	detachedHead = false
+
+[commit]
+	gpgSign = true
+
+[core]
+	quotepath = off
+	hooksPath = ~/.config/git/hooks
+
+[init]
+	defaultBranch = master
+
+[push]
+	autoSetupRemote = true
+
+[tag]
+	gpgSign = true
+
+#-------------------------------
+
+[pager]
+	log = diff-highlight | less
+	show = diff-highlight | less
+	diff = diff-highlight | less
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

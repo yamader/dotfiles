@@ -1,5 +1,13 @@
 vim.g.mapleader = ";"
 
+vim.keymap.set("i", "<C-a>", "<C-o><S-i>")
+vim.keymap.set("i", "<C-e>", "<End>")
+vim.keymap.set("i", "<C-b>", "<Left>")
+vim.keymap.set("i", "<C-f>", "<Right>")
+vim.keymap.set("i", "<C-d>", "<C-o>x")
+vim.keymap.set("n", "<C-b>", "<Left>")
+vim.keymap.set("n", "<C-f>", "<Right>")
+
 vim.keymap.set("i", "<C-Space>", "<C-x><C-o>")
 vim.keymap.set("i", "<C-c>", "<C-[>")
 vim.keymap.set("n", "<C-c><C-c>", "<Cmd>noh<CR>")

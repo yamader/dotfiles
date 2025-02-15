@@ -6,3 +6,6 @@ export LIBVA_DRIVER_NAME=nvidia
 export LIBVA_DRIVERS_PATH=/usr/lib64/va/drivers
 export NVD_BACKEND=direct
 export MOZ_DISABLE_RDD_SANDBOX=1
+
+# https://blog.aktsbot.in/no-more-blurry-fonts.html
+export FREETYPE_PROPERTIES="cff:no-stem-darkening=0 autofitter:no-stem-darkening=0"
