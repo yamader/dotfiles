@@ -38,6 +38,7 @@ set -x ADDR2LINE llvm-addr2line
 
 fish_add_path -P \
   ~/.bin \
+  ~/.config/guix/current/bin \
   ~/.local/bin \
   $ANDROID_HOME/platform-tools \
   $ANDROID_HOME/tools \
@@ -45,6 +46,7 @@ fish_add_path -P \
   $BUN_INSTALL/bin \
   $GOPATH/bin \
   ~/.cargo/bin \
+  ~/.deno/bin \
   ~/.nimble/bin \
   ~/.pub-cache/bin \
   ~/SDK/FPGA/intel_lite_231/quartus/bin \

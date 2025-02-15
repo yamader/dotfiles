@@ -3,13 +3,17 @@
 	email = me@dyama.net
 	signingKey = 4FD07116FB91F292
 
-[core]
-	quotepath = off
-
 #-------------------------------
+
+[advice]
+	detachedHead = false
 
 [commit]
 	gpgSign = true
+
+[core]
+	quotepath = off
+	hooksPath = ~/.config/git/hooks
 
 [init]
 	defaultBranch = master

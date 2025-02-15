@@ -1,7 +1,7 @@
 # cmd
-abbr -a -- - cd -
-abbr -a -- -- v ~/.local/share/fish/fish_history
-abbr -a -- _ prevd
+abbr -a - cd -
+abbr -a -- -- $EDITOR "~/.local/share/fish/fish_history"
+abbr -a _ prevd
 abbr -a cprof p -m cProfile
 abbr -a dig drill
 abbr -a eq equery
@@ -54,6 +54,7 @@ abbr -a gam git commit --amend
 abbr -a gd  git diff
 abbr -a gd- git diff HEAD
 abbr -a gds git diff --staged
+abbr -a gf  git fetch
 abbr -a gi  git init
 abbr -a gl  git log
 abbr -a gl- git log --all --graph
@@ -77,8 +78,9 @@ alias ge='git diff $argv && git add'
 alias ve='v $argv && ge'
 
 # dir
-abbr -a bl --set-cursor ~/Docs/blog/src/content/blog/%
-abbr -a de --set-cursor ~/dev/%
-abbr -a fi --set-cursor ~/.config/fish/conf.d/%
-abbr -a pl --set-cursor ~/playground/%
-abbr -a re --set-cursor ~/Docs/report/%
+abbr -a bl  --set-cursor "~/Docs/blog/src/content/blog/%"
+abbr -a de  --set-cursor "~/dev/%"
+abbr -a f-  --set-cursor "~/.config/fish/conf.d/%"
+abbr -a pl  --set-cursor "~/playground/%"
+abbr -a re  --set-cursor "~/repos/%"
+abbr -a rep --set-cursor "~/Docs/report/%"
