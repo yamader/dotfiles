@@ -1,6 +1,6 @@
 # cmd
 abbr -a - cd -
-abbr -a -- -- $EDITOR "~/.local/share/fish/fish_history"
+abbr -a -- -- $EDITOR '~/.local/share/fish/fish_history'
 abbr -a _ prevd
 abbr -a cprof p -m cProfile
 abbr -a dig drill
@@ -18,7 +18,7 @@ abbr -a v nvim
 abbr -a x hexdump -C
 
 alias mkcd='mkdir -p $argv; cd'
-alias pr="ps -aux | grep -P"
+alias pr='ps -aux | grep -P'
 alias unq='awk \'!a[$0]++\''
 
 function adb -w adb
@@ -41,7 +41,6 @@ abbr -a pkp pkgdev push -A
 abbr -a ql qlist -e
 
 # git
-abbr -a g   git
 abbr -a ga  git add
 abbr -a gaf git add -f
 abbr -a gbl git blame
@@ -70,16 +69,27 @@ abbr -a gs  git stash
 abbr -a gss git stash show
 abbr -a gst git status
 abbr -a gt  git tag
+abbr -a gw  git worktree
+abbr -a gwl git worktree list
+abbr -a gwr git worktree remove
+abbr -a --set-cursor gcm git commit -m \"%\"
 
-abbr -a --set-cursor gcm git commit -m '"%"'
+function ge -w 'git add' --description 'alias ge=git diff $argv && git add'
+  git diff $argv && git add $argv
+end
 
-alias ge='git diff $argv && git add'
-alias ve='v $argv && ge'
+function ve -w ge --description "alias ve=$EDITOR \$argv && ge"
+  $EDITOR $argv && ge $argv
+end
+
+alias gwc='git worktree add $argv && cd'
+alias gwb='cd (git worktree list | awk \'NR == 1 { print $1 }\') \
+  && git worktree remove (echo $dirprev | awk \'{ print $NF }\')'
 
 # dir
-abbr -a bl  --set-cursor "~/Docs/blog/src/content/blog/%"
-abbr -a de  --set-cursor "~/dev/%"
-abbr -a f-  --set-cursor "~/.config/fish/conf.d/%"
-abbr -a pl  --set-cursor "~/playground/%"
-abbr -a re  --set-cursor "~/repos/%"
-abbr -a rep --set-cursor "~/Docs/report/%"
+abbr -a bl  --set-cursor '~/Docs/blog/src/content/blog/%'
+abbr -a de  --set-cursor '~/dev/%'
+abbr -a f-  --set-cursor '~/.config/fish/conf.d/%'
+abbr -a pl  --set-cursor '~/playground/%'
+abbr -a re  --set-cursor '~/repos/%'
+abbr -a rep --set-cursor '~/Docs/report/%'
