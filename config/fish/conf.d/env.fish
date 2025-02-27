@@ -36,7 +36,8 @@ set -x ADDR2LINE llvm-addr2line
 
 #---------------------------------------------------------------
 
-fish_add_path -P \
+set -x PATH \
+  ./vendor/bin \
   ~/.bin \
   ~/.config/guix/current/bin \
   ~/.local/bin \
@@ -51,7 +52,7 @@ fish_add_path -P \
   ~/.pub-cache/bin \
   ~/SDK/FPGA/intel_lite_231/quartus/bin \
   ~/SDK/flutter/bin \
-  "./vendor/bin"
+  $PATH
 
 #---------------------------------------------------------------
 
