@@ -12,6 +12,7 @@ abbr -a p uv run python
 abbr -a pip uv pip
 abbr -a pq portageq
 abbr -a s subl
+abbr -a sb bunx supabase
 abbr -a serve p -m http.server
 abbr -a tf uv run tflocal
 abbr -a v nvim
@@ -34,8 +35,8 @@ abbr -a ei eix -c
 abbr -a ei- eix -e
 abbr -a m doas emerge
 abbr -a m- doas emerge -1 -j1
-abbr -a pc pkgdev commit --signoff
-abbr -a pkc pkgcheck scan --net
+abbr -a pc pkgcheck scan --net
+abbr -a pkc pkgdev commit --signoff
 abbr -a pkm pkgdev manifest -f
 abbr -a pkp pkgdev push -A
 abbr -a ql qlist -e
