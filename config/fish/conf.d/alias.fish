@@ -11,9 +11,10 @@ abbr -a mk mkdir -p
 abbr -a p uv run python
 abbr -a pip uv pip
 abbr -a pq portageq
+abbr -a pzstd zstd -T0
 abbr -a s subl
 abbr -a sb bunx supabase
-abbr -a serve p -m http.server
+abbr -a serve python -m http.server
 abbr -a tf uv run tflocal
 abbr -a v nvim
 abbr -a x hexdump -C
@@ -89,8 +90,13 @@ alias gwb='cd (git worktree list | awk \'NR == 1 { print $1 }\') \
 
 # dir
 abbr -a bl  --set-cursor '~/Docs/blog/src/content/blog/%'
-abbr -a de  --set-cursor '~/dev/%'
+abbr -a c-  --set-cursor '~/.config/%'
 abbr -a f-  --set-cursor '~/.config/fish/conf.d/%'
-abbr -a pl  --set-cursor '~/playground/%'
-abbr -a re  --set-cursor '~/repos/%'
 abbr -a rep --set-cursor '~/Docs/report/%'
+
+for i in ~/*/
+  set base (basename $i)
+  set abbr (string sub -e 2 $base | string lower)
+  abbr -q $abbr || functions -q $abbr || \
+    abbr -a $abbr --set-cursor "~/$base/%"
+end
