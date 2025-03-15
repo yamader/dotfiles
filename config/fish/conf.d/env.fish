@@ -38,9 +38,9 @@ set -x ADDR2LINE llvm-addr2line
 
 set -x PATH \
   ./vendor/bin \
-  ~/.bin \
   ~/.config/guix/current/bin \
   ~/.local/bin \
+  ~/bin \
   $ANDROID_HOME/platform-tools \
   $ANDROID_HOME/tools \
   $ANDROID_HOME/tools/bin \
