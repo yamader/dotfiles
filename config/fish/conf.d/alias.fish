@@ -1,6 +1,6 @@
 # cmd
 abbr -a - cd -
-abbr -a -- -- $EDITOR "~/.local/share/fish/fish_history"
+abbr -a -- -- v "~/.local/share/fish/fish_history"
 abbr -a _ prevd
 abbr -a cprof p -m cProfile
 abbr -a dig drill
@@ -8,26 +8,27 @@ abbr -a eq equery
 abbr -a h hyx
 abbr -a l la
 abbr -a mk mkdir -p
-abbr -a p uv run python
-abbr -a pip uv pip
 abbr -a pq portageq
 abbr -a pzstd zstd -T0
 abbr -a s subl
 abbr -a sb bunx supabase
 abbr -a serve python -m http.server
 abbr -a tf uv run tflocal
-abbr -a v nvim
 abbr -a x hexdump -C
 
-alias mkcd "mkdir -p \$argv; cd"
+alias cd- "cd \$argv[-1] ;:"
+alias mkcd "mkdir -p \$argv; cd-"
+alias p "uv run python"
+alias pip "uv pip"
 alias pr "ps -aux | grep -P"
 alias unq "awk '!a[\$0]++'"
+alias v nvim
 
 function adb -w adb
   command adb -s (command adb devices | awk 'NR == 2 { print $1 }') $argv
 end
 
-for cmd in at idris2 sqlite3
+for cmd in at guile idris2 sqlite3
   abbr -a $cmd rlwrap $cmd
 end
 
@@ -87,7 +88,7 @@ function ve -w "ge" --description "alias ve $EDITOR \$argv && ge"
   $EDITOR $argv && ge $argv
 end
 
-alias gwc 'git worktree add $argv && cd'
+alias gwc 'git worktree add $argv && cd $argv[1] ;:'
 alias gwb 'cd (git worktree list | awk \'NR == 1 { print $1 }\') \
   && git worktree remove (echo $dirprev | awk \'{ print $NF }\')'
 

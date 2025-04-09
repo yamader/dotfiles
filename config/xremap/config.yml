@@ -2,6 +2,10 @@ modmap:
   - name: nocaps
     remap:
       CapsLock: Ctrl_L
+  - name: Right Alt Super
+    remap:
+      RightAlt: Left
+      Henkan: Right
   - name: SandS
     remap:
       Space: [Shift_L, Space]
