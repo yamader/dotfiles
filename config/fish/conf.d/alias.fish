@@ -1,6 +1,6 @@
 # cmd
 abbr -a - cd -
-abbr -a -- -- $EDITOR ~/.local/share/fish/fish_history
+abbr -a -- -- v "~/.local/share/fish/fish_history"
 abbr -a _ prevd
 abbr -a cprof p -m cProfile
 abbr -a dig drill
@@ -8,25 +8,27 @@ abbr -a eq equery
 abbr -a h hyx
 abbr -a l la
 abbr -a mk mkdir -p
-abbr -a p uv run python
-abbr -a pip uv pip
-abbr -a pk pkgdev
 abbr -a pq portageq
+abbr -a pzstd zstd -T0
 abbr -a s subl
-abbr -a serve p -m http.server
+abbr -a sb bunx supabase
+abbr -a serve python -m http.server
 abbr -a tf uv run tflocal
-abbr -a v nvim
 abbr -a x hexdump -C
 
-alias mkcd='mkdir -p $argv; cd'
-alias pr="ps -aux | grep -P"
-alias unq='awk \'!a[$0]++\''
+alias cd- "cd \$argv[-1] ;:"
+alias mkcd "mkdir -p \$argv; cd-"
+alias p "uv run python"
+alias pip "uv pip"
+alias pr "ps -aux | grep -P"
+alias unq "awk '!a[\$0]++'"
+alias v nvim
 
 function adb -w adb
   command adb -s (command adb devices | awk 'NR == 2 { print $1 }') $argv
 end
 
-for cmd in at idris2 sqlite3
+for cmd in at guile idris2 sqlite3
   abbr -a $cmd rlwrap $cmd
 end
 
@@ -42,45 +44,64 @@ abbr -a pkp pkgdev push -A
 abbr -a ql qlist -e
 
 # git
-abbr -a g   git
-abbr -a ga  git add
-abbr -a gaf git add -f
-abbr -a gbl git blame
-abbr -a gb  git branch
-abbr -a gch git checkout
-abbr -a gcl git clean -ffdx
-abbr -a gc  git commit
-abbr -a gam git commit --amend
-abbr -a gd  git diff
-abbr -a gd- git diff HEAD
-abbr -a gds git diff --staged
-abbr -a gf  git fetch
-abbr -a gi  git init
-abbr -a gl  git log
-abbr -a gl- git log --all --graph
-abbr -a gm  git merge
-abbr -a gpl git pull -r --autostash
-abbr -a gp  git push
-abbr -a gpf git push --force-with-lease
-abbr -a gpo git push origin
-abbr -a grb git rebase
-abbr -a gr  git reset
-abbr -a grs git restore
-abbr -a gsh git show
-abbr -a gs  git stash
-abbr -a gss git stash show
-abbr -a gst git status
-abbr -a gt  git tag
+alias ga  "git add"
+alias gaf "git add -f"
+alias gbl "git blame"
+alias gb  "git branch"
+alias gch "git checkout"
+alias gcl "git clean -ffdx"
+alias gc  "git commit"
+alias gam "git commit --amend"
+alias gd  "git diff"
+alias gds "git diff --staged"
+alias gd- "git diff HEAD"
+alias gf  "git fetch"
+alias gi  "git init"
+alias gl  "git log"
+alias gl- "git log --all --graph"
+alias gm  "git merge"
+alias gpl "git pull -r --autostash"
+alias gp  "git push"
+alias gpf "git push --force-with-lease"
+alias gpo "git push origin"
+alias grb "git rebase"
+alias gr  "git reset"
+alias grs "git restore"
+alias gsh "git show"
+alias gs  "git stash"
+alias gss "git stash show"
+alias gst "git status"
+alias gt  "git tag"
+alias gw  "git worktree"
+alias gwl "git worktree list"
+alias gwr "git worktree remove"
 
-abbr -a --set-cursor gcm git commit -m '"%"'
+function gcm -w "git commit" --description 'alias gcm git commit -m "$argv"'
+  git commit -m "$argv"
+end
 
-alias ge='git diff $argv && git add'
-alias ve='v $argv && ge'
+function ge -w "git add" --description 'alias ge git diff $argv && git add'
+  git diff $argv && git add $argv
+end
+
+function ve -w "ge" --description "alias ve $EDITOR \$argv && ge"
+  $EDITOR $argv && ge $argv
+end
+
+alias gwc 'git worktree add $argv && cd $argv[1] ;:'
+alias gwb 'cd (git worktree list | awk \'NR == 1 { print $1 }\') \
+  && git worktree remove (echo $dirprev | awk \'{ print $NF }\')'
 
 # dir
-abbr -a bl  --set-cursor ~/Docs/blog/src/content/blog/%
-abbr -a de  --set-cursor ~/dev/%
-abbr -a f-  --set-cursor ~/.config/fish/conf.d/%
-abbr -a pl  --set-cursor ~/playground/%
-abbr -a re  --set-cursor ~/repos/%
-abbr -a rep --set-cursor ~/Docs/report/%
+abbr -a bl  --set-cursor '~/Docs/blog/src/content/blog/%'
+abbr -a rep --set-cursor '~/Docs/report/%'
+abbr -a c-  --set-cursor '~/.config/%'
+abbr -a f-  --set-cursor '~/.config/fish/conf.d/%'
+abbr -a v-  --set-cursor '~/.config/nvim/%'
+
+for i in ~/*/
+  set base (basename $i)
+  set abbr (string sub -e 2 $base | string lower)
+  abbr -q $abbr || functions -q $abbr || \
+    abbr -a $abbr --set-cursor "~/$base/%"
+end
