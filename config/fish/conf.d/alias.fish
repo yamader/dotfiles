@@ -6,7 +6,6 @@ abbr -a cprof p -m cProfile
 abbr -a dig drill
 abbr -a eq equery
 abbr -a h hyx
-abbr -a l la
 abbr -a mk mkdir -p
 abbr -a pq portageq
 abbr -a pzstd zstd -T0
@@ -17,6 +16,7 @@ abbr -a tf uv run tflocal
 abbr -a x hexdump -C
 
 alias cd- "cd \$argv[-1] ;:"
+alias l la
 alias mkcd "mkdir -p \$argv; cd-"
 alias p "uv run python"
 alias pip "uv pip"

@@ -11,9 +11,9 @@ return {
   },
   event = "BufAdd",
   keys = {
-    { "<C-Tab>", "<Cmd>BufferLineCycleNext<CR>" },
-    { "<C-S-Tab>", "<Cmd>BufferLineCyclePrev<CR>" },
-    { "<C-S-l>", "<Cmd>BufferLineMoveNext<CR>" },
-    { "<C-S-h>", "<Cmd>BufferLineMovePrev<CR>" },
+    { "<C-Tab>", ":BufferLineCycleNext\n" },
+    { "<C-S-Tab>", ":BufferLineCyclePrev\n" },
+    { "<C-S-l>", ":BufferLineMoveNext\n" },
+    { "<C-S-h>", ":BufferLineMovePrev\n" },
   },
 }

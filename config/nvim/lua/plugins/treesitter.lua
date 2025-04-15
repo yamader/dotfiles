@@ -23,7 +23,8 @@ return {
         branch = "main",
       },
     }
+
+    vim.cmd "TSUpdate"
   end,
-  build = ":silent TSUpdate",
   event = { "BufReadPost", "BufWritePost", "BufNewFile" }, -- LazyFile
 }

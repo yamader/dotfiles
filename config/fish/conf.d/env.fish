@@ -40,6 +40,7 @@ set -x PATH \
   ./vendor/bin \
   ~/.config/guix/current/bin \
   ~/.local/bin \
+  ~/.local/share/JetBrains/Toolbox/scripts \
   ~/bin \
   $ANDROID_HOME/platform-tools \
   $ANDROID_HOME/tools \
