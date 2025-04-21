@@ -10,7 +10,6 @@ abbr -a mk mkdir -p
 abbr -a pq portageq
 abbr -a pzstd zstd -T0
 abbr -a s subl
-abbr -a sb bunx supabase
 abbr -a serve python -m http.server
 abbr -a tf uv run tflocal
 abbr -a x hexdump -C
@@ -31,6 +30,10 @@ end
 for cmd in at guile idris2 sqlite3
   abbr -a $cmd rlwrap $cmd
 end
+
+# npx
+abbr -a sb bunx supabase
+abbr -a wr bunx wrangler
 
 # gentoo
 abbr -a ei eix -c

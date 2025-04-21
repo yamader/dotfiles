@@ -19,6 +19,6 @@ return {
     }
   end,
   keys = {
-    { "T", ":Neotree\n" },
+    { "T", "<Cmd>Neotree<CR>" },
   },
 }

@@ -1,6 +1,6 @@
 return {
   "nvim-telescope/telescope.nvim",
   keys = {
-    { "F", ":Telescope find_files\n" },
+    { "F", "<Cmd>Telescope find_files<CR>" },
   },
 }

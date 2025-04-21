@@ -7,13 +7,14 @@ return {
       offsets = {
         { filetype = "neo-tree" },
       },
+      persist_buffer_sort = false,
     },
   },
   event = "BufAdd",
   keys = {
-    { "<C-Tab>", ":BufferLineCycleNext\n" },
-    { "<C-S-Tab>", ":BufferLineCyclePrev\n" },
-    { "<C-S-l>", ":BufferLineMoveNext\n" },
-    { "<C-S-h>", ":BufferLineMovePrev\n" },
+    { "<C-Tab>", "<Cmd>BufferLineCycleNext<CR>" },
+    { "<C-S-Tab>", "<Cmd>BufferLineCyclePrev<CR>" },
+    { "<C-S-l>", "<Cmd>BufferLineMoveNext<CR>" },
+    { "<C-S-h>", "<Cmd>BufferLineMovePrev<CR>" },
   },
 }
