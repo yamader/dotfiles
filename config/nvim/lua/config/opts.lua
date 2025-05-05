@@ -1,7 +1,7 @@
 -- system
 vim.cmd "set gcr=" -- vim.opt.guicursor = nil
 vim.cmd "set mouse=" -- vim.opt.mouse = nil
-vim.opt.fileencodings = "ucs-bom,utf-8,sjis,latin1"
+vim.opt.fileencodings = "ucs-bom,utf-8,euc-jp,sjis,latin1"
 vim.opt.runtimepath:append "/usr/share/vim/vimfiles"
 
 -- layout
