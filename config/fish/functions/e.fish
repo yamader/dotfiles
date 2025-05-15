@@ -13,7 +13,7 @@ function e
       case "*.htm*";    set cmd firefox
       case "*.xls*";    set cmd libreoffice
       case "*.mp4" "*.iso"; set cmd vlc
-      case "*.png" "*.jpg" "*.jpeg";
+      case "*.png" "*.jpg" "*.jpeg" "*.webp";
                         set cmd feh -.
     end
   end

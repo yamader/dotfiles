@@ -7,6 +7,7 @@ return {
       offsets = {
         { filetype = "neo-tree" },
       },
+      persist_buffer_sort = false,
     },
   },
   event = "BufAdd",

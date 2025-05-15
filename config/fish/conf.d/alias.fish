@@ -6,17 +6,16 @@ abbr -a cprof p -m cProfile
 abbr -a dig drill
 abbr -a eq equery
 abbr -a h hyx
-abbr -a l la
 abbr -a mk mkdir -p
 abbr -a pq portageq
 abbr -a pzstd zstd -T0
 abbr -a s subl
-abbr -a sb bunx supabase
 abbr -a serve python -m http.server
 abbr -a tf uv run tflocal
 abbr -a x hexdump -C
 
 alias cd- "cd \$argv[-1] ;:"
+alias l la
 alias mkcd "mkdir -p \$argv; cd-"
 alias p "uv run python"
 alias pip "uv pip"
@@ -31,6 +30,10 @@ end
 for cmd in at guile idris2 sqlite3
   abbr -a $cmd rlwrap $cmd
 end
+
+# npx
+abbr -a sb bunx supabase
+abbr -a wr bunx wrangler
 
 # gentoo
 abbr -a ei eix -c
@@ -55,16 +58,17 @@ alias gam "git commit --amend"
 alias gd  "git diff"
 alias gds "git diff --staged"
 alias gd- "git diff HEAD"
-alias gf  "git fetch"
+alias gf  "git fetch -p"
 alias gi  "git init"
 alias gl  "git log"
 alias gl- "git log --all --graph"
 alias gm  "git merge"
-alias gpl "git pull -r --autostash"
+alias gpl "git pull -r -p --autostash"
 alias gp  "git push"
 alias gpf "git push --force-with-lease"
 alias gpo "git push origin"
 alias grb "git rebase"
+alias grc "git rebase --continue"
 alias gr  "git reset"
 alias grs "git restore"
 alias gsh "git show"

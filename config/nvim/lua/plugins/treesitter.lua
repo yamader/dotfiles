@@ -8,6 +8,7 @@ return {
         disable = {
           "gitcommit",
           "godot_resource",
+          "perl",
           "ssh_config",
           "vimdoc",
         },
@@ -23,7 +24,8 @@ return {
         branch = "main",
       },
     }
+
+    vim.cmd "TSUpdate"
   end,
-  build = ":silent TSUpdate",
   event = { "BufReadPost", "BufWritePost", "BufNewFile" }, -- LazyFile
 }
