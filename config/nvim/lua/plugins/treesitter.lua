@@ -8,6 +8,7 @@ return {
         disable = {
           "gitcommit",
           "godot_resource",
+          "perl",
           "ssh_config",
           "vimdoc",
         },
