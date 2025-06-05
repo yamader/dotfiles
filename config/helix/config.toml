@@ -1,9 +1,0 @@
-theme = "hc"
-
-[editor.cursor-shape]
-insert = "underline"
-normal = "underline"
-select = "block"
-
-[editor.whitespace.render]
-tab = "all"
