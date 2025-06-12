@@ -27,5 +27,5 @@ vim.opt.smartindent = true
 
 -- fold
 vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
-vim.opt.foldmethod = "expr"
+vim.opt.foldmethod = "indent" -- "expr"
 vim.opt.foldlevelstart = 99
