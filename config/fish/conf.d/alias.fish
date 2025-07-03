@@ -23,7 +23,7 @@ alias pr "ps -aux | grep -P"
 alias unq "awk '!a[\$0]++'"
 alias v nvim
 
-function adb -w adb
+function adb- -w adb
   command adb -s (command adb devices | awk 'NR == 2 { print $1 }') $argv
 end
 
