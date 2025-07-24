@@ -15,6 +15,7 @@ abbr -a tf uv run tflocal
 abbr -a x hexdump -C
 
 alias cd- "cd \$argv[-1] ;:"
+alias e "b xdg-open"
 alias l la
 alias mkcd "mkdir -p \$argv; cd-"
 alias p "uv run python"

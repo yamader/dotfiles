@@ -49,6 +49,7 @@ set -x PATH \
   $GOPATH/bin \
   ~/.cargo/bin \
   ~/.deno/bin \
+  ~/.ghcup/bin \
   ~/.nimble/bin \
   ~/.pub-cache/bin \
   ~/SDK/FPGA/intel_lite_231/quartus/bin \
