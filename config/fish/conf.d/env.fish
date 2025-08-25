@@ -48,6 +48,7 @@ set -x PATH \
   $BUN_INSTALL/bin \
   $GOPATH/bin \
   ~/.cargo/bin \
+  ~/.config/composer/vendor/bin \
   ~/.deno/bin \
   ~/.ghcup/bin \
   ~/.nimble/bin \
