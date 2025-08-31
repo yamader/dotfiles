@@ -5,5 +5,6 @@ file=/usr/share/skk/SKK-JISYO.jinmei,mode=readonly,type=file
 file=/usr/share/skk/SKK-JISYO.geo,mode=readonly,type=file
 file=/usr/share/skk/SKK-JISYO.station,mode=readonly,type=file
 file=/usr/share/skk/SKK-JISYO.propernoun,mode=readonly,type=file
+encoding=UTF-8,file=/usr/share/skk/SKK-JISYO.emoji,mode=readonly,type=file
 encoding=UTF-8,file=/usr/share/skk/SKK-JISYO.emoji.utf8,mode=readonly,type=file
 host=localhost,port=1178,type=server
