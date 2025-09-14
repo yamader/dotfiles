@@ -5,14 +5,24 @@ modmap:
       CapsLock: Ctrl_L
   - name: SandS
     remap:
-      Space: [Shift_L, Space]
+      Space:
+        held: Shift_L
+        alone: Space
   - name: JP
     remap:
-      Henkan: [Shift_L, Space]
-      KatakanaHiragana: [Shift_L, Space]
-      Muhenkan: [Shift_L, Space]
+      Henkan:
+        held: Shift_L
+        alone: Space
+      KatakanaHiragana:
+        held: Shift_L
+        alone: Space
+      Muhenkan:
+        held: Shift_L
+        alone: Space
   - name: JP Mac
     remap:
       Yen: Grave
       Hanja: Alt_L
-      Hangeul: [Shift_L, Space]
+      Hangeul:
+        held: Shift_L
+        alone: Space
