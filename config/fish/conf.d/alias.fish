@@ -15,6 +15,7 @@ abbr -a tf uv run tflocal
 abbr -a x hexdump -C
 
 alias cd- "cd \$argv[-1] ;:"
+alias e "b xdg-open"
 alias l la
 alias mkcd "mkdir -p \$argv; cd-"
 alias p "uv run python"
@@ -23,7 +24,7 @@ alias pr "ps -aux | grep -P"
 alias unq "awk '!a[\$0]++'"
 alias v nvim
 
-function adb -w adb
+function adb- -w adb
   command adb -s (command adb devices | awk 'NR == 2 { print $1 }') $argv
 end
 

@@ -6,3 +6,4 @@
 .vscode
 
 bun.lock
+compile_commands.json

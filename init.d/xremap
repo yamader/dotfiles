@@ -1,7 +1,7 @@
 #!/sbin/openrc-run
 
 command="/usr/bin/xremap"
-command_args="--watch=device,config ${config}"
+command_args="--watch=device,config ~yamad/.config/xremap.yml"
 command_background="true"
 pidfile="/run/xremap.pid"
 

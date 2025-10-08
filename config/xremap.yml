@@ -1,0 +1,28 @@
+# evdev/src/sancoders.rs
+modmap:
+  - name: nocaps
+    remap:
+      CapsLock: Ctrl_L
+  - name: SandS
+    remap:
+      Space:
+        held: Shift_L
+        alone: Space
+  - name: JP
+    remap:
+      Henkan:
+        held: Shift_L
+        alone: Space
+      KatakanaHiragana:
+        held: Shift_L
+        alone: Space
+      Muhenkan:
+        held: Shift_L
+        alone: Space
+  - name: JP Mac
+    remap:
+      Yen: Grave
+      Hanja: Alt_L
+      Hangeul:
+        held: Shift_L
+        alone: Space

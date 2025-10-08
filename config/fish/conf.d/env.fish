@@ -18,21 +18,21 @@ set -x GOPATH ~/.go
 set -x PICO_SDK_PATH ~/SDK/pico-sdk
 set -x RLWRAP_HOME ~/.rlwrap
 
-# llvm/mold; cf. /var/db/repos/gentoo/profiles/features/llvm/make.defaults
-set -x CC clang
-set -x CXX clang++
-set -x LD ld.mold
-set -x AR llvm-ar
-set -x AS clang -c
-set -x CPP clang-cpp
-set -x NM llvm-nm
-set -x STRIP llvm-strip
-set -x RANLIB llvm-ranlib
-set -x OBJCOPY llvm-objcopy
-set -x STRINGS llvm-strings
-set -x OBJDUMP llvm-objdump
-set -x READELF llvm-readelf
-set -x ADDR2LINE llvm-addr2line
+## llvm/mold; cf. /var/db/repos/gentoo/profiles/features/llvm/make.defaults
+#set -x CC clang
+#set -x CXX clang++
+#set -x LD ld.mold
+#set -x AR llvm-ar
+#set -x AS clang -c
+#set -x CPP clang-cpp
+#set -x NM llvm-nm
+#set -x STRIP llvm-strip
+#set -x RANLIB llvm-ranlib
+#set -x OBJCOPY llvm-objcopy
+#set -x STRINGS llvm-strings
+#set -x OBJDUMP llvm-objdump
+#set -x READELF llvm-readelf
+#set -x ADDR2LINE llvm-addr2line
 
 #---------------------------------------------------------------
 
@@ -48,7 +48,9 @@ set -x PATH \
   $BUN_INSTALL/bin \
   $GOPATH/bin \
   ~/.cargo/bin \
+  ~/.config/composer/vendor/bin \
   ~/.deno/bin \
+  ~/.ghcup/bin \
   ~/.nimble/bin \
   ~/.pub-cache/bin \
   ~/SDK/FPGA/intel_lite_231/quartus/bin \
