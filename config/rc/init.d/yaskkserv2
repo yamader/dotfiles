@@ -1,0 +1,6 @@
+#!/sbin/openrc-run
+
+command="/usr/bin/yaskkserv2"
+command_args="--no-daemonize --google-cache-filename ~/.cache/yaskkserv2 --google-suggest"
+command_background="true"
+pidfile="${XDG_RUNTIME_DIR}/${RC_SVCNAME}.pid"

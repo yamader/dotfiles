@@ -1,0 +1,10 @@
+#!/sbin/openrc-run
+
+command="/usr/bin/xremap"
+command_args="--watch=device,config ~/.config/xremap.yml"
+command_background="true"
+pidfile="${XDG_RUNTIME_DIR}/${RC_SVCNAME}.pid"
+
+#depend() {
+#	need modules # uinput
+#}

@@ -1,4 +1,21 @@
+output "LG Electronics LG IPS QHD 503TFQK1H564" {
+  mode 2560x1440@99.9Hz
+  alias $LG_0
+}
+
+output "Huawei Technologies Co., Inc. HUAWEI AD80HW              " {
+  mode 1920x1080@75Hz
+  alias $HUAWEI
+}
+
+#---------------------------------------------------------------
+
 profile red {
-  output HDMI-A-1 mode 1920x1080@75Hz position 1920,0
-  output HDMI-A-2 mode 1920x1080@75Hz position 0,256
+  output $LG_0 position 0,0
+  output $HUAWEI position 2560,128
+}
+
+profile orchid_home {
+  output $LG_0 position 0,0
+  output eDP-1 mode 1920x1200 position 320,1440
 }

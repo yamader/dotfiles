@@ -21,11 +21,11 @@ vim.api.nvim_create_autocmd("FileType", {
 
 -- indent
 vim.opt.expandtab = true
-vim.opt.tabstop = 2
+vim.opt.tabstop = 8
 vim.opt.shiftwidth = 2
 vim.opt.smartindent = true
 
 -- fold
 vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
-vim.opt.foldmethod = "expr"
+vim.opt.foldmethod = "indent" -- "expr"
 vim.opt.foldlevelstart = 99

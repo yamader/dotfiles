@@ -1,5 +1,8 @@
 {
-  "modules-left": ["wayfire/workspaces", "wayfire/window"],
+  "modules-left": [
+    "wayfire/workspaces",
+    "wayfire/window",
+  ],
   "modules-right": [
     "tray",
     "pulseaudio",

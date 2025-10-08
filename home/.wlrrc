@@ -1,0 +1,11 @@
+#!/bin/sh
+
+dunst &
+fcitx5 -rd
+gentoo-pipewire-launcher restart &
+kanshi &
+~/.azotebg
+
+swayidle -w \
+  timeout 3599 swaylock \
+  before-sleep swaylock &

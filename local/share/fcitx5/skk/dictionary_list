@@ -1,0 +1,11 @@
+type=file,file=$FCITX_CONFIG_DIR/skk/user.dict,encoding=UTF-8,mode=readwrite
+type=file,file=$FCITX_CONFIG_DIR/skk/yamad.dict,encoding=UTF-8,mode=readonly
+type=file,file=$FCITX_CONFIG_DIR/skk/skk-jisyo-latex-unicode-math/SKK-JISYO.latex.unicode-math.utf8,encoding=UTF-8,mode=readonly
+type=file,file=/usr/share/skk/SKK-JISYO.L,mode=readonly
+type=file,file=/usr/share/skk/SKK-JISYO.jinmei,mode=readonly
+type=file,file=/usr/share/skk/SKK-JISYO.geo,mode=readonly
+type=file,file=/usr/share/skk/SKK-JISYO.station,mode=readonly
+type=file,file=/usr/share/skk/SKK-JISYO.propernoun,mode=readonly
+type=file,file=/usr/share/skk/SKK-JISYO.emoji,encoding=UTF-8,mode=readonly
+type=file,file=/usr/share/skk/SKK-JISYO.emoji.utf8,encoding=UTF-8,mode=readonly
+type=server,host=localhost,port=1178
