@@ -3,26 +3,18 @@ modmap:
   - name: nocaps
     remap:
       CapsLock: Ctrl_L
+
   - name: SandS
     remap:
-      Space:
-        held: Shift_L
-        alone: Space
-  - name: JP
-    remap:
-      Henkan:
-        held: Shift_L
-        alone: Space
-      KatakanaHiragana:
-        held: Shift_L
-        alone: Space
-      Muhenkan:
-        held: Shift_L
-        alone: Space
+      Space:            { held: Shift_L, alone: Space, free_hold: true }
+      Henkan:           { held: Shift_L, alone: Space, free_hold: true }
+      KatakanaHiragana: { held: Shift_L, alone: Space, free_hold: true }
+      Muhenkan:         { held: Shift_L, alone: Space, free_hold: true }
+      Hangeul:          { held: Shift_L, alone: Space, free_hold: true }
+    application:
+      not: '/^Minecraft 1/'
+
   - name: JP Mac
     remap:
       Yen: Grave
       Hanja: Alt_L
-      Hangeul:
-        held: Shift_L
-        alone: Space
