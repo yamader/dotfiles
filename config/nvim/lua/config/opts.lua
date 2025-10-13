@@ -21,7 +21,7 @@ vim.api.nvim_create_autocmd("FileType", {
 
 -- indent
 vim.opt.expandtab = true
-vim.opt.tabstop = 2
+vim.opt.tabstop = 8
 vim.opt.shiftwidth = 2
 vim.opt.smartindent = true
 
