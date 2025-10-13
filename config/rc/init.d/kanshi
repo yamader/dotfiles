@@ -1,0 +1,5 @@
+#!/sbin/openrc-run
+
+command="/usr/bin/kanshi"
+command_background="true"
+pidfile="${XDG_RUNTIME_DIR}/${RC_SVCNAME}.pid"
