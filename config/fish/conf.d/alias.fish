@@ -100,6 +100,7 @@ alias gwb 'cd (git worktree list | awk \'NR == 1 { print $1 }\') \
 # dir
 abbr -a bl  --set-cursor '~/Docs/blog/src/content/blog/%'
 abbr -a rep --set-cursor '~/Docs/report/%'
+abbr -a d-  --set-cursor '~/repos/yamad/dotfiles/%'
 abbr -a c-  --set-cursor '~/.config/%'
 abbr -a f-  --set-cursor '~/.config/fish/conf.d/%'
 abbr -a v-  --set-cursor '~/.config/nvim/%'
