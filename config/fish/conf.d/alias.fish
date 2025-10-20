@@ -4,14 +4,10 @@ abbr -a -- -- v "~/.local/share/fish/fish_history"
 abbr -a _ prevd
 abbr -a cprof p -m cProfile
 abbr -a dig drill
-abbr -a eq equery
 abbr -a h hyx
 abbr -a mk mkdir -p
-abbr -a pq portageq
 abbr -a pzstd zstd -T0
 abbr -a s subl
-abbr -a serve python -m http.server
-abbr -a tf uv run tflocal
 abbr -a x hexdump -C
 
 alias cd- "cd \$argv[-1] ;:"
@@ -32,19 +28,23 @@ for cmd in at guile idris2 sqlite3
   abbr -a $cmd rlwrap $cmd
 end
 
-# npx
+# packages
 abbr -a sb bunx supabase
+abbr -a serve python -m http.server
+abbr -a tf uv run tflocal
 abbr -a wr bunx wrangler
 
 # gentoo
 abbr -a ei eix -c
 abbr -a ei- eix -e
+abbr -a eq equery
 abbr -a m doas emerge
 abbr -a m- doas emerge -1 -j1
 abbr -a pc pkgcheck scan --net
 abbr -a pkc pkgdev commit --signoff
 abbr -a pkm pkgdev manifest -f
 abbr -a pkp pkgdev push -A
+abbr -a pq portageq
 abbr -a ql qlist -e
 
 # git
