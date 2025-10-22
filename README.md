@@ -11,4 +11,5 @@ rc-update -U add xremap default
 for i in dunst easyeffects fcitx5 foot kanshi pipewire-pulse wireplumber xdg-desktop-portal-wlr yaskkserv2
   rc-update -U add $i graphical
 end
+openrc -U graphical # in WM startup
 ```
