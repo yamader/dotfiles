@@ -1,7 +1,7 @@
 # cmd
-abbr -a - cd -
-abbr -a -- -- v "~/.local/share/fish/fish_history"
-abbr -a _ prevd
+abbr -a - ' cd -'
+abbr -a _ ' prevd'
+abbr -a -- -- ' v ~/.local/share/fish/fish_history'
 abbr -a cprof p -m cProfile
 abbr -a dig drill
 abbr -a h hyx
@@ -10,14 +10,13 @@ abbr -a pzstd zstd -T0
 abbr -a s subl
 abbr -a x hexdump -C
 
-alias cd- "cd \$argv[-1] ;:"
-alias e "b xdg-open"
+alias cd- 'cd $argv[-1] ;:'
+alias e 'b xdg-open'
 alias l la
-alias mkcd "mkdir -p \$argv; cd-"
-alias p "uv run python"
-alias pip "uv pip"
+alias mkcd 'mkdir -p $argv; cd-'
+alias p 'uv run python'
 alias pr "ps -aux | grep -P"
-alias unq "awk '!a[\$0]++'"
+alias unq 'awk \'!a[$0]++\''
 alias v nvim
 
 function adb- -w adb
@@ -48,48 +47,48 @@ abbr -a pq portageq
 abbr -a ql qlist -e
 
 # git
-alias ga  "git add"
-alias gaf "git add -f"
-alias gbl "git blame"
-alias gb  "git branch"
-alias gch "git checkout"
-alias gcl "git clean -ffdx"
-alias gc  "git commit"
-alias gam "git commit --amend"
-alias gd  "git diff"
-alias gds "git diff --staged"
-alias gd- "git diff HEAD"
-alias gf  "git fetch -p"
-alias gi  "git init"
-alias gl  "git log"
-alias gl- "git log --all --graph"
-alias gm  "git merge"
-alias gpl "git pull -r -p --autostash"
-alias gp  "git push"
-alias gpf "git push --force-with-lease"
-alias gpo "git push origin"
-alias grb "git rebase"
-alias grc "git rebase --continue"
-alias gr  "git reset"
-alias grs "git restore"
-alias gsh "git show"
-alias gs  "git stash"
-alias gss "git stash show"
-alias gst "git status"
-alias gt  "git tag"
-alias gw  "git worktree"
-alias gwl "git worktree list"
-alias gwr "git worktree remove"
+alias ga  'git add'
+alias gaf 'git add -f'
+alias gbl 'git blame'
+alias gb  'git branch'
+alias gch 'git checkout'
+alias gcl 'git clean -ffdx'
+alias gc  'git commit'
+alias gam 'git commit --amend'
+alias gd  'git diff'
+alias gds 'git diff --staged'
+alias gd- 'git diff HEAD'
+alias gf  'git fetch -p'
+alias gi  'git init'
+alias gl  'git log'
+alias gl- 'git log --all --graph'
+alias gm  'git merge'
+alias gpl 'git pull -r -p --autostash'
+alias gp  'git push'
+alias gpf 'git push --force-with-lease'
+alias gpo 'git push origin'
+alias grb 'git rebase'
+alias grc 'git rebase --continue'
+alias gr  'git reset'
+alias grs 'git restore'
+alias gsh 'git show'
+alias gs  'git stash'
+alias gss 'git stash show'
+alias gst 'git status'
+alias gt  'git tag'
+alias gw  'git worktree'
+alias gwl 'git worktree list'
+alias gwr 'git worktree remove'
 
-function gcm -w "git commit" --description 'alias gcm git commit -m "$argv"'
+function gcm -w 'git commit' --description 'alias gcm git commit -m "$argv"'
   git commit -m "$argv"
 end
 
-function ge -w "git add" --description 'alias ge git diff $argv && git add'
+function ge -w 'git add' --description 'alias ge git diff $argv && git add'
   git diff $argv && git add $argv
 end
 
-function ve -w "ge" --description "alias ve $EDITOR \$argv && ge"
+function ve -w 'ge' --description "alias ve $EDITOR \$argv && ge"
   $EDITOR $argv && ge $argv
 end
 
@@ -100,8 +99,7 @@ alias gwb 'cd (git worktree list | awk \'NR == 1 { print $1 }\') \
 # dir
 abbr -a bl  --set-cursor '~/Docs/blog/src/content/blog/%'
 abbr -a rep --set-cursor '~/Docs/report/%'
-abbr -a d-  --set-cursor '~/repos/yamad/dotfiles/%'
-abbr -a c-  --set-cursor '~/.config/%'
+abbr -a i-  --set-cursor '~/repos/yamad/dotfiles/local/share/fcitx5/skk/%'
 abbr -a f-  --set-cursor '~/.config/fish/conf.d/%'
 abbr -a v-  --set-cursor '~/.config/nvim/%'
 
