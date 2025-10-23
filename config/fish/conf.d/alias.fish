@@ -44,6 +44,7 @@ abbr -a pkc pkgdev commit --signoff
 abbr -a pkm pkgdev manifest -f
 abbr -a pkp pkgdev push -A
 abbr -a pq portageq
+abbr -a qf qfile
 abbr -a ql qlist -e
 
 # git
