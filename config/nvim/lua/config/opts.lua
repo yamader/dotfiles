@@ -20,9 +20,11 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 
 -- indent
+-- cf. https://vim-jp.org/vim-users-jp/2010/04/06/Hack-137.html
 vim.opt.expandtab = true
 vim.opt.tabstop = 8
 vim.opt.shiftwidth = 2
+vim.opt.softtabstop = 2
 vim.opt.smartindent = true
 
 -- fold
