@@ -41,6 +41,7 @@ set -x PATH \
   ~/.config/guix/current/bin \
   ~/.local/bin \
   ~/.local/share/JetBrains/Toolbox/scripts \
+  ~/.local/share/nvim/mason/bin \
   ~/bin \
   $ANDROID_HOME/platform-tools \
   $ANDROID_HOME/tools \
