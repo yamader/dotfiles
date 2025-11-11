@@ -8,6 +8,7 @@ function f
   for i in $argv
     switch $i
       case "*.c" "*.cc"; set cmd clang-format -i
+      case "*.d"; set cmd dfmt -i
       case "*.py"; set cmd ruff format
     end
   end
