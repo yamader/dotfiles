@@ -1,6 +1,7 @@
 # global
 set -x EDITOR nvim
 set -x LC_COLLATE C
+set -x LS_COLORS 'ow=30;42'
 
 # tools
 set -x COREPACK_ENABLE_AUTO_PIN 0
