@@ -43,7 +43,9 @@ set -x PATH \
   ~/.local/bin \
   ~/.local/share/JetBrains/Toolbox/scripts \
   ~/.local/share/nvim/mason/bin \
+  ~/.nix-profile/bin \
   ~/bin \
+  $ANDROID_HOME/cmdline-tools/latest/bin \
   $ANDROID_HOME/platform-tools \
   $ANDROID_HOME/tools \
   $ANDROID_HOME/tools/bin \
