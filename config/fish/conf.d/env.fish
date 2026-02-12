@@ -39,6 +39,7 @@ set -x RLWRAP_HOME ~/.rlwrap
 #---------------------------------------------------------------
 
 set -x PATH \
+  ./bin \
   ./vendor/bin \
   ~/.config/guix/current/bin \
   ~/.local/bin \
