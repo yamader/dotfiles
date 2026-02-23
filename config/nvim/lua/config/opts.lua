@@ -26,6 +26,10 @@ vim.opt.tabstop = 8
 vim.opt.shiftwidth = 2
 vim.opt.softtabstop = 2
 vim.opt.smartindent = true
+-- wtf
+vim.api.nvim_create_autocmd("FileType", {
+  command = "set si inde=",
+})
 
 -- fold
 vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
