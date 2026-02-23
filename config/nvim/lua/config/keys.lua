@@ -1,7 +1,6 @@
 vim.g.mapleader = ";"
 
 vim.cmd.cabbrev("h", "tab h")
-vim.cmd.cabbrev("l", "lua print()<Left>")
 
 vim.keymap.set("i", "<C-a>", "<C-o><S-i>")
 vim.keymap.set("i", "<C-e>", "<End>")
