@@ -6,11 +6,11 @@ modmap:
 
   - name: SandS
     remap:
-      Space:            { held: Shift_L, alone: Space, free_hold: true }
-      Henkan:           { held: Shift_L, alone: Space, free_hold: true }
-      KatakanaHiragana: { held: Shift_L, alone: Space, free_hold: true }
-      Muhenkan:         { held: Shift_L, alone: Space, free_hold: true }
-      Hangeul:          { held: Shift_L, alone: Space, free_hold: true }
+      Space:            { hold: Shift_L, tap: Space, free_hold: true }
+      Henkan:           { hold: Shift_L, tap: Space, free_hold: true }
+      KatakanaHiragana: { hold: Shift_L, tap: Space, free_hold: true }
+      Muhenkan:         { hold: Shift_L, tap: Space, free_hold: true }
+      Hangeul:          { hold: Shift_L, tap: Space, free_hold: true }
     application:
       not: '/^Minecraft 1/'
 
