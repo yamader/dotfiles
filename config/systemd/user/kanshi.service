@@ -1,0 +1,17 @@
+# https://github.com/nix-community/home-manager/blob/7d06e0c/modules/services/kanshi.nix#L358-L377
+
+[Unit]
+Description=Dynamic output configuration
+Documentation=man:kanshi(1)
+ConditionEnvironment=WAYLAND_DISPLAY
+PartOf=graphical-session.target
+Requires=graphical-session.target
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/kanshi
+Restart=always
+
+[Install]
+WantedBy=graphical-session.target

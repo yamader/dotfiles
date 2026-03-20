@@ -1,0 +1,17 @@
+# https://github.com/nix-community/home-manager/blob/a788734/modules/services/swayidle.nix#L146-L192
+
+[Unit]
+Description=idle manager for Wayland
+Documentation=man:swayidle(1)
+ConditionEnvironment=WAYLAND_DISPLAY
+PartOf=graphical-session-pre.target
+After=graphical-session-pre.target
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/bin/swayidle -w timeout 1799 swaylock \
+                               before-sleep swaylock
+
+[Install]
+WantedBy=graphical-session-pre.target

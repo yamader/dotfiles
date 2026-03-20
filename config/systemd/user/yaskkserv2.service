@@ -1,0 +1,10 @@
+[Unit]
+Description=Yet Another SKK server
+PartOf=graphical-session.target
+After=graphical-session.target
+
+[Service]
+ExecStart=/usr/sbin/yaskkserv2 --no-daemonize --google-cache-filename %t/yaskkserv2 --google-suggest
+
+[Install]
+WantedBy=graphical-session.target
