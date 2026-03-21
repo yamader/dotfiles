@@ -1,0 +1,20 @@
+# evdev/src/sancoders.rs
+modmap:
+  - name: nocaps
+    remap:
+      CapsLock: Ctrl_L
+
+  - name: SandS
+    remap:
+      Space:            { hold: Shift_L, tap: Space, free_hold: true }
+      Henkan:           { hold: Shift_L, tap: Space, free_hold: true }
+      KatakanaHiragana: { hold: Shift_L, tap: Space, free_hold: true }
+      Muhenkan:         { hold: Shift_L, tap: Space, free_hold: true }
+      Hangeul:          { hold: Shift_L, tap: Space, free_hold: true }
+    application:
+      not: '/^Minecraft 1/'
+
+  - name: JP Mac
+    remap:
+      Yen: Grave
+      Hanja: Alt_L

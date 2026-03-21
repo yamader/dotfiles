@@ -1,8 +1,10 @@
 # global
 set -x EDITOR nvim
 set -x LC_COLLATE C
+set -x LS_COLORS 'ow=30;42'
 
 # tools
+set -x COMPOSER_IGNORE_PLATFORM_REQS 1
 set -x COREPACK_ENABLE_AUTO_PIN 0
 set -x DOTNET_CLI_TELEMETRY_OPTOUT true
 set -x EIX_LIMIT 0
@@ -37,11 +39,15 @@ set -x RLWRAP_HOME ~/.rlwrap
 #---------------------------------------------------------------
 
 set -x PATH \
+  ./bin \
   ./vendor/bin \
   ~/.config/guix/current/bin \
   ~/.local/bin \
   ~/.local/share/JetBrains/Toolbox/scripts \
+  ~/.local/share/nvim/mason/bin \
+  ~/.nix-profile/bin \
   ~/bin \
+  $ANDROID_HOME/cmdline-tools/latest/bin \
   $ANDROID_HOME/platform-tools \
   $ANDROID_HOME/tools \
   $ANDROID_HOME/tools/bin \

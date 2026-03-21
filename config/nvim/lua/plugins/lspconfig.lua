@@ -1,23 +1,8 @@
 return {
   {
-    "williamboman/mason.nvim",
-    config = function()
-      require("mason").setup {}
-      vim.cmd "MasonUpdate"
-    end,
-    cmd = "Mason",
-  },
-  {
     "williamboman/mason-lspconfig.nvim",
-    dependencies = { "neovim/nvim-lspconfig" },
-    opts = {
-      automatic_installation = true,
-      handlers = {
-        function(server_name)
-          vim.lsp.enable(server_name)
-        end,
-      },
-    },
+    dependencies = { "mason.nvim", "nvim-lspconfig" },
+    opts = {},
     event = { "BufReadPost", "BufWritePost", "BufNewFile" }, -- LazyFile
     keys = {
       { "gD", vim.lsp.buf.declaration },
@@ -31,5 +16,27 @@ return {
       { "g]", vim.diagnostic.goto_next },
       { "ge", vim.diagnostic.open_float },
     },
+  },
+  {
+    "williamboman/mason.nvim",
+    config = function()
+      require("mason").setup {}
+      vim.cmd "MasonUpdate"
+    end,
+    cmd = "Mason",
+  },
+  {
+    "neovim/nvim-lspconfig",
+    config = function()
+      vim.lsp.config("serve_d", {
+        settings = {
+          overrideDfmtEditorconfig = false, -- wtf
+          dfmt = {
+            -- https://github.com/Pure-D/serve-d/issues/213
+            braceStyle = "otbs",
+          },
+        },
+      })
+    end,
   },
 }

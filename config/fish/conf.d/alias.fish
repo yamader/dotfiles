@@ -3,7 +3,6 @@ abbr -a - ' cd -'
 abbr -a _ ' prevd'
 abbr -a -- -- ' v ~/.local/share/fish/fish_history'
 abbr -a cprof p -m cProfile
-abbr -a dig drill
 abbr -a h hyx
 abbr -a mk mkdir -p
 abbr -a pzstd zstd -T0
@@ -44,6 +43,7 @@ abbr -a pkc pkgdev commit --signoff
 abbr -a pkm pkgdev manifest -f
 abbr -a pkp pkgdev push -A
 abbr -a pq portageq
+abbr -a qf qfile
 abbr -a ql qlist -e
 
 # git

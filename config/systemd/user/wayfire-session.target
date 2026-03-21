@@ -1,0 +1,8 @@
+# https://github.com/nix-community/home-manager/blob/e90b289/modules/services/window-managers/wayfire.nix#L198-L206
+
+[Unit]
+Description=wayfire compositor session
+Documentation=man:systemd.special(7)
+BindsTo=graphical-session.target
+Wants=graphical-session-pre.target
+After=graphical-session-pre.target

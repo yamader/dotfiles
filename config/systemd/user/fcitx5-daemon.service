@@ -1,0 +1,12 @@
+# https://github.com/nix-community/home-manager/blob/fa6de26/modules/i18n/input-method/fcitx5.nix#L267-L275
+
+[Unit]
+Description=Fcitx5 input method editor
+PartOf=graphical-session.target
+After=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/fcitx5
+
+[Install]
+WantedBy=graphical-session.target

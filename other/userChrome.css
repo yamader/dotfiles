@@ -1,0 +1,15 @@
+#context-bookmarklink,
+#context-inspect-a11y,
+#context-savelink,
+#context-savepage,
+#context-sendaudio,
+#context-sendimage,
+#context-sendvideo,
+#context-translate-selection,
+#frame-sep,
+#pageAction-urlbar-tab-stash_condordes_net,
+#translations-button,
+#vertical-spacer,
+.titlebar-buttonbox-container {
+  display: none;
+}

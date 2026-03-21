@@ -1,0 +1,5 @@
+[*]
+indent_size = 2
+
+[*.d]
+dfmt_brace_style = otbs

@@ -27,3 +27,6 @@ vim.api.nvim_create_user_command("Bnp", function()
   end, vim.api.nvim_list_bufs())
   vim.cmd(bufnr ~= bufs[#bufs] and "bn" or "bp")
 end, {})
+
+-- delete trailing whitespaces
+vim.api.nvim_create_user_command('Dws', 'keepp %s/\\s\\+$', {})
