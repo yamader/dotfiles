@@ -1,3 +1,6 @@
+[submodule "local/share/fcitx5/skk/skk-emoji-jisyo"]
+	path = local/share/fcitx5/skk/skk-emoji-jisyo
+	url = https://github.com/uasi/skk-emoji-jisyo
 [submodule "local/share/fcitx5/skk/skk-jisyo-latex-unicode-math"]
 	path = local/share/fcitx5/skk/skk-jisyo-latex-unicode-math
 	url = https://github.com/xiupos/skk-jisyo-latex-unicode-math
