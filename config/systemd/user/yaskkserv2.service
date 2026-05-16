@@ -5,6 +5,8 @@ After=graphical-session.target
 
 [Service]
 ExecStart=/usr/sbin/yaskkserv2 --no-daemonize --google-cache-filename %t/yaskkserv2 --google-suggest
+Restart=always
+RestartSec=3
 
 [Install]
 WantedBy=graphical-session.target

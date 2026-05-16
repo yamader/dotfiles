@@ -10,6 +10,7 @@ After=graphical-session-pre.target
 [Service]
 Type=simple
 Restart=always
+RestartSec=3
 ExecStart=/usr/bin/swayidle -w timeout 1799 swaylock \
                                before-sleep swaylock
 
