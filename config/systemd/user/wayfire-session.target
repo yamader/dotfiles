@@ -5,4 +5,6 @@ Description=wayfire compositor session
 Documentation=man:systemd.special(7)
 BindsTo=graphical-session.target
 Wants=graphical-session-pre.target
+Wants=xdg-desktop-autostart.target
 After=graphical-session-pre.target
+AllowIsolate=true
