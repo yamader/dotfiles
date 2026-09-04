@@ -1,0 +1,20 @@
+# https://github.com/nix-community/home-manager/blob/4067ca1/modules/services/easyeffects.nix#L117-L147
+
+[Unit]
+Description=Easyeffects daemon
+After=graphical-session.target
+#After=pipewire.socket
+PartOf=graphical-session.target
+
+[Service]
+Environment=QT_QPA_PLATFORM=offscreen
+#Environment=QT_QPA_PLATFORM=wayland;xcb
+ExecStart=/usr/bin/easyeffects --hide-window --service-mode
+ExecStop=/usr/bin/easyeffects --quit
+KillMode=mixed
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=10
+
+[Install]
+WantedBy=graphical-session.target
