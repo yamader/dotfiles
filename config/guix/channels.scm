@@ -1,7 +1,5 @@
-(use-modules (guix channels))
-
 (list (channel
         (name 'guix)
+        (url "https://codeberg.org/guix/guix")
         (branch "master")
-        (url "https://codeberg.org/guix/guix-mirror")
         (introduction (channel-introduction %default-guix-channel))))
