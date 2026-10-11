@@ -19,9 +19,10 @@
   },
   "modelSettings": {
     "claude-opus-5-5": {
-      "effortLevel": "high"
+      "effortLevel": "xhigh"
     }
   },
   "promptSuggestionEnabled": false,
+  "awaySummaryEnabled": false,
   "theme": "auto"
 }
