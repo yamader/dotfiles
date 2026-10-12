@@ -13,3 +13,7 @@
 .titlebar-buttonbox-container {
   display: none;
 }
+
+.browserContainer {
+  border-start-start-radius: 0 !important;
+}
