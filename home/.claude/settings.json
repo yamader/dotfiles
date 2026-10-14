@@ -24,5 +24,6 @@
   },
   "promptSuggestionEnabled": false,
   "awaySummaryEnabled": false,
+  "switchModelsOnFlag": true,
   "theme": "auto"
 }

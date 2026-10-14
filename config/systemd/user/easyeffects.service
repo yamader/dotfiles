@@ -7,7 +7,6 @@ After=graphical-session.target
 PartOf=graphical-session.target
 
 [Service]
-Environment=QT_QPA_PLATFORM=offscreen
 #Environment=QT_QPA_PLATFORM=wayland;xcb
 ExecStart=/usr/bin/easyeffects --hide-window --service-mode
 ExecStop=/usr/bin/easyeffects --quit

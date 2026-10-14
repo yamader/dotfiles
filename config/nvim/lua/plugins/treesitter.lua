@@ -7,13 +7,11 @@ return {
       auto_install = true,
       highlight = {
         enable = true,
-        disable = {
-          "gitcommit",
-          "godot_resource",
-          "perl",
-          "ssh_config",
-          "vimdoc",
-        },
+        -- large files: per-frame highlighting gets very slow (8.7MB json: 145ms/frame)
+        disable = function(lang, buf)
+          return vim.list_contains({ "gitcommit", "godot_resource", "perl", "ssh_config", "vimdoc" }, lang)
+            or vim.fn.getfsize(vim.api.nvim_buf_get_name(buf)) > 1024 * 1024
+        end,
       },
       incremental_selection = { enable = true },
     }
