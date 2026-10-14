@@ -19,10 +19,11 @@
   },
   "modelSettings": {
     "claude-opus-5-5": {
-      "effortLevel": "xhigh"
+      "effortLevel": "high"
     }
   },
   "promptSuggestionEnabled": false,
   "awaySummaryEnabled": false,
-  "theme": "auto"
+  "theme": "auto",
+  "switchModelsOnFlag": true
 }
