@@ -1,6 +1,0 @@
-{
-  "defaultCompiler": "ldc2",
-  "defaultBuildEnvironments": {
-    "DFLAGS": "--gcc=clang"
-  }
-}
