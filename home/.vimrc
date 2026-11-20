@@ -1,4 +1,5 @@
 " visual options
+sy enable
 se guicursor=
 se laststatus=0 "cmdheight=0
 se list listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
@@ -23,6 +24,10 @@ no <Space> :
 no <C-C> <Esc>
 ino <C-C> <Esc>
 nn <C-C> <Cmd>noh<CR>
+no <C-H> <C-W>h
+no <C-J> <C-W>j
+no <C-K> <C-W>k
+no <C-L> <C-W>l
 
 " emacs
 ino <C-A> <C-O><S-I>

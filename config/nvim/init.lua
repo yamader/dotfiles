@@ -6,6 +6,9 @@ vim.opt.runtimepath:append '/usr/share/vim/vimfiles'
 vim.opt.cmdheight = 0
 require('vim._core.ui2').enable { enable = true }
 
+-- delete trailing whitespaces
+vim.api.nvim_create_user_command('Dws', 'keepp %s/\\s\\+$', {})
+
 -- set wrap
 vim.api.nvim_create_autocmd({ 'FileType' }, {
   pattern = { 'markdown', 'tex', 'typst' },
@@ -30,5 +33,12 @@ vim.api.nvim_create_autocmd({ 'FileType' }, {
   end,
 })
 
--- delete trailing whitespaces
-vim.api.nvim_create_user_command('Dws', 'keepp %s/\\s\\+$', {})
+-- disable editorconfig tabstop
+local ec = require('editorconfig')
+local orig_indent_size = ec.properties.indent_size
+ec.properties.tab_width = function() end
+ec.properties.indent_size = function(buf, val, opts)
+  local x = vim.bo[buf].tabstop
+  orig_indent_size(buf, val, opts)
+  vim.bo[buf].tabstop = x
+end

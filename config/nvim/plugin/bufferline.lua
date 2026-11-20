@@ -19,7 +19,7 @@ vim.keymap.set({ 'n', 'i' }, '<C-S-Tab>', '<Cmd>BufferLineCyclePrev<CR>')
 vim.keymap.set({ 'n', 'i' }, '<C-S-L>', '<Cmd>BufferLineMoveNext<CR>')
 vim.keymap.set({ 'n', 'i' }, '<C-S-H>', '<Cmd>BufferLineMovePrev<CR>')
 
-vim.keymap.set('n', 'gq', function()
+vim.keymap.set('n', 'Q', function()
   if #vim.fn.getbufinfo { buflisted = 1 } <= 1 then
     vim.cmd.enew()
     vim.bo.bufhidden = 'wipe'
